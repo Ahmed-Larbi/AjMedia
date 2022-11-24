@@ -5,11 +5,36 @@ import arrow from "../../assets/arrow.png"
 
 function EventCard(props) {
   const [isHovering, setIsHovering] = React.useState(false);
+  const [windowWidth, setWindowWidth] = React.useState(window.innerWidth)
+  const [translateName, setTranslateName] = React.useState(-170);
+
+  React.useEffect( ()=> {
+    function watchWidth() {
+      setWindowWidth(window.innerWidth)
+    }
+    window.addEventListener("resize", watchWidth)
+  },)
 
   const handleMouseOver = () => {
+    if(windowWidth < 560)
+    {
+      setTranslateName(-10)
+
+    }
+    else {
+      setTranslateName(-170)
+    }
     setIsHovering(true);
   }
   const handleMouseOut = () => {
+    if(windowWidth < 560)
+    {
+      setTranslateName(-10)
+
+    }
+    else {
+      setTranslateName(-170)
+    }
     setIsHovering(false);
   }
 
@@ -22,8 +47,8 @@ function EventCard(props) {
         <h1> {props.props.day}</h1>
         <h1>{props.props.month} </h1>
         </div>
-        <h1 className='card__name' style={{'transform': isHovering ? 'translateY(-170%)' : '', transition: '0.25s'}}> {props.props.card_name}</h1>
-        {isHovering && 
+        <h1 className='card__name' style={{'transform': isHovering ? `translateY(${translateName}%)` : '', transition: '0.25s'}}> {props.props.card_name}</h1>
+        {isHovering && windowWidth > 560 &&
         <div className='hover__text'>
 
         <h1 className='card__location'> <span> <img src={locationIcon} alt="" id="location__icon"/></span>{props.props.location}</h1>
