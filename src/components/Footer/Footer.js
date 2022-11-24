@@ -12,8 +12,14 @@ import twitterLogo from "../../assets/footer/twitter.png"
 import youtubeLogo from "../../assets/footer/youtube.png"
 import instagramLogo from "../../assets/footer/instagram.png"
 import phone from "../../assets/footer/telephone.png"
+import Tooltip from "@mui/material/Tooltip"
 
 function Footer() {
+    const [socialLogos, setSocialLogos] = React.useState([
+        {image: facebookLogo, 'hint': 'Facebook', },{image: twitterLogo, 'hint': 'Twitter',}
+        ,{image: youtubeLogo, 'hint': 'Youtube',},{image: instagramLogo, 'hint': 'Instagram',}
+    ])
+
   return (
     <div className='footer__container'>
         <header className='footer__header'>
@@ -27,11 +33,14 @@ function Footer() {
             <h1> Working Hours </h1>
             <h3>07:30 AM - 12:00 PM</h3>
         </div>
-            <plaintext> Sign to our Newsletter</plaintext>
+        <form className='form__signup'>
+            <input placeholder='Sign to our Newsletter'/>
+
             <div className='footer__signup'>
                 <h1>SignUp</h1>
                 <img src={signUp} alt=""/>
             </div>
+        </form>
         </header>
         <img src={vectorFooter} alt="" className='footer__vector'/>
         <main className='footer__main'>
@@ -43,25 +52,40 @@ function Footer() {
                 <img src={ajmanMedia} alt="" className='ajman__media'/>
             </div>
             <div className='footer__about'>
-                <h1>About The Website</h1>
-                <h3> Privacy Policy </h3>
-                <h3> Terms & Conditions </h3>
-                <h3> Disclaimer </h3>
-                <h3> Copyright </h3>
+                <h1>
+                <a href="javascript:void()">
+
+                About The Website
+                </a>
+                </h1>
+                <h3> 
+                <a href="javascript:void()">
+
+                Privacy Policy
+                </a> 
+                </h3>
+                <h3> 
+                <a href="javascript:void()">
+
+                Terms & Conditions
+                </a> 
+                </h3>
+                <h3> <a href="javascript:void()">Disclaimer</a> </h3>
+                <h3> <a href="javascript:void()">Copyright</a> </h3>
             </div>
             <div className='footer__links'>
-                <h1>Quick Links</h1>
-                <h3> FAQs </h3>
-                <h3> Contact Us </h3>
-                <h3> Sitemap </h3>
-                <h3> Careers </h3>
+                <h1><a href="javascript:void()">Quick Links</a></h1>
+                <h3> <a href="javascript:void()">FAQs</a> </h3>
+                <h3> <a href="javascript:void()">Contact Us</a> </h3>
+                <h3> <a href="javascript:void()">Sitemap</a> </h3>
+                <h3> <a href="javascript:void()">Careers</a> </h3>
             </div>
             <div className='footer__help'>
                 <h1 style={{color: '#FFFFFF'}}> __ </h1>
-                <h3> Archive </h3>
-                <h3> Suggestions </h3>
-                <h3> Acessability Policy </h3>
-                <h3> Help </h3>
+                <h3> <a href="javascript:void()">Archive</a> </h3>
+                <h3> <a href="javascript:void()">Suggestions</a> </h3>
+                <h3> <a href="javascript:void()">Acessability Policy</a> </h3>
+                <h3> <a href="javascript:void()">Help</a> </h3>
             </div>
         </main>
         <img src={footerline} alt="" className='footer__vector'/>
@@ -69,14 +93,16 @@ function Footer() {
             <div className='footer__copyright'> © 2022 Ajman Ruler’s Court Media Office
 </div>
             <div className='footer__social'>
-            <img src={facebookLogo} alt=""/>
-            <img src={twitterLogo} alt="" />
-            <img src={youtubeLogo} alt="" />
-            <img src={instagramLogo} alt="" />
+            {socialLogos.map( (social) => 
+            <Tooltip title={`${social.hint}`} placement='top'>
+
+            <img src={social.image} alt="" className="socialLogo"/>
+            </Tooltip>
+            )}
             </div>
             <div className='footer__number'>
                 <img src={phone} alt=""/>
-                <h3> 800 111 11</h3>
+                <h3> Toll-free 24/7 800 8877 </h3>
             </div>
         </footer>
     </div>

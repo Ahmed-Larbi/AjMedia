@@ -44,8 +44,8 @@ function EventCard(props) {
         <div className='date__container'>
         <h1> {props.props.year}</h1>
         <div className='vector2'></div>
-        <h1> {props.props.day}</h1>
-        <h1>{props.props.month} </h1>
+        <h1 className='card__date'> {props.props.month} </h1>
+        <h1 className='card__day'> {props.props.day}</h1>
         </div>
         <h1 className='card__name' style={{'transform': isHovering ? `translateY(${translateName}%)` : '', transition: '0.25s'}}> {props.props.card_name}</h1>
         {isHovering && windowWidth > 560 &&

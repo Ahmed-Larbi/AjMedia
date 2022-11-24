@@ -11,7 +11,7 @@
     padding: 30px;
     display: flex;
     justify-content: flex-start;
-    gap: 180px;
+    gap: 9vw;
 }
 .footer__visitor{
     display: flex;
@@ -74,20 +74,33 @@
     left: 50px;
     padding-left: 150px;
 }
-.footer__header plaintext {
-    font-family: 'Futura PT';
+.footer__header input {
+    /* font-family: 'Futura PT';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    line-height: 28px;
-    /* identical to box height, or 156% */
+    line-height: 28px; */
+    width: 300px;
+    height: 50px;
+    border: transparent;
+    z-index: 1;
 
 
     color: #B7B7B7;
 }
+.footer__header input:focus {
+    outline: none;
+    border: none;
+}
+.form__signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
 .footer__signup{
     display: flex;
-    gap: 15px;
+    gap: 20px;
     align-items: center;
 }
 .footer__signup h1 {
@@ -210,6 +223,20 @@
     font-size: 18px;
 
     color: #AFAFAF;
+}
+.socialLogo:hover {
+    width: 25px;
+    height: auto;
+    margin: -5%;
+}
+.logo__hint { 
+    position: relative;
+    border: 1px solid beige;
+    background: white;
+    color: red;
+    top: -30px;
+    right: 50px;
+
 }
 @media screen and (max-width: 560px) {
     .footer__container {

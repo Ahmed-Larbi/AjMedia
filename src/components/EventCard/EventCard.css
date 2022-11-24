@@ -32,11 +32,11 @@
     margin-right: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    gap: 0px;
     background: #A3C891;
-    height: 127px;
-    width: 74px;
+    height: 130px;
+    width: 80px;
     border-radius: 10px 10px 0px 0px;
     transform: matrix(1, 0, 0, -1, 0, 0);
     color: white;
@@ -46,8 +46,6 @@
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
-    line-height: 102.26%;
-    /* or 18px */
 
     text-align: center;
     transform: matrix(1, 0, 0, -1, 0, 0);
@@ -55,6 +53,7 @@
 }
 .vector2 {
     width: 40px;
+    height: 5px;
     margin: auto;
     border: 1px solid rgba(255, 255, 255, 0.7);
 }
@@ -67,8 +66,23 @@
     font-family: 'Futura PT';
     font-weight: 100;
     font-size: 8px;
-    bottom: 0px;
     padding: 30px;
+}
+.card__day {
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 700;
+    height: 120px;
+    font-size: 30px;
+}
+.card__date {
+    margin-bottom: 2vh;
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+
+    text-align: center;
 }
 .hover__text > h1 {
     color: #A3C891;

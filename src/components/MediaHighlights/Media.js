@@ -29,7 +29,7 @@ function Media() {
             </div>
             <div className='media__footer'>
                 <img src={leftArrow} alt=""/>
-                <div className='vector'>|</div>
+                <div className='vector'></div>
                 <img src={rightArrow} alt=""/>
             </div>
         </main>

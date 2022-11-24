@@ -47,6 +47,18 @@
     padding: 20px 30px;
     gap: 50px;
 }
+.hidden__details {
+    position: absolute;
+    font-family: 'Futura PT';
+    font-style: normal;
+    align-items: center;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 102.26%;
+    bottom: 150px;
+    padding-left: 15px;
+    color: #A3C891;
+}
 #locationButton {
     background: #A3C891;
     font-family: 'Futura PT';
@@ -129,6 +141,10 @@ li > h1 {
     height: 131px;
     width: 131px;
     border-radius: 50%;
+}
+.circle:hover {
+    transition: 0.05s;
+    border: 2px solid #A3C891;
 }
 .vectorLeft {
     position: absolute;
