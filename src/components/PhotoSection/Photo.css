@@ -1,0 +1,270 @@
+@import url('https://fonts.cdnfonts.com/css/futura-pt');
+
+.photosection__container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background: linear-gradient(13.3deg, #25527A -2.52%, rgba(37, 82, 122, 0) 367.92%), url('../../assets/photosection.png');
+    background-size: cover;
+}
+.photosection__title {
+    position: relative;
+    width: 1000px;
+    height: 43px;
+    left: 100px;
+    top: 150px;
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 102.26%;
+    text-transform: uppercase;
+    color: white;
+}
+.photosection__container > plaintext {
+    position: relative;
+    left: 100px;
+    top: 160px;
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 102.26%;
+    /* or 20px */
+
+
+    color: #FFFFFF;
+}
+.button {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    left: 550px;
+    top: 20px;
+    padding: 20px 30px;
+    gap: 50px;
+}
+#locationButton {
+    background: #A3C891;
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 102.26%;
+    width: 201px;
+    height: 51px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    color: white;
+}
+#locationButton:hover{
+    background-color: #2077A5;
+}
+#galleryButton:hover {
+    background: #A3C891;
+}
+#galleryButton {
+    border: 1px solid #FFFFFF;
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 102.26%;
+    /* or 20px */
+
+
+    color: #FFFFFF;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    width: 184px;
+    height: 51px;
+    background-color: transparent;
+    color: white;
+    border-radius: 6px;
+}
+.photosection__container > ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    gap: 180px;
+}
+.photosection__container li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+li > h1 { 
+    font-family: 'Futura PT';
+    width: 255px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 102.26%;
+    /* or 25px */
+    
+    
+    color: #FFFFFF;
+}
+.circle > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    padding-top: 35px;
+}
+.circle {
+    box-sizing: border-box;
+    justify-content: center;
+    background: #2077A5;
+    height: 131px;
+    width: 131px;
+    border-radius: 50%;
+}
+.vectorLeft {
+    position: absolute;
+    top: 50px;
+}
+.vectorRight {
+    position: absolute;
+    right: 0px;
+    top: 100px;
+}
+@media screen and (max-width: 560px) {
+    .photosection__container {
+        display: inline-block;
+        position: relative;
+        width: 560px;
+        height: 500px;
+        background: linear-gradient(13.3deg, #25527A -12.52%, rgba(37, 82, 122, 0) 400.92%), url('../../assets/photosection.png') no-repeat;
+        background-size: inherit;
+        background-position: center center;
+    }
+    .photosection__title {
+        position: relative;
+        width: 300px;
+        height: 43px;
+        left: 10px;
+        top: 150px;
+        font-family: 'Futura PT';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 102.26%;
+        text-transform: uppercase;
+        color: white;
+    }
+    .photosection__container > plaintext {
+        position: relative;
+        width: 30px;
+        left: 00px;
+        flex-wrap: wrap;
+        top: 160px;
+        font-family: 'Futura PT';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 102.26%;
+        /* or 20px */
+    
+    
+        color: #FFFFFF;
+    }
+    .button {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        left: 0px;
+        top: 150px;
+        padding: 20px 20px;
+        gap: 20px;
+    }
+    #locationButton {
+        background: #A3C891;
+        font-family: 'Futura PT';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 102.26%;
+        width: 100px;
+        height: 51px;
+        border: 1px solid transparent;
+        border-radius: 6px;
+        color: white;
+    }
+    #galleryButton {
+        border: 1px solid #FFFFFF;
+        font-family: 'Futura PT';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 102.26%;
+        /* or 20px */
+    
+    
+        color: #FFFFFF;
+    
+    
+        /* Inside auto layout */
+    
+        width: 100px;
+        height: 51px;
+        background-color: transparent;
+        color: white;
+        border-radius: 6px;
+    }
+    .photosection__container > ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 30%;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .photosection__container li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    li > h1 { 
+        font-family: 'Futura PT';
+        width: 100px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 102.26%;
+        /* or 25px */
+        
+        
+        color: #FFFFFF;
+    }
+    .circle > img {
+        position: relative;
+        height: 20px;
+        width: 20px;
+        line-height: inherit;
+        top: -18px;
+    }
+    .circle {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background: #2077A5;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+    }
+  }

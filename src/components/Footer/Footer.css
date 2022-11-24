@@ -1,0 +1,460 @@
+.footer__container {
+    margin-top: 5%;
+    width: 100%;
+    height: 589px;
+
+    background: #FFFFFF;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.footer__header {
+    padding: 30px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 180px;
+}
+.footer__visitor{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center;
+    margin-left: 10%;
+}
+.footer__visitor > h1{
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height, or 120% */
+
+    text-transform: capitalize;
+
+    color: #747272;
+}
+.footer__visitor > h3 {
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+
+    color: #B7B7B7;
+}
+.footer__working {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.footer__working > h1{
+    
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+
+    color: #747272;
+ }
+ .footer__working > h3 {
+    margin-left: 20px;
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+
+    color: #AFAFAF;
+}
+.footer__vector {
+    position: relative;
+    width: 75%;
+    top: -90px;
+    left: 50px;
+    padding-left: 150px;
+}
+.footer__header plaintext {
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    /* identical to box height, or 156% */
+
+
+    color: #B7B7B7;
+}
+.footer__signup{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.footer__signup h1 {
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    /* identical to box height, or 140% */
+
+
+    color: #2077A5;
+}
+.footer__main {
+    position: relative;
+    top: -40px;
+    padding: 30px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 180px;
+}
+.vertical__linefooter{
+    height: 52px;
+    border: 1px solid #73654A;
+    margin: 0px 15px 0px 15px;
+}
+.footer__logo {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center;
+    margin-left: 9%;
+    height: 0;
+}
+.footer__about {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    top: -40px;
+}
+.footer__links {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    top: -40px;
+}
+.footer__help {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    top: -40px;
+}
+.footer__main h1{
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    /* or 120% */
+
+    text-transform: capitalize;
+
+    color: #747272;
+}
+.footer__main h3 {
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    /* or 222% */
+
+
+    color: #AFAFAF;
+}
+.footer {
+    position: relative;
+    padding: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 300px;
+    margin-left: 10%;
+    height: 0;
+    top: -80px;
+}
+.footer__copyright {
+    position: relative;
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #A6A6A6;
+    height: 0;
+
+}
+.footer__social {
+    display: flex;
+    width: 200px;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+.footer__number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.footer__number h3 {
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+
+    color: #AFAFAF;
+}
+@media screen and (max-width: 560px) {
+    .footer__container {
+        margin-top: 5%;
+        width: 100%;
+        height: 350px;
+    
+        background: #FFFFFF;
+        box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+    .footer__header {
+        padding: 10px;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    .footer__visitor{
+        display: flex;
+        justify-content: flex-start;
+        gap: 2px;
+        align-items: center;
+        margin-left: 10%;
+    }
+    .footer__visitor img{
+        height: 10px;
+    }
+    .footer__visitor > h1{
+        font-family: 'Futura PT';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 5px;
+        /* identical to box height, or 120% */
+    
+        text-transform: capitalize;
+    
+        color: #747272;
+    }
+    .footer__visitor > h3 {
+        font-family: 'Futura PT';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 5px;
+    
+        color: #B7B7B7;
+    }
+    .footer__working {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+    .footer__working > h1{
+        
+        font-family: 'Futura PT';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 5px;
+    
+        color: #747272;
+     }
+     .footer__working > img{
+        
+        height: 10px;
+     }
+     .footer__working > h3 {
+        margin-left: 5px;
+        width: 110px;
+        font-family: 'Futura PT';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 5px;
+        flex-wrap: wrap;
+    
+        color: #AFAFAF;
+    }
+    .footer__vector {
+        position: relative;
+        width: 75%;
+        top: -90px;
+        left: 10px;
+        padding-left: 10px;
+    }
+    .footer__header plaintext {
+        font-family: 'Futura PT';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 5px;
+        /* identical to box height, or 156% */
+    
+    
+        color: #B7B7B7;
+    }
+    .footer__signup{
+        display: flex;
+        gap: 5px;
+        align-items: center;
+    }
+    .footer__signup h1 {
+        font-family: 'Futura PT';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 5px;
+        /* identical to box height, or 140% */
+    
+    
+        color: #2077A5;
+    }
+    .footer__signup img {
+        height: 10px;
+    }
+    .footer__main {
+        position: relative;
+        top: -40px;
+        padding: 10px;
+        display: flex;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+    .footer__main img {
+        height: 50px;
+    }
+    .vertical__linefooter{
+        height: 30px;
+        border: 1px solid #73654A;
+        margin: 0px 15px 0px 15px;
+    }
+    .footer__logo {
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        gap: 0px;
+        align-items: center;
+        margin-top: 20px;
+        left: -20px;
+        
+    }
+    .footer__logo img {
+        height: 25px;
+    }
+    .footer__about {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        top: -20px;
+        flex-wrap: wrap;
+    }
+    .footer__links {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        top: -20px;
+        flex-wrap: wrap;
+    }
+    .footer__vector {
+        width: 85%;
+    }
+    .footer__help {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        top: -40px;
+    }
+    .footer__main h1{
+        font-family: 'Futura PT';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 10px;
+        /* or 120% */
+    
+        text-transform: capitalize;
+    
+        color: #747272;
+    }
+    .footer__main h3 {
+        font-family: 'Futura PT';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        /* or 222% */
+    
+    
+        color: #AFAFAF;
+    }
+    .footer {
+        position: relative;
+        padding: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        margin-left: 1%;
+        line-height: 10px;
+        height: 0;
+        top: -80px;
+    }
+    .footer__copyright {
+        position: relative;
+        font-family: 'Futura PT';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        color: #A6A6A6;
+        height: 0;
+    
+    }
+    .footer__social {
+        display: flex;
+        width: 10px;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+    .footer__social img {
+        height: 10px;
+    }
+    .footer__number {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+    .footer__number img{
+        height: 10px;
+    }
+    .footer__number h3 {
+        font-family: 'Futura PT';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 10px;
+    
+        color: #AFAFAF;
+    }
+}

@@ -1,0 +1,189 @@
+@import url('https://fonts.cdnfonts.com/css/futura-pt');
+
+.media__container {
+    position: relative;
+    margin-top: 100px;
+}
+.media__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.media__header > button {
+    align-items: center;
+    text-align: center;
+    width: 150px;
+    height: 51px;
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 102.26%;
+    /* or 20px */
+
+
+    color: #FFFFFF;
+
+
+    border: transparent;
+    background: #A3C891;
+    border-radius: 6px;
+}
+.media__header > button:hover {
+    background-color: #2077A5;
+}
+.media__header > h1 {
+    width: 395px;
+    height: 43px;
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 102.26%;
+    /* or 41px */
+
+    text-transform: uppercase;
+
+    color: #5F5F5F;
+}
+.headers{ 
+    padding-left: 4.5%;
+    display: flex;
+    justify-content: flex-start;
+    width: 1297px;
+    gap: 40px;
+    align-items: center;
+    /* or 33px */
+
+
+    color: #747272;
+}
+.headers > h1 {
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 0;
+    margin-left: 60px;
+}
+.headers > h1:nth-child(2) {
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    /* or 33px */
+
+
+    color: #A3C891;
+}
+.vertical__line {
+    position: relative;
+    width: 1450px;
+    height: 11px;
+    left: 150px;
+    border: none;
+}
+.media__cards {
+    display: flex;
+    margin-top: 3%;
+    justify-content: center;
+    gap: 125px;
+}
+.media__footer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+    margin: 5rem 10.5rem 0rem 0rem;
+}
+@media screen and (max-width: 560px) {
+    .media__cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    .media__header {
+        display: flex;
+        justify-content: space-evenly;
+        padding-left: 50px;
+        padding-right: 50px;
+        align-items: center;
+    }
+    .media__header > h1 {
+        width: 395px;
+        height: 43px;
+        font-family: 'Futura PT';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 100.26%;
+        /* or 41px */
+    
+        text-transform: uppercase;
+    
+        color: #5F5F5F;
+    }
+    .headers{ 
+        margin-left: 4rem;
+        display: flex;
+        justify-content: center;
+        width: 90px;
+        gap:0px;
+        align-items: center;
+        /* or 33px */
+    
+    
+        color: #747272;
+    }
+    .headers > h1 {
+        font-family: 'Futura PT';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        margin-bottom: 0;
+        margin-left: 20px;
+    }
+    .headers > h1:nth-child(2) {
+        font-family: 'Futura PT';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        /* or 33px */
+    
+    
+        color: #A3C891;
+    }
+    .vertical__line {
+        position: relative;
+        width: 350px;
+        height: 11px;
+        left: 60px;
+        border: none;
+    }
+    .media__header > button {
+        align-items: center;
+        text-align: center;
+        width: 120px;
+        height: 51px;
+        font-family: 'Futura PT';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 102.26%;
+        /* or 20px */
+    
+    
+        color: #FFFFFF;
+    
+    
+        border: transparent;
+        background: #A3C891;
+        border-radius: 6px;
+    }
+  }
