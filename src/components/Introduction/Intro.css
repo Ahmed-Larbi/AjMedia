@@ -185,5 +185,5 @@
 } */
 @keyframes fade {
   0%,100% { opacity: 0 }
-  90% { opacity: 1 }
+  45% { opacity: 1 }
 }
