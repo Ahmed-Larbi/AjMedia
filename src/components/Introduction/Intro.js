@@ -13,6 +13,7 @@ function Intro() {
   // eslint-disable-next-line no-unused-vars
   const [images, setImages] = React.useState([mainImage, bannerImage1,bannerImage2])
   const [currentImage, setCurrentImage] = React.useState(0)
+  const [isHovering, setIsHovering] = React.useState([{id: 0, isHovered: false},{id: 1, isHovered: false},{id: 2, isHovered: false}])
  
   function change(){
     if(currentImage < images.length - 1)
@@ -23,6 +24,16 @@ function Intro() {
     else {
       setCurrentImage(0)
     }
+    const newState = isHovering.map(obj => {
+      if (obj.id === currentImage) {
+        return {...obj, isHovered: true};
+      }
+
+      // 👇️ otherwise return object as is
+      return {...obj, isHovered: false};
+    });
+    console.log(newState)
+    setIsHovering(newState)
   }
   function changeCurrentButton() {
     var dot = document.getElementsByClassName('dots')
@@ -48,8 +59,6 @@ function Intro() {
     const interValid = setInterval( () => {
       change()
       changeCurrentButton()
-      var bannerImage = document.getElementById('bannerImage')
-      bannerImage.style.transition= 'opacity 0 2s linear;';
     }, 3000);
     return ()=> {
       clearInterval(interValid)
@@ -60,22 +69,15 @@ function Intro() {
 
   return (
     <div className='intro__container'>
-    <TransitionGroup>
-          <CSSTransition
-            timeout={1000}
-            classNames="messageout"
-          >
-            <img src={images[currentImage]} id="bannerImage" alt=""/>
-          </CSSTransition>
-        </TransitionGroup>
-      <img src={Vector} alt=""/>
-      <img src={Vector2} alt=""/> 
-      <div className='shader1'></div>
-      <div className='shader2'></div>
-      <h1 className='intro__text'>WELCOME TO <span><br></br>AJMAN RULER'S COURT<br></br> MEDIA OFFICE</span></h1>
-      <span id='dot1' className='dots'></span>
-      <span id='dot2' className='dots'></span>
-      <span id='dot3' className='dots'></span>
+      <img src={images[currentImage]} id="image1" alt="" className='animate'/>
+        <img src={Vector} alt="" id="vector1"/>
+        <img src={Vector2} alt="" id="vector2"/> 
+        <div className='shader1'></div>
+        <div className='shader2'></div>
+        <h1 className='intro__text'>WELCOME TO <span><br></br>AJMAN RULER'S COURT<br></br> MEDIA OFFICE</span></h1>
+        <span id='dot1' className='dots'></span>
+        <span id='dot2' className='dots'></span>
+        <span id='dot3' className='dots'></span>
     </div>
   )
 }

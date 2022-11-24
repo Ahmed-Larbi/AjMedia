@@ -7,17 +7,32 @@ import audioIcon from "../../assets/buttons/audio.png"
 import cameraIcon from "../../assets/buttons/camera.png"
 
 function PhotoSection() {
-  const [isHovering, setIsHovering] = React.useState(false)
+  const [isHovering, setIsHovering] = React.useState([{id: 0, isHovered: false},{id: 1, isHovered: false},{id: 2, isHovered: false}])
   const handleMouseOver = (index) => {
-    
-    var hidden = document.getElementsByClassName('hidden__details')
-    hidden[index-1].style = `display: block`;
+    const newState = isHovering.map(obj => {
+      // 👇️ if id equals 2, update country property
+      if (obj.id === index) {
+        return {...obj, isHovered: true};
+      }
+
+      // 👇️ otherwise return object as is
+      return obj;
+    });
+    setIsHovering(newState)
   }
   const handleMouseOut = (index) => {
-   
-    var hidden = document.getElementsByClassName('hidden__details')
-    hidden[index-1].style = `display: none`;
+    const newState = isHovering.map(obj => {
+      // 👇️ if id equals 2, update country property
+      if (obj.id === index) {
+        return {...obj, isHovered: false};
+      }
+
+      // 👇️ otherwise return object as is
+      return obj;
+    });
+    setIsHovering(newState)
   }
+
   return (
     <div className='photosection__container'>
         <img src={vectorLeft} className='vectorLeft' alt=""/>
@@ -31,28 +46,28 @@ function PhotoSection() {
         </div>
         <ul>
           <li>
-            <span className='circle' onMouseOver={() => handleMouseOver(1)} onMouseOut={() => handleMouseOut(1)}>
+            <span className='circle' onMouseOver={() => handleMouseOver(0)} onMouseOut={() => handleMouseOut(0)}>
 
             <img src={menu} alt=""/>
             </span>
             <h1> Media Footage Approval</h1>
-            <div className='hidden__details' style={{ display: 'none'}}> View Details {">"} </div>
+            <div className={isHovering[0].isHovered ? 'showing' : 'not-showing'}> View Details {">"} </div>
           </li>
           <li>
-            <span className='circle' onMouseOver={() => handleMouseOver(2)} onMouseOut={() => handleMouseOut(2)}>
+            <span className='circle' onMouseOver={() => handleMouseOver(1)} onMouseOut={() => handleMouseOut(1)}>
 
             <img src={cameraIcon} alt=""/>
             </span>
             <h1> Photographer Permission Request</h1>
-            <div className='hidden__details' style={{ display: 'none'}}> View Details {">"} </div>
+            <div className={isHovering[1].isHovered ? 'showing' : 'not-showing'}> View Details {">"} </div>
           </li>
           <li>
-            <span className='circle' onMouseOver={() => handleMouseOver(3)} onMouseOut={() => handleMouseOut(3)}>
+            <span className='circle' onMouseOver={() => handleMouseOver(2)} onMouseOut={() => handleMouseOut(2)}>
 
             <img src={audioIcon} alt=""/>
             </span>
             <h1> Request to Host Influencer/Speaker</h1>
-            <div className='hidden__details' style={{ display: 'none'}}> View Details {">"}</div>
+            <div className={isHovering[2].isHovered ? 'showing' : 'not-showing'}> View Details {">"} </div>
           </li>
         </ul>
     </div>

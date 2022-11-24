@@ -47,7 +47,7 @@
     padding: 20px 30px;
     gap: 50px;
 }
-.hidden__details {
+.not-showing {
     position: absolute;
     font-family: 'Futura PT';
     font-style: normal;
@@ -58,7 +58,26 @@
     bottom: 150px;
     padding-left: 15px;
     color: #A3C891;
-}
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 1s, opacity 0.5s linear;
+  }
+  .showing {
+    position: absolute;
+    font-family: 'Futura PT';
+    font-style: normal;
+    align-items: center;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 102.26%;
+    bottom: 150px;
+    padding-left: 15px;
+    color: #A3C891;
+    visibility: visible;
+    transition: visibility 1s, opacity 0.5s linear;
+    opacity: 1;
+  
+  }
 #locationButton {
     background: #A3C891;
     font-family: 'Futura PT';
