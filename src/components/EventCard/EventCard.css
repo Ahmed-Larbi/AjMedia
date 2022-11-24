@@ -28,12 +28,12 @@
     filter: linear-gradient(0.92deg, #26537B 7.79%, rgba(38, 83, 123, 0) 120.91%);
 }
 .date__container {
+    position: relative;
     margin-left: auto;
     margin-right: 30px;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 0px;
+    flex-direction: column;
     background: #A3C891;
     height: 130px;
     width: 80px;
@@ -45,15 +45,12 @@
     font-family: 'Futura PT';
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
-
-    text-align: center;
-    transform: matrix(1, 0, 0, -1, 0, 0);
+    transform: matrix(1, 0, 0, -1, 0, -6);
     
 }
 .vector2 {
     width: 40px;
-    height: 5px;
+    height: 0px;
     margin: auto;
     border: 1px solid rgba(255, 255, 255, 0.7);
 }
@@ -72,17 +69,20 @@
     font-family: 'Futura PT';
     font-style: normal;
     font-weight: 700;
-    height: 120px;
     font-size: 30px;
+    height: 1px;
 }
 .card__date {
-    margin-bottom: 2vh;
     font-family: 'Futura PT';
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
-
+    font-size:18px;
     text-align: center;
+}
+.card__year {
+    font-size: 18px;
+    padding-bottom: 15px;
+    margin-bottom: 0;
 }
 .hover__text > h1 {
     color: #A3C891;

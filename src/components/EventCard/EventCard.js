@@ -42,7 +42,7 @@ function EventCard(props) {
     <div className='card__container' style={{ background: isHovering ? `linear-gradient(0.92deg, #26537B 20.79%, rgba(38, 83, 123, 0) 150.91%), url(${props.props.image})` : `linear-gradient(0.92deg, #26537B 7.79%, rgba(38, 83, 123, 0) 120.91%), url(${props.props.image})`,}} 
     onMouseOut={handleMouseOut} onMouseOver={handleMouseOver}>
         <div className='date__container'>
-        <h1> {props.props.year}</h1>
+        <h1 className='card__year'> {props.props.year}</h1>
         <div className='vector2'></div>
         <h1 className='card__date'> {props.props.month} </h1>
         <h1 className='card__day'> {props.props.day}</h1>

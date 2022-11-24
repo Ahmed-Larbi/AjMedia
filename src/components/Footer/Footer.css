@@ -224,8 +224,8 @@
 
     color: #AFAFAF;
 }
-.socialLogo:hover {
-    width: 25px;
+.social__logo:hover {
+    width: 12%;
     height: auto;
     margin: -5%;
 }

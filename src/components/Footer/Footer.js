@@ -96,7 +96,7 @@ function Footer() {
             {socialLogos.map( (social) => 
             <Tooltip title={`${social.hint}`} placement='top'>
 
-            <img src={social.image} alt="" className="socialLogo"/>
+            <img src={social.image} alt="" className="social__logo"/>
             </Tooltip>
             )}
             </div>
