@@ -1,3 +1,6 @@
+@import url('https://fonts.cdnfonts.com/css/futura-pt');
+
+
 .header__container {
     width: 100vw;
     height: 132px;
@@ -27,6 +30,18 @@
 }
 .right__container > img {
     margin: 10px;
+}
+.arabic {
+    font-family: 'GE SS Two';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 24px;
+/* identical to box height, or 133% */
+
+text-align: right;
+
+color: #797977;
 }
 @media screen and (max-width: 560px) {
     .left__container {

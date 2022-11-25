@@ -144,6 +144,9 @@
     align-items: flex-start;
     top: -40px;
 }
+.footer__about a {
+    color: #2077A5;
+}
 .footer__links {
     position: relative;
     display: flex;

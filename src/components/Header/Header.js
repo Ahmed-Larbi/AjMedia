@@ -3,7 +3,6 @@ import ajmanGov from "../../assets/ajmangov.png"
 import ajmanMedia from "../../assets/ajmanmedia.png"
 import search from "../../assets/search.png"
 import settings from "../../assets/setting.png"
-import arabic from "../../assets/arabic.png"
 import menu from "../../assets/menu.png"
 import "./Header.css"
 
@@ -18,7 +17,7 @@ function Header() {
     <div className='right__container'>
     <img src={search} alt="" className='search'/>
     <img src={settings} alt="" className='settings'/>
-    <img src={arabic} alt="" className='arabic'/>
+    <h1 alt="" className='arabic'> عربي </h1>
     <img src={menu} alt="" className='menu'/>
     </div>
     </div>

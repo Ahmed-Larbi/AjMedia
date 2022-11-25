@@ -6,6 +6,7 @@ import bannerImage2 from "../../assets/banner/Group1023.jpg";
 import Vector from "../../assets/vectors/Vector.png"
 import Vector2 from "../../assets/vectors/Vector2.png"
 import { CSSTransition, TransitionGroup } from "react-transition-group";
+import {AnimatePresence,motion} from "framer-motion"
 // import Shader1 from "../../assets/Rectangle.png"
 // import Shader2 from "../../assets/Rectangle2.png"
 
@@ -24,16 +25,8 @@ function Intro() {
     else {
       setCurrentImage(0)
     }
-    const newState = isHovering.map(obj => {
-      if (obj.id === currentImage) {
-        return {...obj, isHovered: true};
-      }
+    changeCurrentButton()
 
-      // 👇️ otherwise return object as is
-      return {...obj, isHovered: false};
-    });
-    console.log(newState)
-    setIsHovering(newState)
   }
   function changeCurrentButton() {
     var dot = document.getElementsByClassName('dots')
@@ -58,8 +51,7 @@ function Intro() {
   useEffect( ()=> {
     const interValid = setInterval( () => {
       change()
-      changeCurrentButton()
-    }, 3000);
+    }, 2970);
     return ()=> {
       clearInterval(interValid)
     }
@@ -75,9 +67,12 @@ function Intro() {
         <div className='shader1'></div>
         <div className='shader2'></div>
         <h1 className='intro__text'>WELCOME TO <span><br></br>AJMAN RULER'S COURT<br></br> MEDIA OFFICE</span></h1>
-        <span id='dot1' className='dots'></span>
-        <span id='dot2' className='dots'></span>
-        <span id='dot3' className='dots'></span>
+        <AnimatePresence>
+
+        <motion.span id='dot1' className='dots'></motion.span>
+        <motion.span id='dot2' className='dots'></motion.span>
+        <motion.span id='dot3' className='dots'></motion.span>
+        </AnimatePresence>
     </div>
   )
 }
