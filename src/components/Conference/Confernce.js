@@ -6,7 +6,7 @@ import rightArrow from "../../assets/rightarrow.png"
 import EventCard from '../EventCard/EventCard';
 import cards from '../../cards';
 import Vector6 from "../../assets/vectors/Vector6.png"
-import {AnimatePresence,motion} from "framer-motion"
+import {motion} from "framer-motion"
 
 function Confernce() {
   const [startingIndex, setStartingIndex] = React.useState(0)

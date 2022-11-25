@@ -17,7 +17,7 @@ function Header() {
     <div className='right__container'>
     <img src={search} alt="" className='search'/>
     <img src={settings} alt="" className='settings'/>
-    <h1 alt="" className='arabic'> عربي </h1>
+    <h1 className='arabic'> عربي </h1>
     <img src={menu} alt="" className='menu'/>
     </div>
     </div>
