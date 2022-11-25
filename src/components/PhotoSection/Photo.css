@@ -4,7 +4,7 @@
     display: inline-block;
     position: relative;
     width: 100%;
-    height: 700px;
+    height: 90vh;
     background: linear-gradient(13.3deg, #25527A -2.52%, rgba(37, 82, 122, 0) 367.92%), url('../../assets/photosection.png');
     background-size: cover;
 }
@@ -12,24 +12,24 @@
     position: relative;
     width: 1000px;
     height: 43px;
-    left: 100px;
-    top: 150px;
+    left: 6.5%;
+    top: 10vw;
     font-family: 'Futura PT';
     font-style: normal;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 2vw;
     line-height: 102.26%;
     text-transform: uppercase;
     color: white;
 }
 .photosection__container > plaintext {
     position: relative;
-    left: 100px;
+    left: 6.5%;
     top: 160px;
     font-family: 'Futura PT';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.5vw;
     line-height: 102.26%;
     /* or 20px */
 
