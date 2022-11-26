@@ -69,6 +69,8 @@ function Media() {
         }
         if(mediaChoice === 'All')
         {
+            var button = document.getElementById('All').getBoundingClientRect()
+            console.log(button)
             setDirection('1.0%')
         }
         else if(mediaChoice === 'Photos')
