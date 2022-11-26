@@ -16,7 +16,7 @@
     font-weight: 700;
     font-size: 40px;
     line-height: 102.26%;
-    margin-left: 12.7vw;
+    margin-left: 7%;
     margin-top: 5rem;
 
     text-transform: uppercase;
@@ -27,7 +27,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 13vw;
+    margin-right: 7%;
 }
 .container__header2 {
     display: flex;

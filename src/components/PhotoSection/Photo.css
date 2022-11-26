@@ -4,32 +4,34 @@
     display: inline-block;
     position: relative;
     width: 100%;
-    height: 90vh;
-    background: linear-gradient(13.3deg, #25527A -2.52%, rgba(37, 82, 122, 0) 367.92%), url('../../assets/photosection.png');
+    padding: 1%;
+    height: 546px;
+    background: linear-gradient(13.3deg, #25527A -2.52%, rgba(37, 82, 122, 0) 367.92%), url('../../assets/photosection.png') no-repeat;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 .photosection__title {
     position: relative;
-    width: 1000px;
-    height: 43px;
-    left: 6.5%;
-    top: 10vw;
+    width: 6250%;
+    left: 7%;
+    top: 7rem;
     font-family: 'Futura PT';
     font-style: normal;
     font-weight: 700;
-    font-size: 2vw;
+    font-size: 2.5rem;
     line-height: 102.26%;
     text-transform: uppercase;
     color: white;
 }
 .photosection__container > plaintext {
     position: relative;
-    left: 6.5%;
-    top: 160px;
+    left: 7%;
+    top: 6.2rem;
     font-family: 'Futura PT';
     font-style: normal;
     font-weight: 400;
-    font-size: 1.5vw;
+    font-size: 100%;
     line-height: 102.26%;
     /* or 20px */
 
@@ -42,10 +44,10 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    left: 550px;
-    top: 20px;
+    left: 35%;
+    top: 0.025rem;
     padding: 20px 30px;
-    gap: 50px;
+    gap: 3.125rem;
 }
 .not-showing {
     position: absolute;
@@ -53,24 +55,25 @@
     font-style: normal;
     align-items: center;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 102.26%;
-    bottom: 150px;
+    margin-bottom: 7rem;
     padding-left: 15px;
     color: #A3C891;
     visibility: hidden;
     opacity: 0;
-    transition: visibility 1s, opacity 0.5s linear;
+    transition: visibility 0s, opacity 0.5s linear;
   }
   .showing {
     position: absolute;
+    
     font-family: 'Futura PT';
     font-style: normal;
     align-items: center;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 102.26%;
-    bottom: 150px;
+    bottom: 7rem;
     padding-left: 15px;
     color: #A3C891;
     visibility: visible;
@@ -83,10 +86,10 @@
     font-family: 'Futura PT';
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 102.26%;
-    width: 201px;
-    height: 51px;
+    width: 12.563rem;
+    height: 3.188rem;
     border: 1px solid transparent;
     border-radius: 6px;
     color: white;
@@ -102,21 +105,16 @@
     font-family: 'Futura PT';
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 102.26%;
-    /* or 20px */
-
 
     color: #FFFFFF;
-
-
-    /* Inside auto layout */
 
     flex: none;
     order: 0;
     flex-grow: 0;
-    width: 184px;
-    height: 51px;
+    width: 11.5rem;
+    height: 3.188rem;
     background-color: transparent;
     color: white;
     border-radius: 6px;
@@ -125,14 +123,15 @@
     list-style-type: none;
     display: flex;
     justify-content: center;
-    margin-top: 10%;
-    gap: 180px;
+    margin-top: 4.688rem;
+    gap: 10vw;
 }
 .photosection__container li {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 1.25rem;
+    z-index: 1;
 }
 li > h1 { 
     font-family: 'Futura PT';
@@ -157,8 +156,8 @@ li > h1 {
     box-sizing: border-box;
     justify-content: center;
     background: #2077A5;
-    height: 131px;
-    width: 131px;
+    height: 14.539400665926747vh;
+    width:  7.99267846247712vw;
     border-radius: 50%;
 }
 .circle:hover {
@@ -167,12 +166,12 @@ li > h1 {
 }
 .vectorLeft {
     position: absolute;
-    top: 50px;
+    top: 3.125rem;
 }
 .vectorRight {
     position: absolute;
     right: 0px;
-    top: 100px;
+    top: 6.25rem;
 }
 @media screen and (max-width: 560px) {
     .photosection__container {

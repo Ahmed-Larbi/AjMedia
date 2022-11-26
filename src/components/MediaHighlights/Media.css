@@ -2,14 +2,14 @@
 
 .media__container {
     position: relative;
-    margin-top: 100px;
+    margin-top: 10rem;
 }
 .media__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 13vw;
-    padding-right: 13vw;
+    margin-right: 7.5%;
+    margin-left: 7.5%;
 }
 .media__header > button {
     align-items: center;
@@ -53,29 +53,20 @@
     justify-content: flex-start;
     gap: 5vw;
     width: 1100px;
-    margin-left: 13vw;
+    margin-left: 7.5%;
     align-items: center;
     /* or 33px */
 
 
     color: #747272;
 }
-.headers > h1 {
+.headers > button {
     font-family: 'Futura PT';
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     margin-bottom: 0;
-}
-.headers > h1:nth-child(2) {
-    font-family: 'Futura PT';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    /* or 33px */
-
-
-    color: #A3C891;
+    border: none;
 }
 .vector {
     height: 23px;
@@ -85,10 +76,26 @@
 }
 .vertical__line {
     position: relative;
-    width: 1375px;
-    height: 11px;
-    left: 13vw;
-    border: none;
+
+    width: 85%;
+    left: 7.5%;
+    margin-top: 10px;
+    border: 1px solid #D3D3D3;
+    transform: rotate(0deg);
+}
+.vertical__line:after {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-top: 0px solid #A3C891;
+    border-right: 2px solid #A3C891;
+    border-bottom: 2px solid #A3C891;
+    border-left: 0px solid #A3C891;
+    left: var(--left);
+    content: '';
+    transform: rotate(45deg);
+    margin-top: -5px;
+
 }
 .media__cards {
     display: flex;
