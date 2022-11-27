@@ -16,7 +16,7 @@ function EventCard(props) {
   },)
 
   const handleMouseOver = () => {
-    if(windowWidth < 560)
+    if(windowWidth < 700)
     {
       setTranslateName(-10)
 
@@ -27,7 +27,7 @@ function EventCard(props) {
     setIsHovering(true);
   }
   const handleMouseOut = () => {
-    if(windowWidth < 560)
+    if(windowWidth < 700)
     {
       setTranslateName(-10)
 

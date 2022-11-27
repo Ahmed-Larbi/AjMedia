@@ -1,41 +1,48 @@
 @import url('https://fonts.cdnfonts.com/css/futura-pt');
 
 .photosection__container {
-    display: inline-block;
+    display: block;
+    margin-top: 10vh;
     position: relative;
-    width: 100%;
-    padding: 1%;
+    min-width: 100%;
     height: 546px;
     background: linear-gradient(13.3deg, #25527A -80.52%, rgba(37, 82, 122, 0) 362.92%), url('../../assets/photosection.png') no-repeat;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
+.photosection__headers > h1, .photosection__headers > plaintext {
+    height: 23px;
+}
+.photosection__headers {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: min(3.8850452368281vw,73px);
+}
 .photosection__title {
     position: relative;
-    width: 6250%;
-    left: 7%;
-    top: 7rem;
+    width: 50%;
+    top: 13.5vh;
     font-family: 'Futura PT';
     font-style: normal;
     font-weight: 700;
-    font-size: 2.5rem;
-    line-height: 102.26%;
+    min-width: 839px;
+    flex-wrap: wrap;
+    font-size: min(4.123711340206185vw, 2.5rem);
     text-transform: uppercase;
     color: white;
 }
-.photosection__container > plaintext {
+.photosection__headers > plaintext {
     position: relative;
-    left: 7%;
-    top: 6.2rem;
+    width: 50%;
+    top: 12.5vh;
+    min-width: 781px;
     font-family: 'Futura PT';
     font-style: normal;
     font-weight: 400;
-    font-size: 100%;
-    line-height: 102.26%;
-    /* or 20px */
-
-
+    font-size: min(2.2vw, 1.25rem);
+    margin-inline: 0;
     color: #FFFFFF;
 }
 .button {
@@ -44,10 +51,10 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    left: 35%;
+    left: max(150px, 35vw);
     top: 0.025rem;
     padding: 20px 30px;
-    gap: 3.125rem;
+    gap: min(2vh,3.125rem);
 }
 .not-showing {
     position: absolute;
@@ -86,10 +93,11 @@
     font-family: 'Futura PT';
     font-style: normal;
     font-weight: 700;
-    font-size: 1.25rem;
+    font-size: min(1.2202562538133008vw,20px);
     line-height: 102.26%;
-    width: 12.563rem;
-    height: 3.188rem;
+    width: 12.263575350823674vw;
+    height: 5.660377358490566vh;
+    max-width: 201px;
     border: 1px solid transparent;
     border-radius: 6px;
     color: white;
@@ -105,16 +113,16 @@
     font-family: 'Futura PT';
     font-style: normal;
     font-weight: 700;
-    font-size: 1.25rem;
+    font-size: min(1.2202562538133008vw,20px);
     line-height: 102.26%;
+    width: 12.263575350823674vw;
+    height: 5.660377358490566vh;
 
     color: #FFFFFF;
 
     flex: none;
     order: 0;
     flex-grow: 0;
-    width: 11.5rem;
-    height: 3.188rem;
     background-color: transparent;
     color: white;
     border-radius: 6px;
@@ -161,19 +169,45 @@ li > h1 {
     border-radius: 50%;
 }
 .circle:hover {
-    transition: 0.05s;
+    transition: all 0.25s ease;
+    opacity: 0.6s;
     border: 2px solid #A3C891;
 }
 .vectorLeft {
     position: absolute;
+    width: 50%;
+    max-width: 300px;
     top: 3.125rem;
 }
 .vectorRight {
     position: absolute;
+    width: 50%;
+    max-width: 300px;
     right: 0px;
     top: 6.25rem;
 }
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 700px) {
+    .button {
+        position: relative;
+        display: flex;
+        top: 100px;
+        left: 10px;
+        
+    }
+    #locationButton {
+        height: 35px;
+        width: 60px;
+        font-size: 8px;
+    }
+    #galleryButton {
+        height: 35px;
+        width: 60px;
+        font-size: 8px;
+    }
+    
+}
+/* @media screen and (max-width: 560px) {
+    
     .photosection__container {
         display: inline-block;
         position: relative;
@@ -208,7 +242,7 @@ li > h1 {
         font-weight: 400;
         font-size: 12px;
         line-height: 102.26%;
-        /* or 20px */
+
     
     
         color: #FFFFFF;
@@ -244,13 +278,12 @@ li > h1 {
         font-weight: 700;
         font-size: 10px;
         line-height: 102.26%;
-        /* or 20px */
+
     
     
         color: #FFFFFF;
     
-    
-        /* Inside auto layout */
+
     
         width: 100px;
         height: 51px;
@@ -279,7 +312,7 @@ li > h1 {
         font-weight: 700;
         font-size: 10px;
         line-height: 102.26%;
-        /* or 25px */
+
         
         
         color: #FFFFFF;
@@ -301,4 +334,4 @@ li > h1 {
         width: 50px;
         border-radius: 50%;
     }
-  }
+  } */

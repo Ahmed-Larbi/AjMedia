@@ -15,8 +15,9 @@ function App() {
       <main>
 
         <Intro/>
-        {/* <Confernce/>
+         <Confernce/> 
         <PhotoSection/>
+         {/*
         <Media/>
       </main>
       <footer>

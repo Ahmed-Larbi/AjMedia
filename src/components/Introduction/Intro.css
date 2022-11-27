@@ -3,6 +3,7 @@
 .intro__container {
     position: relative;
     min-width: 100%;
+    max-height: 653px;
     background: linear-gradient(80.35deg, #24527A 100.27%, rgba(36, 82, 122, 0) 76.73%), linear-gradient(62.44deg, #24527A 43.12%, rgba(36, 82, 122, 0) 94.65%), linear-gradient(80.35deg, #24527A 43.27%, rgba(36, 82, 122, 0) 86.73%);;
 }
 #image1{
@@ -22,7 +23,7 @@
     animation: rotation 2s infinite linear;
 }
 #vector2{
-  position: absolute;
+    position: absolute;
     width: 20%;
     left: 0;
     right: 69.6%;
@@ -51,7 +52,7 @@
     min-width: 400px;
     flex-wrap: wrap;
     left: 5%;
-    top: 120px;
+    top: min(20vh, 150px);
 
     font-family: 'Futura PT';
     font-style: normal;

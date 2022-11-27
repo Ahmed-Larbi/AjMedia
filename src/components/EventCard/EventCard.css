@@ -2,7 +2,9 @@
 
 .card__container {
     position: relative;
-    width: 410px;
+    width: 21.5vw;
+    max-width: 500px;
+    min-width: 200px;
     height: 532px;
     border-radius: 6px;
 
@@ -17,8 +19,7 @@
     font-family: 'Futura PT';
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
-    line-height: 136.26%;
+    font-size: min(1.3vw, 1.85rem);
 
     text-transform: uppercase;
 
@@ -56,14 +57,14 @@
 }
 .hover__text {
     position: relative;
-    top: 57%;
+    top: min(42vh, 57%);
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: 'Futura PT';
     font-weight: 100;
-    font-size: 8px;
-    padding: 30px;
+    font-size: max(0.4255319vw,8px);
+    padding: 1.5957446808510638vw;
 }
 .card__day {
     font-family: 'Futura PT';
@@ -97,7 +98,7 @@
 #arrow__icon {
     height: 10px;
 }
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 700px) {
     .card__container {
         margin-top: 20px;
         margin-left: auto;
@@ -110,5 +111,16 @@
         width: 100px;
         font-size: 20px;
         top:20px;
+    }
+    .hover__text {
+        position: relative;
+        display: flex;
+        top: 10px;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Futura PT';
+        font-weight: 100;
+        font-size: max(0.4255319vw,8px);
+        padding: 1.5957446808510638vw;
     }
   }

@@ -37,9 +37,13 @@ function PhotoSection() {
     <div className='photosection__container'>
         <img src={vectorLeft} className='vectorLeft' alt=""/>
         <img src={vectorRight} className='vectorRight' alt=""/>
-            
+
+        <div className='photosection__headers'>
+
         <h1 className='photosection__title'> Photo-Shooting & Filming in Ajman </h1>
         <plaintext> You can request any kind of shooting permission inside the emirate of Ajman online.</plaintext>
+        </div>
+            
         <div className='button'>
             <button id='locationButton'> View Locations </button>
             <button id='galleryButton'> View Gallery </button>
