@@ -4,7 +4,7 @@ import leftArrow from "../../assets/leftarrow.png"
 import rightArrow from "../../assets/rightarrow.png"
 // import vector from "../../assets/vectors/Vector3.png";
 import EventCard from '../EventCard/EventCard';
-import cards from '../../cards';
+import cards from '../../Events';
 import Vector6 from "../../assets/vectors/Vector6.png"
 import {motion} from "framer-motion"
 
@@ -12,13 +12,13 @@ function Confernce() {
   const [startingIndex, setStartingIndex] = React.useState(0)
   const limit = parseInt( (cards.length / 2))
   const [limitIndex, setLimitIndex] = React.useState(limit)
-  const [direction, setDirection] = React.useState(0)
+  const [AnimationDirection, setAnimationDirection] = React.useState(0)
 
   const variants = {
-    initial: (direction) => {
+    initial: (AnimationDirection) => {
       return {
 
-        x: direction > 0 ? 200 : -200,
+        x: AnimationDirection > 0 ? 200 : -200,
         opacity: 0
       }
     },
@@ -26,17 +26,17 @@ function Confernce() {
       x: 0,
       opacity: 1,
     },
-    exit: direction => {
+    exit: AnimationDirection => {
       return {
 
-        x: direction > 0 ? -200 : 200,
+        x: AnimationDirection > 0 ? -200 : 200,
         opacity: 0
       }
     }
   }
 
   const goToNext = ()=> {
-    setDirection(1)
+    setAnimationDirection(1)
     if( limitIndex < cards.length)
     {
       
@@ -48,7 +48,7 @@ function Confernce() {
   }
 
   const goToPrevious = ()=> {
-    setDirection(-1)
+    setAnimationDirection(-1)
     if(startingIndex > 0)
     {
       setStartingIndex(0)
@@ -67,7 +67,7 @@ function Confernce() {
             <img src={Vector6} alt="" className="conf__vector"></img>
         </div>
 
-        <motion.div variants={variants} animate="animate" initial="initial" exit="exit" custom={direction}  key={startingIndex} className='cards__container' style={{}}>
+        <motion.div variants={variants} animate="animate" initial="initial" exit="exit" custom={AnimationDirection}  key={startingIndex} className='cards__container' style={{}}>
 
         {cards.slice(startingIndex,limitIndex).map( card => 
             <EventCard props={card}/>

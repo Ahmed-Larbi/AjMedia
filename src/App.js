@@ -15,13 +15,14 @@ function App() {
       <main>
 
         <Intro/>
-        <Confernce/>
+        {/* <Confernce/>
         <PhotoSection/>
         <Media/>
       </main>
       <footer>
         <Footer/>
-      </footer>
+      </footer> */}
+      </main>
     </div>
   );
 }

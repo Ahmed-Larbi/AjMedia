@@ -7,7 +7,7 @@ import image3 from "../src/assets/news/image3.png"
 export default [
     {
        'language': 'arabic',
-       'title': 'تجاوزت قيمة عقود البناء في عجمان 2.1 مليار درهم في النصف الأول',
+       'title': 'Ammar Al Nuaimi opens Ajman Museum in its new identity',
        'date': 'October 16, 2022',
        'image':  image1
     },
@@ -25,7 +25,7 @@ export default [
      },
      {
       'language': 'arabic',
-      'title': 'تجاوزت قيمة عقود البناء في عجمان 2.1 مليار درهم في النصف الأول',
+      'title': 'Ammar Al Nuaimi opens Ajman Museum in its new identity',
       'date': 'October 16, 2022',
       'image':  image1
    },

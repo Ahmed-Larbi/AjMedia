@@ -3,36 +3,17 @@
 .intro__container {
     position: relative;
     min-width: 100%;
-    height: 653px;
-    margin: 0;
-    padding: 0;
-
-    background: linear-gradient(80.35deg, #24527A 100.27%, rgba(36, 82, 122, 0) 76.73%);
-    z-index: 0;
+    background: linear-gradient(80.35deg, #24527A 100.27%, rgba(36, 82, 122, 0) 76.73%), linear-gradient(62.44deg, #24527A 43.12%, rgba(36, 82, 122, 0) 94.65%), linear-gradient(80.35deg, #24527A 43.27%, rgba(36, 82, 122, 0) 86.73%);;
 }
 #image1{
-    position: absolute;
-    max-width: 1187px;
-    height: 653px;
-    right: 0px;
-    bottom: 0px;
-}
-#image2{
-  position: absolute;
-  max-width: 1187px;
-  height: 653px;
-  right: 0px;
-  bottom: 0px;
-}
-#image3{
-  position: absolute;
-  max-width: 1187px;
-  height: 653px;
-  right: 0px;
-  bottom: 0px;
+    display: -webkit-box;
+    height: 69vh;
+    margin-left: auto;
+    width: 70%;
 }
 #vector1{
     position: absolute;
+    width: 32%;
     left: 14.94%;
     right: 30.47%;
     top: 12.74%;
@@ -42,28 +23,12 @@
 }
 #vector2{
   position: absolute;
+    width: 20%;
     left: 0;
     right: 69.6%;
     top: 1.95%;
     bottom: 86.27%;
-    z-index: 1;
     animation: rotation 2s infinite linear;
-
-}
-.shader1{
-    position: absolute;
-    width: 1440px;
-    height: 653px;
-
-    background: linear-gradient(62.44deg, #24527A 43.12%, rgba(36, 82, 122, 0) 94.65%);
-}
-.shader2{
-    position: absolute;
-    width: 1440px;
-    height: 653px;
-    left: 6px;
-
-    background: linear-gradient(80.35deg, #24527A 43.27%, rgba(36, 82, 122, 0) 86.73%);
 
 }
 .not-showing {
@@ -82,15 +47,16 @@
 }
 .intro__text{
     position: absolute;
-    max-width: 800px;
-    height: 167px;
-    left: 75px;
-    top: 160px;
+    width: 50%;
+    min-width: 400px;
+    flex-wrap: wrap;
+    left: 5%;
+    top: 120px;
 
     font-family: 'Futura PT';
     font-style: normal;
     font-weight: 700;
-    font-size: 60px;
+    font-size: min(7vw, 3.5rem);
     line-height: 102.26%;
     /* or 61px */
 
@@ -105,32 +71,35 @@
 }
 #dot1 {
     box-sizing: border-box;
-    left: 75px;
-    top: 450px;
     position: absolute;
+    left: max(5%, 50px);
+    bottom: min(150px, 10%);
     width: 18px;
     height: 18px;
     background: rgba(255, 255, 255, 0.3);
     border-radius: 100px; 
+    z-index: 1;
 }
 #dot2 {
     position: absolute;
     width: 18px;
     height: 18px;
-    left: 132px;
-    top: 450px;
+    left: max(8.5%, 100px);
+    bottom: min(150px, 10%);
 
     background: rgba(255, 255, 255, 0.3);
     border-radius: 100px;
+    z-index: 1;
 }
 #dot3 {
     position: absolute;
     width: 18px;
     height: 18px;
-    left: 189px;
-    top: 450px;
+    left: max(11.5%, 150px);
+    bottom: min(150px, 10%);
     background: rgba(255, 255, 255, 0.3);
     border-radius: 100px;
+    z-index: 1;
 }
 /* starting ENTER animation */
 .messageout-enter {
@@ -161,7 +130,7 @@
     transform: scale(4);
     transition: all 1100ms ease-in-out;
   }
-@media screen and (max-width: 560px) {
+/* @media screen and (max-width: 560px) {
     .intro__text span{
 
         font-size: 30px;
@@ -172,8 +141,8 @@
     }
     /* .intro__container img:nth-child(1){
         display: none;
-    } */
-  }
+    } 
+  } 
 
 /* @keyframes rotation {
   from {

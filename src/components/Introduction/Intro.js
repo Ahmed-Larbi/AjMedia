@@ -14,7 +14,6 @@ function Intro() {
   // eslint-disable-next-line no-unused-vars
   const [images, setImages] = React.useState([mainImage, bannerImage1,bannerImage2])
   const [currentImage, setCurrentImage] = React.useState(0)
-  const [isHovering, setIsHovering] = React.useState([{id: 0, isHovered: false},{id: 1, isHovered: false},{id: 2, isHovered: false}])
  
   function change(){
     if(currentImage < images.length - 1)
@@ -62,11 +61,11 @@ function Intro() {
   return (
     <div className='intro__container'>
       <img src={images[currentImage]} id="image1" alt="" className='animate'/>
+        <h1 className='intro__text'>WELCOME TO <span><br></br>AJMAN RULER'S COURT<br></br> MEDIA OFFICE</span></h1>
         <img src={Vector} alt="" id="vector1"/>
         <img src={Vector2} alt="" id="vector2"/> 
         <div className='shader1'></div>
         <div className='shader2'></div>
-        <h1 className='intro__text'>WELCOME TO <span><br></br>AJMAN RULER'S COURT<br></br> MEDIA OFFICE</span></h1>
         <AnimatePresence>
 
         <motion.span id='dot1' className='dots'></motion.span>
