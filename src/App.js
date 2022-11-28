@@ -17,8 +17,8 @@ function App() {
         <Intro/>
          <Confernce/> 
         <PhotoSection/>
-         {/*
         <Media/>
+         {/*
       </main>
       <footer>
         <Footer/>
