@@ -39,15 +39,17 @@ function PhotoSection() {
         <img src={vectorRight} className='vectorRight' alt=""/>
 
         <div className='photosection__headers'>
+        <div className='wrapper'>
 
         <h1 className='photosection__title'> Photo-Shooting & Filming in Ajman </h1>
-        <plaintext> You can request any kind of shooting permission inside the emirate of Ajman online.</plaintext>
+        <plaintext className="photosection__information"> You can request any kind of shooting permission inside the emirate of Ajman online.</plaintext>
         </div>
-            
         <div className='button'>
             <button id='locationButton'> View Locations </button>
             <button id='galleryButton'> View Gallery </button>
         </div>
+        </div>
+            
         <ul>
           <li>
             <span className='circle' onMouseOver={() => handleMouseOver(0)} onMouseOut={() => handleMouseOut(0)}>
