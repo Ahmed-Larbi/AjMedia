@@ -2,7 +2,9 @@
 
 .card__container1 {
     position: relative;
-    width: 410px;
+    width: 21.5vw;
+    max-width: 500px;
+    min-width: 200px;
     height: 532px;
     border-radius: 6px;
 
@@ -11,13 +13,12 @@
     position: absolute;
     left: 7.8%;
     right: 7.8%;
-    top: 82.71%;
-    bottom: 3.38%;
+    top: 80.71%;
+
     font-family: 'Futura PT';
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
-    line-height: 136.26%;
+    font-size: min(1.1vw, 20px);
 
     text-transform: uppercase;
 
@@ -34,10 +35,10 @@
 .hover__text1 > h1 {
     position: relative;
     font-family: 'Futura PT';
-    font-weight: bold;
-    font-size: 18px;
-    left:250px;
-    top: 30rem;
+    top: 55vh;
+    font-weight: 700;
+    font-size: max(1.4255319vw,18px);
+    padding: 1.5957446808510638vw;
 }
 .hover__text1 > h1 {
     color: #A3C891;
@@ -78,7 +79,7 @@
 #arrow__icon {
     height: 10px;
 }
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 700px) {
     .card__container1 {
         margin-top: 20px;
         margin-left: auto;
@@ -86,7 +87,7 @@
         width: 300px;
         height: 200px;
     }
-    .card__name1{
+    /* .card__name1{
         position: absolute;
         width: 100px;
         font-size: 14px;
@@ -122,4 +123,4 @@
         text-align: right;
         color: rgba(255, 255, 255, 0.6);
     }
-  }
+  } */ }

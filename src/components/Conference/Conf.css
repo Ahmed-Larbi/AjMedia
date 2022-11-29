@@ -8,9 +8,10 @@
 .container__header {
     display: flex;
     position:relative;
-    justify-content: center;
     align-items: center;
-    width: 100%;
+    width: max(1000px, 100%);
+    float: top;
+    margin-left: 10vh;
 }
 .container__title {
     width: 100%;

@@ -8,15 +8,38 @@ import rightArrow from "../../assets/rightarrow.png"
 import {motion} from "framer-motion"
 
 function Media() {
-    const [mediaChoice, setMediaChoice] = React.useState('News')
-    const [direction, setDirection] = React.useState('11%')
+    const [mediaChoice, setMediaChoice] = React.useState('All')
+    const markerRef = React.useRef(null)
     const [startingIndex, setStartingIndex] = React.useState(0)
     const limit = parseInt( (news.length / 2))
     const [limitIndex, setLimitIndex] = React.useState(limit)
     const [animationDirection, setAnimationDirection] = React.useState(0)
+    
+    let marker;
+    React.useEffect( () => {
+        changeButtonStyling()
+    },[mediaChoice])
+    
+    const handleClick = (e, name) =>
+    {
+      marker = markerRef.current;
+      if(marker)
+      {
+
+        if(name === 'All')
+        {
   
+          marker.style.left = `calc((${e.target.getBoundingClientRect().left - 20}px - 7.2%)`;
+        }
+        else {
+          marker.style.left = `calc((${e.target.getBoundingClientRect().left + 5}px - 7.2%)`;
+        }
+      }
+      setMediaChoice(name)
+    }
+   
     const variants = {
-      initial: (direction) => {
+      initial: (animationDirection) => {
         return {
   
           x: animationDirection > 0 ? 200 : -200,
@@ -55,10 +78,6 @@ function Media() {
         setLimitIndex(parseInt((limitIndex / 2)))
       }
     }
-    var top = {
-        '--left': direction
-    }
-
     const changeButtonStyling = () => {
         var buttons= document.getElementsByClassName('buttons')
         for( let x= 0; x<buttons.length; x++)
@@ -67,30 +86,8 @@ function Media() {
             buttons[mediaChoice].style = `color: #A3C891;`
             
         }
-        if(mediaChoice === 'All')
-        {
-            var button = document.getElementById('All').getBoundingClientRect()
-            console.log(button)
-            setDirection('1.0%')
-        }
-        else if(mediaChoice === 'Photos')
-        {
-            setDirection('23%')
-        }
-        else if(mediaChoice === 'Videos')
-        {
-            setDirection('35.5%')
-        }
-        else {
-            setDirection('11%')
-        }
-        
-
     }
 
-    React.useEffect( () => {
-        changeButtonStyling()
-    },[mediaChoice])
   return (
     <div className='media__container'>
         <div className='media__header'>
@@ -99,14 +96,21 @@ function Media() {
         </div>
         <main className='media__body'>
             <div className='headers'>
-                <button id="All" className='buttons' onClick={() => setMediaChoice('All')}>All</button>
-                <button id="News" className='buttons' onClick={() => setMediaChoice('News')}>News</button>
-                <button id="Photos" className='buttons' onClick={() => setMediaChoice('Photos')}>Photos</button>
-                <button id="Videos" className='buttons' onClick={() => setMediaChoice('Videos')}>Videos</button>
+                <button id="All" className='buttons' onClick={(event) => handleClick(event,'All')}>All</button>
+                <button id="News" className='buttons' onClick={(event) => handleClick(event,'News')}>News</button>
+                <button id="Photos" className='buttons' onClick={(event) => handleClick(event,'Photos')}>Photos</button>
+                <button id="Videos" className='buttons' onClick={(event) => handleClick(event,'Videos')}>Videos</button>
 
             </div>
-            <div className='vertical__line' style={top}></div>
-            <motion.div variants={variants} animate="animate" initial="initial" exit="exit" custom={direction}  key={startingIndex} className='media__cards'>
+            <div className='vertical__line'>
+              <div className='arrow__indicator' ref={markerRef} id="marker">
+                <div className='arrow__border__left'></div>
+                <div className='arrow__border__right'></div>
+              </div>
+            </div>
+            {/* style={top} */}
+
+            <motion.div variants={variants} animate="animate" initial="initial" exit="exit" custom={animationDirection}  key={startingIndex} className='media__cards'>
             {mediaChoice === 'News' ?
                   news.slice(startingIndex,limitIndex).map(neww =>
                   <NewsCard props={neww}/>

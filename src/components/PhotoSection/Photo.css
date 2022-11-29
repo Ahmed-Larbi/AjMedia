@@ -79,7 +79,7 @@
     font-style: normal;
     align-items: center;
     font-weight: 700;
-    font-size: 1.125rem;
+    font-size: max(0.9579563597658329vw, 12px);
     line-height: 102.26%;
     bottom: min(150px,7vh);
     color: #A3C891;
@@ -148,8 +148,6 @@ li > h1 {
     max-width: 17.5vw;
     font-size: clamp(8px,1.464307504575961vw,24px);
     word-wrap: break-word;
-    /* or 25px */
-    
     
     color: #FFFFFF;
 }
@@ -157,14 +155,17 @@ li > h1 {
     display: block;
     margin: auto;
     width: 3.4777303233679073vw;
-    padding-top: 35px;
+    padding-top: 3.7593984962406015vh;
 }
 .circle {
     box-sizing: border-box;
     justify-content: center;
     background: #2077A5;
-    width: 7.987804878048781vw;
-    padding-bottom: 10%;
+    align-items: center;
+    width: 6.971793507184673vw;
+    height: 6.971793507184673vw;
+    min-width: 50px;
+    min-height: 50px;
     border-radius: 100%;
 }
 .circle:hover {
@@ -222,7 +223,7 @@ li > h1 {
         width: 100%;
         flex-direction: column;
         align-items: center;
-        gap: 75px;
+        gap: 0px;
         margin-top: 10vh;
     }
 

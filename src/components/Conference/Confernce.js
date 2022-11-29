@@ -43,7 +43,6 @@ function Confernce() {
       setStartingIndex(limitIndex)
       setLimitIndex((limitIndex * 2) + 1)
     }
-    console.log(startingIndex, limitIndex)
 
   }
 
@@ -57,7 +56,7 @@ function Confernce() {
   }
   return (
     <div className='confernece__container'>
-        <div className='container__header'>
+        <header className='container__header'>
             <h1 className='container__title'> Conference & Events </h1>
             <div className='container__header2'>
                 <img src={leftArrow} alt="" onClick={goToPrevious}/>
@@ -65,7 +64,8 @@ function Confernce() {
                 <img src={rightArrow} alt="" onClick={goToNext}/>
             </div>
             <img src={Vector6} alt="" className="conf__vector"></img>
-        </div>
+        </header>
+        <section>
 
         <motion.div variants={variants} animate="animate" initial="initial" exit="exit" custom={AnimationDirection}  key={startingIndex} className='cards__container' style={{}}>
 
@@ -73,6 +73,7 @@ function Confernce() {
             <EventCard props={card}/>
         )}
         </motion.div>
+        </section>
     </div>
   )
 }
