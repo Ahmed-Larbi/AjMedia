@@ -18,7 +18,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 10vh;
+    margin-top: 7vh;
 }
 .wrapper {
     width: 100%;
@@ -79,9 +79,8 @@
     font-style: normal;
     align-items: center;
     font-weight: 700;
-    font-size: max(0.9579563597658329vw, 12px);
-    line-height: 102.26%;
-    bottom: min(150px,7vh);
+    font-size: clamp(8px,1.064307504575961vw,20px);
+    bottom: max(130px,9vh);
     color: #A3C891;
     visibility: visible;
     transition: visibility 1s, opacity 0.5s linear;
@@ -135,6 +134,7 @@
 }
 .photosection__container li {
     display: flex;
+    width: 100%;
     justify-content: center;
     align-items: center;
     gap: min(20px,2vw);
@@ -152,13 +152,11 @@ li > h1 {
     color: #FFFFFF;
 }
 .circle > img {
-    display: block;
-    margin: auto;
     width: 3.4777303233679073vw;
-    padding-top: 3.7593984962406015vh;
+    
 }
 .circle {
-    box-sizing: border-box;
+    display: flex;
     justify-content: center;
     background: #2077A5;
     align-items: center;
@@ -194,7 +192,7 @@ li > h1 {
     .button {
         position: relative;
         display: flex;
-        top: 100px;
+        top: 50px;
         left: 10px;
         
     }
@@ -209,22 +207,26 @@ li > h1 {
         font-size: 8px;
     }
     .photosection__container > ul {
-        margin-top: 10.688rem;
+        margin-top: 3.688rem;
+        justify-content: space-around;
     }
     li > h1 { 
         
-        margin-right: 10vw;
+        margin-right: 8vw;
     }
     
 }
-@media screen and (max-width: 975px) {
+@media screen and (max-width: 1250px) {
     .photosection__headers {
         display: flex;
         width: 100%;
         flex-direction: column;
         align-items: center;
         gap: 0px;
-        margin-top: 10vh;
+        margin-top: 7vh;
+    }
+    .photosection__container{ 
+        max-height: 400px;
     }
 
 }

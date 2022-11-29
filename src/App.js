@@ -18,12 +18,11 @@ function App() {
          <Confernce/> 
         <PhotoSection/>
         <Media/>
-         {/*
+         
       </main>
       <footer>
         <Footer/>
-      </footer> */}
-      </main>
+      </footer>
     </div>
   );
 }

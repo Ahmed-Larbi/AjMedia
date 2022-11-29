@@ -7,15 +7,11 @@
 }
 .container__header {
     display: flex;
-    position:relative;
+    justify-content: space-evenly;
+    gap: 22vw;
     align-items: center;
-    width: max(1000px, 100%);
-    float: top;
-    margin-left: 10vh;
 }
 .container__title {
-    width: 100%;
-    min-width: 300px;
 
     font-family: 'Futura PT';
     font-style: normal;
@@ -28,15 +24,13 @@
 }
 .container__header2 {
     display: flex;
-    width: 100%;
-    max-width: 700px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 3px;
 }
 .container__header2 > img {
-    width: 30%;
+    width: 800%;
     max-width: 35px;
     padding: 2px;
 }

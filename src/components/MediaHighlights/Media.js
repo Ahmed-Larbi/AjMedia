@@ -1,6 +1,5 @@
 import React from 'react'
 import "./Media.css"
-import line from "../../assets/buttons/line.png"
 import news from '../../news'
 import NewsCard from '../NewsCard/NewsCard'
 import leftArrow from "../../assets/leftarrow.png"
@@ -29,10 +28,10 @@ function Media() {
         if(name === 'All')
         {
   
-          marker.style.left = `calc((${e.target.getBoundingClientRect().left - 20}px - 7.2%)`;
+          marker.style.left = `calc((${e.target.getBoundingClientRect().left}px - 2.12879191059074vw - 15% - 1.6vw)`;
         }
         else {
-          marker.style.left = `calc((${e.target.getBoundingClientRect().left + 5}px - 7.2%)`;
+          marker.style.left = `calc((${e.target.getBoundingClientRect().left}px - 1.06439595529537vw - 15% - 1.6vw)`;
         }
       }
       setMediaChoice(name)
@@ -104,6 +103,7 @@ function Media() {
             </div>
             <div className='vertical__line'>
               <div className='arrow__indicator' ref={markerRef} id="marker">
+              <div className='arrow__border_middle'></div>
                 <div className='arrow__border__left'></div>
                 <div className='arrow__border__right'></div>
               </div>
@@ -115,7 +115,8 @@ function Media() {
                   news.slice(startingIndex,limitIndex).map(neww =>
                   <NewsCard props={neww}/>
                   )
-            : ''}
+            : mediaChoice === 'All' ? news.slice(startingIndex,limitIndex).map(neww =>
+                  <NewsCard props={neww}/> ) : ''}
             </motion.div>
             <div className='media__footer'>
                 <img src={leftArrow} alt="" onClick={goToPrevious}/>
