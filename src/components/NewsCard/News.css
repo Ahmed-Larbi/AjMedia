@@ -32,31 +32,34 @@
     margin: auto;
     border: 1px solid rgba(255, 255, 255, 0.7);
 }
+.hover__text1 {
+    position: absolute;
+    bottom: 1vh;
+    right: 6vw;
+    padding-right: 5px;
+    display: flex;
+    justify-content: space-between;
+}
 .hover__text1 > h1 {
     position: relative;
     font-family: 'Futura PT';
-    top: 45vh;
     font-weight: 700;
-    font-size: max(1.4255319vw,18px);
+    font-size: clamp(8px,1.064307504575961vw,20px);
     padding: 1.5957446808510638vw;
-}
-.hover__text1 > h1 {
+    left: 60%;
     color: #A3C891;
 }
+
 .date__card-arabic {
+    position: absolute;
     font-family: 'Futura PT';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: clamp(12px,1.064307504575961vw,18px);
     line-height: 102.26%;
-    position: absolute;
-    left: 42.83%;
-    right: 8.29%;
-    top: 75.05%;
-    width: 200px;
-
+    left: 7.8%;
+    top: 72.05%;
     text-align: right;
-
     color: rgba(255, 255, 255, 0.6);
 }
 .date__card-english {
@@ -64,11 +67,10 @@
     font-family: 'Futura PT';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: clamp(12px,1.064307504575961vw,18px);
     line-height: 102.26%;
-    left: -4.83%;
-    top: 75.05%;
-    width: 200px;
+    left: 7.8%;
+    top: 72.05%;
     text-align: right;
     color: rgba(255, 255, 255, 0.6);
 }
@@ -87,40 +89,4 @@
         width: 300px;
         height: 200px;
     }
-    /* .card__name1{
-        position: absolute;
-        width: 100px;
-        font-size: 14px;
-        top:20px;
-    }
-    .date__card-arabic {
-        font-family: 'Futura PT';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 102.26%;
-        position: absolute;
-        left: 4.83%;
-        right: 8.29%;
-        top: 75.05%;
-        width: 200px;
-        text-align: center;
-    
-        text-align: right;
-    
-        color: rgba(255, 255, 255, 0.6);
-    }
-    .date__card-english {
-        position: absolute;
-        font-family: 'Futura PT';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 102.26%;
-        left: 4.83%;
-        top: 75.05%;
-        width: 200px;
-        text-align: right;
-        color: rgba(255, 255, 255, 0.6);
-    }
-  } */ }
+  }  

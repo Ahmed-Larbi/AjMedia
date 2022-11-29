@@ -11,12 +11,12 @@
     padding: 30px;
     display: flex;
     justify-content: flex-start;
-    gap: 9vw;
+    gap: 12vw;
 }
 .footer__visitor{
     display: flex;
     justify-content: flex-start;
-    gap: 10px;
+    gap: 0.5vw;
     align-items: center;
     margin-left: 10%;
 }
@@ -24,7 +24,7 @@
     font-family: 'Futura PT';
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
+    font-size: clamp(12px,1.064307504575961vw,20px);
     line-height: 24px;
     /* identical to box height, or 120% */
 
@@ -36,8 +36,7 @@
     font-family: 'Futura PT';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 23px;
+    font-size: clamp(12px,1.064307504575961vw,18px);;
 
     color: #B7B7B7;
 }
@@ -52,37 +51,35 @@
     font-family: 'Futura PT';
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
+    font-size: clamp(12px,1.064307504575961vw,20px);
     line-height: 26px;
 
     color: #747272;
  }
  .footer__working > h3 {
-    margin-left: 20px;
+    margin-left: 2vw;
     font-family: 'Futura PT';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: clamp(8px,1.064307504575961vw,24px);
     line-height: 23px;
 
     color: #AFAFAF;
 }
 .footer__vector {
     position: relative;
-    width: 75%;
-    top: -90px;
-    left: 50px;
+    width: 65vw;
+    top: -80px;
+    left: 17vw;
+    min-width: 500px;
     padding-left: 150px;
 }
 .footer__header input {
-    /* font-family: 'Futura PT';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 28px; */
-    width: 300px;
+    width: 12vw;
     height: 50px;
+    margin-left: 2vw;
     border: transparent;
+    background-color: transparent;
     z-index: 1;
 
 
@@ -96,18 +93,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 0.6101281269066504vw;
 }
 .footer__signup{
     display: flex;
-    gap: 20px;
+    gap: 1.2202562538133008vw;
     align-items: center;
 }
 .footer__signup h1 {
     font-family: 'Futura PT';
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
+    font-size: clamp(12px,1.664307504575961vw,20px);
     line-height: 28px;
     /* identical to box height, or 140% */
 
@@ -117,10 +114,10 @@
 .footer__main {
     position: relative;
     top: -40px;
-    padding: 30px;
+    padding: 15px;
     display: flex;
     justify-content: flex-start;
-    gap: 180px;
+    gap: 10.982306284319707vw;
 }
 .vertical__linefooter{
     height: 52px;
@@ -131,10 +128,15 @@
     position: relative;
     display: flex;
     justify-content: flex-start;
-    gap: 10px;
+    gap:  0.6101281269066504vw;
     align-items: center;
     margin-left: 9%;
     height: 0;
+    
+}
+.footer__logo > img {
+    width: 50%;
+    max-width: 10vw;
 }
 .footer__about {
     position: relative;
@@ -142,7 +144,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    top: -40px;
+    top:  -2.4405125076266017vw;
 }
 .footer__about a {
     color: #2077A5;
@@ -153,7 +155,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    top: -40px;
+    top: -2.4405125076266017vw;
 }
 .footer__help {
     position: relative;
@@ -161,13 +163,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    top: -40px;
+    top: -2.4405125076266017vw;
 }
 .footer__main h1{
     font-family: 'Futura PT';
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
+    font-size: clamp(12px,1.664307504575961vw,20px);
     line-height: 24px;
     /* or 120% */
 
@@ -179,7 +181,7 @@
     font-family: 'Futura PT';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: clamp(8px,1.064307504575961vw,24px);
     /* or 222% */
 
 
@@ -191,7 +193,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 300px;
+    gap: 18.303843807199513vw;
     margin-left: 10%;
     height: 0;
     top: -80px;
@@ -201,29 +203,29 @@
     font-family: 'Futura PT';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: clamp(12px,1.064307504575961vw,18px);
     color: #A6A6A6;
     height: 0;
 
 }
 .footer__social {
     display: flex;
-    width: 200px;
+    width: 12.202562538133009vw;
     justify-content: space-evenly;
     align-items: center;
-    gap: 20px;
+    gap: 1.2vw;
 }
 .footer__number {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 0.66vw;
 }
 .footer__number h3 {
     font-family: 'Futura PT';
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
+    font-size: clamp(12px,1.064307504575961vw,18px);
 
     color: #AFAFAF;
 }
@@ -241,7 +243,7 @@
     right: 50px;
 
 }
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 750px) {
     .footer__container {
         margin-top: 5%;
         width: 100%;
@@ -274,7 +276,6 @@
         font-weight: 700;
         font-size: 10px;
         line-height: 5px;
-        /* identical to box height, or 120% */
     
         text-transform: capitalize;
     
@@ -334,7 +335,7 @@
         font-weight: 400;
         font-size: 10px;
         line-height: 5px;
-        /* identical to box height, or 156% */
+       
     
     
         color: #B7B7B7;
@@ -350,7 +351,7 @@
         font-weight: 700;
         font-size: 10px;
         line-height: 5px;
-        /* identical to box height, or 140% */
+        
     
     
         color: #2077A5;
@@ -422,7 +423,7 @@
         font-weight: 700;
         font-size: 10px;
         line-height: 10px;
-        /* or 120% */
+        
     
         text-transform: capitalize;
     
@@ -433,7 +434,7 @@
         font-style: normal;
         font-weight: 400;
         font-size: 10px;
-        /* or 222% */
+       
     
     
         color: #AFAFAF;

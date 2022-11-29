@@ -44,8 +44,6 @@ function Footer() {
         </header>
         <img src={vectorFooter} alt="" className='footer__vector'/>
         <main className='footer__main'>
-            {/* TODO: Add Gov logo with Verticalline, 
-                    Add about website, quicklinks and arvhice */}
             <div className='footer__logo'>
                 <img src={ajmanGov} alt="" className='ajman__gov'/>
                 <div className='vertical__linefooter'></div>

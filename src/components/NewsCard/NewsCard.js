@@ -1,12 +1,11 @@
 import React, { useEffect } from 'react'
 import "./News.css"
-import locationIcon from "../../assets/locationicon.png"
 import arrow from "../../assets/arrow.png"
 
 function NewsCard(props) {
   const [isHovering, setIsHovering] = React.useState(false);
   const [windowWidth, setWindowWidth] = React.useState(window.innerWidth)
-  const [translateName, setTranslateName] = React.useState(-170);
+  const [translateName, setTranslateName] = React.useState(-250);
   const [translateDate, setTranslateDate] = React.useState(-370);
 
   useEffect( ()=> {
@@ -24,7 +23,7 @@ function NewsCard(props) {
 
     }
     else {
-      setTranslateName(-170)
+      setTranslateName(-250)
       setTranslateDate(-370)
     }
     setIsHovering(true);
@@ -37,7 +36,7 @@ function NewsCard(props) {
 
     }
     else {
-      setTranslateName(-170)
+      setTranslateName(-250)
       setTranslateDate(-370)
     }
     setIsHovering(false);
