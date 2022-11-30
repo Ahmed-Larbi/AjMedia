@@ -48,7 +48,7 @@ function EventCard(props) {
         <h1 className='card__day'> {props.props.day}</h1>
         </div>
         <h1 className='card__name' style={{'transform': isHovering ? `translateY(${translateName}%)` : '', transition: '0.25s'}}> {props.props.card_name}</h1>
-        {isHovering && windowWidth > 560 &&
+        {isHovering &&
         <div className='hover__text'>
 
         <h1 className='card__location'> <span> <img src={locationIcon} alt="" id="location__icon"/></span>{props.props.location}</h1>

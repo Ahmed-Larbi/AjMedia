@@ -57,7 +57,7 @@ function PhotoSection() {
             <img src={menu} alt=""/>
             </span>
             <h1> Media Footage Approval</h1>
-            <div className={isHovering[0].isHovered ? 'showing' : 'not-showing'}> View Details {">"} </div>
+            <h1 className={isHovering[0].isHovered ? 'showing' : 'not-showing'}> View Details {">"} </h1>
           </li>
           <li>
             <span className='circle' onMouseOver={() => handleMouseOver(1)} onMouseOut={() => handleMouseOut(1)}>
@@ -65,7 +65,7 @@ function PhotoSection() {
             <img src={cameraIcon} alt=""/>
             </span>
             <h1> Photographer Permission Request</h1>
-            <div className={isHovering[1].isHovered ? 'showing' : 'not-showing'}> View Details {">"} </div>
+            <h1 className={isHovering[1].isHovered ? 'showing' : 'not-showing'}> View Details {">"} </h1>
           </li>
           <li>
             <span className='circle' onMouseOver={() => handleMouseOver(2)} onMouseOut={() => handleMouseOut(2)}>
@@ -73,7 +73,7 @@ function PhotoSection() {
             <img src={audioIcon} alt=""/>
             </span>
             <h1> Request to Host Influencer/Speaker</h1>
-            <div className={isHovering[2].isHovered ? 'showing' : 'not-showing'}> View Details {">"} </div>
+            <h1 className={isHovering[2].isHovered ? 'showing' : 'not-showing'}> View Details {">"} </h1>
           </li>
         </ul>
     </div>

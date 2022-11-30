@@ -24,7 +24,7 @@
     width: 100%;
     margin-inline-end: 0;
     padding-right: 0;
-    margin-left: 10vw;
+    margin-left: 7vw;
 }
 .photosection__title {
     width: 50%;
@@ -65,8 +65,6 @@
     align-items: center;
     font-weight: 700;
     font-size: 1.125rem;
-    line-height: 102.26%;
-    margin-bottom: 7rem;
     color: #A3C891;
     visibility: hidden;
     opacity: 0;
@@ -74,13 +72,13 @@
   }
   .showing {
     position: absolute;
-    
     font-family: 'Futura PT';
     font-style: normal;
     align-items: center;
     font-weight: 700;
-    font-size: clamp(8px,1.064307504575961vw,20px);
-    bottom: max(130px,9vh);
+    font-size: clamp(8px,1.064307504575961vw,18px);
+    bottom: 14vh;
+    padding-left: 15vh;
     color: #A3C891;
     visibility: visible;
     transition: visibility 1s, opacity 0.5s linear;
@@ -129,7 +127,7 @@
 .photosection__container > ul {
     list-style-type: none;
     display: flex;
-    width: 100%;
+    width: 95%;
     justify-content: space-evenly;
 }
 .photosection__container li {
@@ -213,6 +211,10 @@ li > h1 {
     li > h1 { 
         
         margin-right: 8vw;
+    }
+    .circle {
+        width: 1.271793507184673vw;
+        height: 1.271793507184673vw;
     }
     
 }

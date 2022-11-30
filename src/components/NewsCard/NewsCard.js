@@ -5,8 +5,8 @@ import arrow from "../../assets/arrow.png"
 function NewsCard(props) {
   const [isHovering, setIsHovering] = React.useState(false);
   const [windowWidth, setWindowWidth] = React.useState(window.innerWidth)
-  const [translateName, setTranslateName] = React.useState(-250);
-  const [translateDate, setTranslateDate] = React.useState(-370);
+  const [translateName, setTranslateName] = React.useState(-120);
+  const [translateDate, setTranslateDate] = React.useState(-300);
 
   useEffect( ()=> {
     function watchWidth() {
@@ -23,8 +23,8 @@ function NewsCard(props) {
 
     }
     else {
-      setTranslateName(-250)
-      setTranslateDate(-370)
+      setTranslateName(-120)
+      setTranslateDate(-300)
     }
     setIsHovering(true);
   }
@@ -36,8 +36,8 @@ function NewsCard(props) {
 
     }
     else {
-      setTranslateName(-250)
-      setTranslateDate(-370)
+      setTranslateName(-120)
+      setTranslateDate(-300)
     }
     setIsHovering(false);
   }
@@ -48,7 +48,7 @@ function NewsCard(props) {
     onMouseOut={handleMouseOut} onMouseOver={handleMouseOver}>
        <h1 className={`date__card-${props.props.language}`} style={{'transform': isHovering ? `translateY(${translateDate}%)` : '', transition: '0.25s'}}> {props.props.date}</h1>
         <h1 className='card__name1' style={{'transform': isHovering ? `translateY(${translateName}%)` : '', transition: '0.25s'}}> {props.props.title}</h1>
-        {isHovering && windowWidth > 560 &&
+        {isHovering &&
         <div className='hover__text1'>
         {   props.props.language === 'arabic' ?
         <h1> اعرف المزيد <span><img src={arrow} alt="" id="arrow__icon" style={{ transform: 'rotate(180deg)'}}/></span> </h1>

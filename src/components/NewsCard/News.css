@@ -18,7 +18,7 @@
     font-family: 'Futura PT';
     font-style: normal;
     font-weight: 700;
-    font-size: min(1.1vw, 20px);
+    font-size: min(1.1vw, 1.5rem);
 
     text-transform: uppercase;
 
@@ -87,6 +87,9 @@
         margin-left: auto;
         margin-right: auto;
         width: 300px;
-        height: 200px;
+        height: 300px;
+    }
+    .card__name1 { 
+        font-size: 10px;
     }
   }  
