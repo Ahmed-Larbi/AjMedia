@@ -42,7 +42,7 @@ function Footer() {
             </div>
         </form>
         </header>
-        <img src={footerline} alt="" className='footer__vector'/>
+        <img src={vectorFooter} alt="" className='footer__vector'/>
         <main className='footer__main'>
             <div className='footer__logo'>
                 <img src={ajmanGov} alt="" className='ajman__gov'/>
@@ -92,7 +92,7 @@ function Footer() {
             </div>
         </main>
         <img src={footerline} alt="" className='footer__vector1'/>
-        <footer className='footer'>
+        <section className='footer'>
             <div className='footer__copyright'> © 2022 Ajman Ruler’s Court Media Office
 </div>
             <div className='footer__social'>
@@ -107,7 +107,7 @@ function Footer() {
                 <img src={phone} alt=""/>
                 <h3> Toll-free 24/7 800 8877 </h3>
             </div>
-        </footer>
+        </section>
 
     </div>
   )
