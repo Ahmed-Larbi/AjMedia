@@ -8,6 +8,7 @@ import {motion} from "framer-motion"
 
 function Media() {
     const [mediaChoice, setMediaChoice] = React.useState('All')
+    const [windowSize, setWindowSize] = React.useState(getWindowSize())
     const markerRef = React.useRef(null)
     const [startingIndex, setStartingIndex] = React.useState(0)
     const limit = parseInt( (news.length / 2))
@@ -15,9 +16,23 @@ function Media() {
     const [animationDirection, setAnimationDirection] = React.useState(0)
     
     let marker;
+
+  function getWindowSize() {
+    const {innerWidth, innerHeight} = window;
+    return {innerWidth, innerHeight}
+  }
+
     React.useEffect( () => {
-        changeButtonStyling()
-    },[mediaChoice])
+      changeButtonStyling()
+      function handleWindowResize() {
+        setWindowSize(getWindowSize())
+      }
+
+      window.addEventListener('resize', handleWindowResize);
+      return () => {
+        window.removeEventListener('resize', handleWindowResize)
+      }
+    },[mediaChoice,windowSize])
     
     const handleClick = (e, name) =>
     {

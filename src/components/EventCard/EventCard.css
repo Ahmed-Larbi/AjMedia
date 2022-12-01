@@ -13,10 +13,10 @@
     position: absolute;
     left: 7.8%;
     right: 7.8%;
-    top: 80.71%;
+    top: 75.71%;
     bottom: 3.38%;
 
-    font-family: 'Futura PT';
+    font-family: 'Futura PT', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: min(1.3vw, 1.85rem);
@@ -43,7 +43,7 @@
     color: white;
 }
 .date__container > h1 {
-    font-family: 'Futura PT';
+    font-family: 'Futura PT', sans-serif;
     font-style: normal;
     font-weight: 700;
     transform: matrix(1, 0, 0, -1, 0, -6);
@@ -57,24 +57,24 @@
 }
 .hover__text {
     position: relative;
-    top: min(42vh, 57%);
+    top: min(41vh, 55%);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: 'Futura PT';
+    font-family: 'Futura PT', sans-serif;
     font-weight: 100;
     font-size: max(0.4255319vw,12px);
     padding: 1.5957446808510638vw;
 }
 .card__day {
-    font-family: 'Futura PT';
+    font-family: 'Futura PT', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
     height: 1px;
 }
 .card__date {
-    font-family: 'Futura PT';
+    font-family: 'Futura PT', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size:18px;
@@ -118,7 +118,7 @@
         top: 10px;
         justify-content: space-between;
         align-items: center;
-        font-family: 'Futura PT';
+        font-family: 'Futura PT', sans-serif;
         font-weight: 100;
         font-size: max(0.4255319vw,8px);
         padding: 1.5957446808510638vw;

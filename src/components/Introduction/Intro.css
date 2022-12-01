@@ -54,7 +54,7 @@
     left: 15%;
     top: min(20vh, 150px);
 
-    font-family: 'Futura PT';
+    font-family: 'Futura PT', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: min(7vw, 3.5rem);

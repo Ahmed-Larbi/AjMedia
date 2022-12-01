@@ -17,7 +17,7 @@
     text-align: center;
     width: 150px;
     height: 51px;
-    font-family: 'Futura PT';
+    font-family: 'Futura PT', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -38,7 +38,7 @@
 .media__header > h1 {
     
     height: 43px;
-    font-family: 'Futura PT';
+    font-family: 'Futura PT', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: max(2.4405125076266017vw, 1.5rem);
@@ -62,7 +62,7 @@
     color: #747272;
 }
 .headers > button {
-    font-family: 'Futura PT';
+    font-family: 'Futura PT', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: min(3.2772751463544438vw, 1.5rem);
@@ -185,7 +185,7 @@
     .media__header > h1 {
         width: 395px;
         height: 43px;
-        font-family: 'Futura PT';
+        font-family: 'Futura PT', sans-serif;
         font-style: normal;
         font-weight: 700;
         font-size: 16px;
@@ -209,7 +209,7 @@
         color: #747272;
     }
     .headers > h1 {
-        font-family: 'Futura PT';
+        font-family: 'Futura PT', sans-serif;
         font-style: normal;
         font-weight: 700;
         font-size: 12px;
@@ -217,7 +217,7 @@
         margin-left: 20px;
     }
     .headers > h1:nth-child(2) {
-        font-family: 'Futura PT';
+        font-family: 'Futura PT', sans-serif;
         font-style: normal;
         font-weight: 700;
         font-size: 12px;
@@ -238,7 +238,7 @@
         text-align: center;
         width: 120px;
         height: 51px;
-        font-family: 'Futura PT';
+        font-family: 'Futura PT', sans-serif;
         font-style: normal;
         font-weight: 700;
         font-size: 12px;

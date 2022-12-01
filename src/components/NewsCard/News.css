@@ -15,7 +15,7 @@
     right: 7.8%;
     top: 80.71%;
 
-    font-family: 'Futura PT';
+    font-family: 'Futura PT', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: min(1.1vw, 1.5rem);
@@ -35,14 +35,14 @@
 .hover__text1 {
     position: absolute;
     bottom: 1vh;
-    right: 6vw;
+    right: 6vh;
     padding-right: 5px;
     display: flex;
     justify-content: space-between;
 }
 .hover__text1 > h1 {
     position: relative;
-    font-family: 'Futura PT';
+    font-family: 'Futura PT', sans-serif;
     font-weight: 700;
     font-size: clamp(8px,1.064307504575961vw,20px);
     padding: 1.5957446808510638vw;
@@ -52,7 +52,7 @@
 
 .date__card-arabic {
     position: absolute;
-    font-family: 'Futura PT';
+    font-family: 'Futura PT', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: clamp(12px,1.064307504575961vw,18px);
@@ -64,7 +64,7 @@
 }
 .date__card-english {
     position: absolute;
-    font-family: 'Futura PT';
+    font-family: 'Futura PT', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: clamp(12px,1.064307504575961vw,18px);

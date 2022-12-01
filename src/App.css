@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/futura-pt');
+
 html,body
 {
     width: 100%;
@@ -6,4 +8,8 @@ html,body
     padding: 0px;
     overflow-x: hidden; 
     background-color: #F1F2F2;
+}
+body {
+    position: relative;
+    font-family: 'Future-PT', sans-serif;
 }

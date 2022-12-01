@@ -8,12 +8,12 @@
 .container__header {
     display: flex;
     justify-content: space-evenly;
-    gap: 22vw;
+    gap: 24vw;
     align-items: center;
 }
 .container__title {
-
-    font-family: 'Futura PT';
+    
+    font-family: 'Futura PT', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: max(2.4405125076266017vw, 1.5rem);

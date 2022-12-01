@@ -51,29 +51,29 @@ function PhotoSection() {
         </div>
             
         <ul>
-          <li>
-            <span className='circle' onMouseOver={() => handleMouseOver(0)} onMouseOut={() => handleMouseOut(0)}>
+          <li onMouseOver={() => handleMouseOver(0)} onMouseOut={() => handleMouseOut(0)}>
+            <span className='circle'>
 
             <img src={menu} alt=""/>
             </span>
             <h1> Media Footage Approval</h1>
-            <h1 className={isHovering[0].isHovered ? 'showing' : 'not-showing'}> View Details {">"} </h1>
+            <h1 className={isHovering[0].isHovered ? 'hover__effect' : 'not__hover__effect'}> View Details {">"} </h1>
           </li>
-          <li>
-            <span className='circle' onMouseOver={() => handleMouseOver(1)} onMouseOut={() => handleMouseOut(1)}>
+          <li onMouseOver={() => handleMouseOver(1)} onMouseOut={() => handleMouseOut(1)}>
+            <span className='circle'>
 
             <img src={cameraIcon} alt=""/>
             </span>
             <h1> Photographer Permission Request</h1>
-            <h1 className={isHovering[1].isHovered ? 'showing' : 'not-showing'}> View Details {">"} </h1>
+            <h1 className={isHovering[1].isHovered ? 'hover__effect' : 'not__hover__effect'}> View Details {">"} </h1>
           </li>
-          <li>
-            <span className='circle' onMouseOver={() => handleMouseOver(2)} onMouseOut={() => handleMouseOut(2)}>
+          <li onMouseOver={() => handleMouseOver(2)} onMouseOut={() => handleMouseOut(2)} >
+            <span className='circle'>
 
             <img src={audioIcon} alt=""/>
             </span>
             <h1> Request to Host Influencer/Speaker</h1>
-            <h1 className={isHovering[2].isHovered ? 'showing' : 'not-showing'}> View Details {">"} </h1>
+            <h1 className={isHovering[2].isHovered ? 'hover__effect' : 'not__hover__effect'}> View Details {">"} </h1>
           </li>
         </ul>
     </div>

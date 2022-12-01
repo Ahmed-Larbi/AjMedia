@@ -24,11 +24,11 @@
     width: 100%;
     margin-inline-end: 0;
     padding-right: 0;
-    margin-left: 7vw;
+    margin-left: 15vw;
 }
 .photosection__title {
     width: 50%;
-    font-family: 'Futura PT';
+    font-family: 'Futura PT', sans-serif;
     font-style: normal;
     font-weight: 700;
     min-width: 800px;
@@ -41,7 +41,7 @@
 }
 .photosection__information {
     width: 50%;
-    font-family: 'Futura PT';
+    font-family: 'Futura PT', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: min(2.2vw, 1.25rem);
@@ -54,13 +54,12 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    /* left: max(150px, 35vw); */
     gap: min(2vh,3.125rem);
     z-index: 1;
 }
-.not-showing {
+.not__hover__effect {
     position: absolute;
-    font-family: 'Futura PT';
+    font-family: 'Futura PT', sans-serif;
     font-style: normal;
     align-items: center;
     font-weight: 700;
@@ -70,15 +69,15 @@
     opacity: 0;
     transition: visibility 0s, opacity 0.5s linear;
   }
-  .showing {
+  .hover__effect {
     position: absolute;
-    font-family: 'Futura PT';
+    font-family: 'Futura PT', sans-serif;
     font-style: normal;
     align-items: center;
     font-weight: 700;
     font-size: clamp(8px,1.064307504575961vw,18px);
-    bottom: 14vh;
-    padding-left: 15vh;
+    top: max(4.789781798829164vw, 50px);
+    padding-left: 10vh;
     color: #A3C891;
     visibility: visible;
     transition: visibility 1s, opacity 0.5s linear;
@@ -87,7 +86,7 @@
   }
 #locationButton {
     background: #A3C891;
-    font-family: 'Futura PT';
+    font-family: 'Futura PT', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: min(1.2202562538133008vw,20px);
@@ -107,7 +106,7 @@
 }
 #galleryButton {
     border: 1px solid #FFFFFF;
-    font-family: 'Futura PT';
+    font-family: 'Futura PT', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: min(1.2202562538133008vw,20px);
@@ -127,10 +126,12 @@
 .photosection__container > ul {
     list-style-type: none;
     display: flex;
-    width: 95%;
-    justify-content: space-evenly;
+    width: 85%;
+    justify-content: center;
+    margin-left: 5vw;
 }
 .photosection__container li {
+    position: relative;
     display: flex;
     width: 100%;
     justify-content: center;
@@ -139,18 +140,19 @@
     z-index: 1;
 }
 li > h1 { 
-    font-family: 'Futura PT';
+    font-family: 'Futura PT', sans-serif;
     font-style: normal;
     font-weight: 700;
     width: 100%;
     max-width: 17.5vw;
     font-size: clamp(8px,1.464307504575961vw,24px);
     word-wrap: break-word;
+    overflow-wrap: break-word;
     
     color: #FFFFFF;
 }
 .circle > img {
-    width: 3.4777303233679073vw;
+    width: 2.9777303233679073vw;
     
 }
 .circle {
@@ -158,10 +160,10 @@ li > h1 {
     justify-content: center;
     background: #2077A5;
     align-items: center;
-    width: 6.971793507184673vw;
-    height: 6.971793507184673vw;
-    min-width: 50px;
-    min-height: 50px;
+    width: 5.451793507184673vw;
+    height: 5.451793507184673vw;
+    min-width: 40px;
+    min-height: 40px;
     border-radius: 100%;
 }
 .circle:hover {
@@ -206,15 +208,15 @@ li > h1 {
     }
     .photosection__container > ul {
         margin-top: 3.688rem;
-        justify-content: space-around;
+        justify-content: center;
     }
     li > h1 { 
         
         margin-right: 8vw;
     }
     .circle {
-        width: 1.271793507184673vw;
-        height: 1.271793507184673vw;
+        width: 1.071793507184673vw;
+        height: 1.071793507184673vw;
     }
     
 }

@@ -42,51 +42,56 @@ function Footer() {
             </div>
         </form>
         </header>
-        <img src={vectorFooter} alt="" className='footer__vector'/>
+        <img src={footerline} alt="" className='footer__vector'/>
         <main className='footer__main'>
             <div className='footer__logo'>
                 <img src={ajmanGov} alt="" className='ajman__gov'/>
                 <div className='vertical__linefooter'></div>
                 <img src={ajmanMedia} alt="" className='ajman__media'/>
             </div>
-            <div className='footer__about'>
-                <h1>
-                <a href="javascript:void()">
+            <div className='footer__hyperlinks'>
 
-                About The Website
-                </a>
-                </h1>
-                <h3> 
-                <a href="javascript:void()">
 
-                Privacy Policy
-                </a> 
-                </h3>
-                <h3> 
-                <a href="javascript:void()">
+                <div className='footer__about'>
+                    <h1>
+                    <a href="javascript:void()">
 
-                Terms & Conditions
-                </a> 
-                </h3>
-                <h3> <a href="javascript:void()">Disclaimer</a> </h3>
-                <h3> <a href="javascript:void()">Copyright</a> </h3>
-            </div>
-            <div className='footer__links'>
-                <h1><a href="javascript:void()">Quick Links</a></h1>
-                <h3> <a href="javascript:void()">FAQs</a> </h3>
-                <h3> <a href="javascript:void()">Contact Us</a> </h3>
-                <h3> <a href="javascript:void()">Sitemap</a> </h3>
-                <h3> <a href="javascript:void()">Careers</a> </h3>
-            </div>
-            <div className='footer__help'>
-                <h1 style={{color: '#FFFFFF'}}> __ </h1>
-                <h3> <a href="javascript:void()">Archive</a> </h3>
-                <h3> <a href="javascript:void()">Suggestions</a> </h3>
-                <h3> <a href="javascript:void()">Acessability Policy</a> </h3>
-                <h3> <a href="javascript:void()">Help</a> </h3>
+                    About The Website
+                    </a>
+                    </h1>
+                    <h3> 
+                    <a href="javascript:void()">
+
+                    Privacy Policy
+                    </a> 
+                    </h3>
+                    <h3> 
+                    <a href="javascript:void()">
+
+                    Terms & Conditions
+                    </a> 
+                    </h3>
+                    <h3> <a href="javascript:void()">Disclaimer</a> </h3>
+                    <h3> <a href="javascript:void()">Copyright</a> </h3>
+                </div>
+                <div className='footer__links'>
+                    <h1><a href="javascript:void()">Quick Links</a></h1>
+                    <h3> <a href="javascript:void()">FAQs</a> </h3>
+                    <h3> <a href="javascript:void()">Contact Us</a> </h3>
+                    <h3> <a href="javascript:void()">Sitemap</a> </h3>
+                    <h3> <a href="javascript:void()">Careers</a> </h3>
+                </div>
+                <div className='footer__help'>
+                    <h1 style={{color: '#FFFFFF'}}> __ </h1>
+                    <h3> <a href="javascript:void()">Archive</a> </h3>
+                    <h3> <a href="javascript:void()">Suggestions</a> </h3>
+                    <h3> <a href="javascript:void()">Acessability Policy</a> </h3>
+                    <h3> <a href="javascript:void()">Help</a> </h3>
+                </div>
+                
             </div>
         </main>
-        <img src={footerline} alt="" className='footer__vector'/>
+        <img src={footerline} alt="" className='footer__vector1'/>
         <footer className='footer'>
             <div className='footer__copyright'> © 2022 Ajman Ruler’s Court Media Office
 </div>
@@ -103,6 +108,7 @@ function Footer() {
                 <h3> Toll-free 24/7 800 8877 </h3>
             </div>
         </footer>
+
     </div>
   )
 }
