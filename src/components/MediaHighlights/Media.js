@@ -14,12 +14,21 @@ function Media() {
     const limit = parseInt( (news.length / 2))
     const [limitIndex, setLimitIndex] = React.useState(limit)
     const [animationDirection, setAnimationDirection] = React.useState(0)
+    const [extraLength, setExtraLength] = React.useState('0px');
     
     let marker;
 
   function getWindowSize() {
     const {innerWidth, innerHeight} = window;
     return {innerWidth, innerHeight}
+  }
+  function buttonHandler()
+  {
+    if(windowSize.innerWidth < 700)
+    {
+      let length = (window.innerWidth / 100) + 5
+      setExtraLength(`${length}px`)
+    }
   }
 
     React.useEffect( () => {
@@ -29,10 +38,11 @@ function Media() {
       }
 
       window.addEventListener('resize', handleWindowResize);
+      buttonHandler()
       return () => {
         window.removeEventListener('resize', handleWindowResize)
       }
-    },[mediaChoice,windowSize])
+    },[mediaChoice])
     
     const handleClick = (e, name) =>
     {
@@ -43,10 +53,10 @@ function Media() {
         if(name === 'All')
         {
   
-          marker.style.left = `calc((${e.target.getBoundingClientRect().left}px - 2.12879191059074vw - 15% - 1.6vw)`;
+          marker.style.left = `calc((${e.target.getBoundingClientRect().left}px - 2.12879191059074vw - 15% - 1.0vw + ${extraLength})`;
         }
         else {
-          marker.style.left = `calc((${e.target.getBoundingClientRect().left}px - 1.06439595529537vw - 15% - 1.6vw)`;
+          marker.style.left = `calc((${e.target.getBoundingClientRect().left}px - 1.06439595529537vw - 13% - 2.0vw + ${extraLength})`;
         }
       }
       setMediaChoice(name)

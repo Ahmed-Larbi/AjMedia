@@ -78,9 +78,9 @@
 }
 .footer__vector1 {
     position: relative;
-    width: 65vw;
+    width: 60vw;
     top: -70px;
-    left: 17vw;
+    left: 22vw;
     min-width: 500px;
     padding-left: 150px;
 }
@@ -122,7 +122,7 @@
     font-family: 'Futura PT', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: clamp(12px,1.664307504575961vw,20px);
+    font-size: clamp(12px,1.064307504575961vw,20px);
     line-height: 28px;
     /* identical to box height, or 140% */
 
@@ -296,11 +296,10 @@
     }
     .footer__visitor{
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         gap: 10px;
         align-items: center;
         margin-left: 7.5%;
-        margin-right: auto;
     }
     .footer__visitor img{
         height: 10px;
@@ -327,11 +326,11 @@
     }
     .footer__working {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         gap: 10px;
         margin-left: 7.5%;
-        margin-right: auto;
+
     }
     .footer__working > h1{
         
@@ -365,6 +364,7 @@
         top: -20px;
         left: 0px;
         padding-left: 0px;
+        content: url('../../assets/footer/footerline.png');
     }
     .footer__header plaintext {
         font-family: 'Futura PT', sans-serif;
@@ -428,7 +428,9 @@
         
     }
     .footer__logo img {
-        height: 25px;
+        width: 90%;
+        max-width: 20vw;
+        
     }
     .footer__about {
         position: relative;
@@ -461,7 +463,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        top: -40px;
+        top: -20px;
     }
     .footer__main h1{
         font-family: 'Futura PT', sans-serif;
@@ -486,50 +488,51 @@
         color: #AFAFAF;
     }
     .footer {
+        position: relative;
+        height: 50%;
         padding: 2px;
         display: flex;
+        justify-content: flex-start;
+        gap: 30px;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 25px;
-        margin-left: 1%;
+        margin-right: auto;
         line-height: 10px;
-        top: -45px;
     }
     .footer__copyright {
         position: relative;
         font-family: 'Futura PT', sans-serif;
         font-style: normal;
         font-weight: 400;
-        font-size: 10px;
+        font-size: 14px;
         color: #A6A6A6;
         height: 0;
     
     }
     .footer__social {
         display: flex;
-        width: 10px;
-        justify-content: center;
+        width: 100%;
+        justify-content: flex-start;
         align-items: center;
         gap: 15px;
     }
     .footer__social img {
-        height: 10px;
+        height: 3vw;
     }
     .footer__number {
+        width: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         gap: 5px;
     }
     .footer__number img{
-        height: 10px;
+        height: 15px;
     }
     .footer__number h3 {
         font-family: 'Futura PT', sans-serif;
         font-style: normal;
         font-weight: 700;
-        font-size: 10px;
+        font-size: 12px;
     
         color: #AFAFAF;
     }

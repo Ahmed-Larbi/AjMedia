@@ -4,7 +4,7 @@
     position: relative;
     min-width: 100%;
     max-height: 653px;
-    background: linear-gradient(80.35deg, #24527A 100.27%, rgba(36, 82, 122, 0) 76.73%), linear-gradient(62.44deg, #24527A 43.12%, rgba(36, 82, 122, 0) 94.65%), linear-gradient(80.35deg, #24527A 43.27%, rgba(36, 82, 122, 0) 86.73%);;
+    background: linear-gradient(80.35deg, #24527A 100.27%, rgba(36, 82, 122, 0) 76.73%), linear-gradient(62.44deg, #24527A 43.12%, rgba(36, 82, 122, 0) 94.65%), linear-gradient(80.35deg, #24527A 43.27%, rgba(36, 82, 122, 0) 86.73%);
 }
 #image1{
     display: -webkit-box;
@@ -130,6 +130,28 @@
     opacity: 0;
     transform: scale(4);
     transition: all 1100ms ease-in-out;
+  }
+  @media screen and (max-width: 750px) {
+    .intro__text{
+      position: absolute;
+      width: 50%;
+      min-width: 400px;
+      flex-wrap: wrap;
+      left: 11%;
+      top: min(20vh, 150px);
+  
+      font-family: 'Futura PT', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: min(7vw, 3.5rem);
+      line-height: 102.26%;
+      /* or 61px */
+  
+      text-transform: uppercase;
+  
+      color: rgba(255, 255, 255, 0.4);
+      z-index: 1;
+  }
   }
 /* @media screen and (max-width: 560px) {
     .intro__text span{

@@ -52,12 +52,15 @@
 
     color: #797977;
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
+    .header__container {
+        gap: 5%;
+    }
     .left__container {
         display: flex;
         align-items: center;
         justify-content: center;
-        left: 15vw;
+        left: 11vw;
         position: static;
     }
     .right__container {
@@ -65,6 +68,6 @@
         position: static;
         right: 15vw;
         align-items: center;
-        gap: 1vw;
+        gap: 0.5vw;
     }
 }

@@ -91,13 +91,13 @@
     width: 10px;
     height: 10px;
     border-top: 0px solid #A3C891;
-    border-right: 0.15965939329430548vw solid #A3C891;
-    border-bottom: 0.15965939329430548vw solid #A3C891;
+    border-right: 3px solid #A3C891;
+    border-bottom: 3px solid #A3C891;
     border-left: 0px solid #A3C891;
     content: '';
     transform: rotate(45deg);
     margin-top: -5px;
-    left:  0.532197977647685vw;
+    left:  1.232197977647685vw;
 
 }
 .arrow__border__left {
@@ -164,6 +164,24 @@
         align-items: center;
         justify-content: center;
         gap: 10px;
+    }.media__header > button {
+        font-size: 12px;
+        width: 100px;
+        height: 25px;
+    }
+    .arrow__indicator {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-top: 0px solid #A3C891;
+        border-right: 3px solid #A3C891;
+        border-bottom: 3px solid #A3C891;
+        border-left: 0px solid #A3C891;
+        content: '';
+        transform: rotate(45deg);
+        margin-top: -5px;
+        left:  3.532197977647685vw;
+    
     }
     
 }
