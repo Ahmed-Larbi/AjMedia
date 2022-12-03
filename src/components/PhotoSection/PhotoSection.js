@@ -5,6 +5,7 @@ import vectorRight from "../../assets/vectors/VectorRight.png"
 import menu from "../../assets/buttons/menu.png"
 import audioIcon from "../../assets/buttons/audio.png"
 import cameraIcon from "../../assets/buttons/camera.png"
+import arrow from "../../assets/arrow.png"
 
 function PhotoSection() {
   const [isHovering, setIsHovering] = React.useState([{id: 0, isHovered: false},{id: 1, isHovered: false},{id: 2, isHovered: false}])
@@ -59,7 +60,7 @@ function PhotoSection() {
             <div className='circle__info'>
 
             <h1> Media Footage Approval</h1>
-            <h3 className={isHovering[0].isHovered ? 'hover__effect' : 'not__hover__effect'}> View Details {">"} </h3>
+            <h3 className={isHovering[0].isHovered ? 'hover__effect' : 'not__hover__effect'}> View Details <span><img src={arrow} alt="" id="arrow__icon" style={{ transform: 'rotate(180deg)'}}/></span> </h3>
             </div>
           </li>
           <li onMouseOver={() => handleMouseOver(1)} onMouseOut={() => handleMouseOut(1)}>
@@ -70,7 +71,7 @@ function PhotoSection() {
             <div className='circle__info'>
 
             <h1> Photographer Permission Request</h1>
-            <h3 className={isHovering[1].isHovered ? 'hover__effect' : 'not__hover__effect'}> View Details {">"} </h3>
+            <h3 className={isHovering[1].isHovered ? 'hover__effect' : 'not__hover__effect'}> View Details <span><img src={arrow} alt="" id="arrow__icon" style={{ transform: 'rotate(180deg)'}}/></span> </h3>
             </div>
           </li>
           <li onMouseOver={() => handleMouseOver(2)} onMouseOut={() => handleMouseOut(2)} >
@@ -81,7 +82,7 @@ function PhotoSection() {
             <div className='circle__info'>
 
             <h1> Request to Host Influencer/Speaker</h1>
-            <h3 className={isHovering[2].isHovered ? 'hover__effect' : 'not__hover__effect'}> View Details {">"} </h3>
+            <h3 className={isHovering[2].isHovered ? 'hover__effect' : 'not__hover__effect'}> View Details <span><img src={arrow} alt="" id="arrow__icon" style={{ transform: 'rotate(180deg)'}}/></span> </h3>
             </div>
           </li>
         </ul>

@@ -122,11 +122,13 @@
         position: relative;
         display: flex;
         top: 10px;
-        justify-content: space-between;
+        justify-content: flex-start;
+        gap: 27vw;
+        left: 3%;
         align-items: center;
         font-family: 'Futura PT', sans-serif;
         font-weight: 100;
         font-size: max(0.4255319vw,8px);
-        padding: 1.5957446808510638vw;
+        padding: 2.5957446808510638vw;
     }
 }

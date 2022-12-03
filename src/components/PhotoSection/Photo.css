@@ -1,5 +1,6 @@
 @import url('https://fonts.cdnfonts.com/css/futura-pt');
 
+
 .photosection__container {
     display: flex;
     flex-direction: column;
@@ -137,6 +138,8 @@
     align-items: center;
     gap: min(20px,2vw);
     z-index: 1;
+    white-space: pre-line;
+    word-wrap: break-word;
 }
 .circle__info h1 { 
     font-family: 'Futura PT', sans-serif;
@@ -193,6 +196,11 @@
     z-index: 0;
     opacity: 0.5;
 }
+.circle__info h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 @media screen and (max-width: 700px) {
     .button {
         position: relative;
@@ -231,6 +239,9 @@
     .circle > img {
         width: 3.777303233679073vw;
         
+    }
+    .circle__info h1 { 
+        max-width: min(20vw, 125px);
     }
     
 }
