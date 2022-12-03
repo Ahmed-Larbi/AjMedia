@@ -153,8 +153,9 @@
       z-index: 1;
   }
   #image1{
-    width: 100%;
-    object-fit:fill;
+    min-width: 100%;
+    object-fit:cover;
+    margin-right: auto;
 }
   }
 /* @media screen and (max-width: 560px) {

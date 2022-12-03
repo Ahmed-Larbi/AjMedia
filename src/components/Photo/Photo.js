@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react'
-import "./News.css"
+import "./Photos.css"
 import arrow from "../../assets/arrow.png"
 
-function NewsCard(props) {
+function Photo(props) {
   const [isHovering, setIsHovering] = React.useState(false);
   const [windowWidth, setWindowWidth] = React.useState(window.innerWidth)
   const [translateName, setTranslateName] = React.useState(-120);
@@ -44,7 +44,7 @@ function NewsCard(props) {
 
 
   return (
-    <div className='card__container1' style={{ background: isHovering ? `linear-gradient(0.92deg, #26537B 20.79%, rgba(38, 83, 123, 0) 150.91%), url(${props.props.image})` : `linear-gradient(0.92deg, #26537B 7.79%, rgba(38, 83, 123, 0) 120.91%), url(${props.props.image})`}} 
+    <div className='photo__card' style={{ background: isHovering ? `linear-gradient(0.92deg, #26537B 20.79%, rgba(38, 83, 123, 0) 150.91%), url(${props.props.image}) no-repeat center/100% ` : `linear-gradient(0.92deg, #26537B 7.79%, rgba(38, 83, 123, 0) 120.91%), url(${props.props.image}) no-repeat center/100%`}} 
     onMouseOut={handleMouseOut} onMouseOver={handleMouseOver}>
        <h1 className={`date__card-${props.props.language}`} style={{'transform': isHovering ? `translateY(${translateDate}%)` : '', transition: '0.25s'}}> {props.props.date}</h1>
         <h1 className='card__name1' style={{'transform': isHovering ? `translateY(${translateName}%)` : '', transition: '0.25s'}}> {props.props.title}</h1>
@@ -60,4 +60,4 @@ function NewsCard(props) {
   )
 }
 
-export default NewsCard;
+export default Photo;

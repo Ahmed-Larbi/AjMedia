@@ -1,6 +1,6 @@
-import image1 from "../src/assets/news/image1.png"
-import image2 from "../src/assets/news/image2.png"
-import image3 from "../src/assets/news/image3.png"
+import image1 from "../../src/assets/news/image1.png"
+import image2 from "../../src/assets/news/image2.png"
+import image3 from "../../src/assets/news/image3.png"
 
 
 // eslint-disable-next-line import/no-anonymous-default-export

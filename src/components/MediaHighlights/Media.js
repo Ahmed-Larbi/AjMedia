@@ -1,10 +1,12 @@
 import React from 'react'
 import "./Media.css"
-import news from '../../news'
+import news from '../../Data/news'
+import photos from '../../Data/photos'
 import NewsCard from '../NewsCard/NewsCard'
 import leftArrow from "../../assets/leftarrow.png"
 import rightArrow from "../../assets/rightarrow.png"
 import {motion} from "framer-motion"
+import Photo from '../Photo/Photo'
 
 function Media() {
     const [mediaChoice, setMediaChoice] = React.useState('All')
@@ -136,12 +138,17 @@ function Media() {
             {/* style={top} */}
 
             <motion.div variants={variants} animate="animate" initial="initial" exit="exit" custom={animationDirection}  key={startingIndex} className='media__cards'>
-            {mediaChoice === 'News' ?
+                  {mediaChoice === 'News' ?
                   news.slice(startingIndex,limitIndex).map(neww =>
-                  <NewsCard props={neww}/>
-                  )
-            : mediaChoice === 'All' ? news.slice(startingIndex,limitIndex).map(neww =>
-                  <NewsCard props={neww}/> ) : ''}
+                  <NewsCard props={neww}/>)
+
+                  : mediaChoice === 'All' ? news.slice(startingIndex,limitIndex).map(neww =>
+                  <NewsCard props={neww}/> )
+
+                  : mediaChoice === 'Photos' ?
+                  photos.slice(startingIndex,limitIndex).map(photo =>
+                  <Photo props={photo}/> ) 
+                  : ''}
             </motion.div>
             <div className='media__footer'>
                 <img src={leftArrow} alt="" onClick={goToPrevious}/>
