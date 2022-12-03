@@ -42,6 +42,8 @@
 }
 .hover__text1 > h1 {
     position: relative;
+    display: flex;
+    align-items: center;
     font-family: 'Futura PT', sans-serif;
     font-weight: 700;
     font-size: clamp(8px,1.064307504575961vw,20px);
