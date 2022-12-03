@@ -201,6 +201,7 @@
     align-items: center;
     justify-content: center;
 }
+
 @media screen and (max-width: 700px) {
     .button {
         position: relative;
@@ -243,7 +244,9 @@
     .circle__info h1 { 
         max-width: min(20vw, 125px);
     }
-    
+    #arrow__icon1 {
+        max-height: 5px;
+    }
 }
 @media screen and (max-width: 1250px) {
     .photosection__headers {
