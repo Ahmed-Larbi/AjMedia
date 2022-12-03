@@ -51,7 +51,7 @@ function NewsCard(props) {
         {isHovering &&
         <div className='hover__text1'>
         {   props.props.language === 'arabic' ?
-        <h1> اعرف المزيد <span><img src={arrow} alt="" id="arrow__icon" style={{ transform: 'rotate(180deg)'}}/></span> </h1>
+        <h1> Read More <span><img src={arrow} alt="" id="arrow__icon" style={{ transform: 'rotate(180deg)'}}/></span> </h1>
             : <h1> Read More <span><img src={arrow} alt="" id="arrow__icon" style={{ transform: 'rotate(180deg)'}}/></span> </h1>
         }
         </div>

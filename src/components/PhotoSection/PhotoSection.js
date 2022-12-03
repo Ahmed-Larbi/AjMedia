@@ -56,24 +56,33 @@ function PhotoSection() {
 
             <img src={menu} alt=""/>
             </span>
+            <div className='circle__info'>
+
             <h1> Media Footage Approval</h1>
-            <h1 className={isHovering[0].isHovered ? 'hover__effect' : 'not__hover__effect'}> View Details {">"} </h1>
+            <h3 className={isHovering[0].isHovered ? 'hover__effect' : 'not__hover__effect'}> View Details {">"} </h3>
+            </div>
           </li>
           <li onMouseOver={() => handleMouseOver(1)} onMouseOut={() => handleMouseOut(1)}>
             <span className='circle'>
 
             <img src={cameraIcon} alt=""/>
             </span>
+            <div className='circle__info'>
+
             <h1> Photographer Permission Request</h1>
-            <h1 className={isHovering[1].isHovered ? 'hover__effect' : 'not__hover__effect'}> View Details {">"} </h1>
+            <h3 className={isHovering[1].isHovered ? 'hover__effect' : 'not__hover__effect'}> View Details {">"} </h3>
+            </div>
           </li>
           <li onMouseOver={() => handleMouseOver(2)} onMouseOut={() => handleMouseOut(2)} >
             <span className='circle'>
 
             <img src={audioIcon} alt=""/>
             </span>
+            <div className='circle__info'>
+
             <h1> Request to Host Influencer/Speaker</h1>
-            <h1 className={isHovering[2].isHovered ? 'hover__effect' : 'not__hover__effect'}> View Details {">"} </h1>
+            <h3 className={isHovering[2].isHovered ? 'hover__effect' : 'not__hover__effect'}> View Details {">"} </h3>
+            </div>
           </li>
         </ul>
     </div>

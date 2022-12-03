@@ -77,7 +77,6 @@
     font-weight: 700;
     font-size: clamp(8px,1.064307504575961vw,18px);
     top: max(4.789781798829164vw, 50px);
-    padding-left: 8vh;
     color: #A3C891;
     visibility: visible;
     transition: visibility 1s, opacity 0.5s linear;
@@ -139,7 +138,7 @@
     gap: min(20px,2vw);
     z-index: 1;
 }
-li > h1 { 
+.circle__info h1 { 
     font-family: 'Futura PT', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -151,8 +150,14 @@ li > h1 {
     
     color: #FFFFFF;
 }
+.circle__info { 
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-start;
+}
 .circle > img {
-    width: 2.9777303233679073vw;
+    width: 3.0777303233679073vw;
     
 }
 .circle {
@@ -160,8 +165,8 @@ li > h1 {
     justify-content: center;
     background: #2077A5;
     align-items: center;
-    width: 5.451793507184673vw;
-    height: 5.451793507184673vw;
+    width: 6.451793507184673vw;
+    height: 6.451793507184673vw;
     min-width: 40px;
     min-height: 40px;
     border-radius: 100%;
@@ -198,12 +203,12 @@ li > h1 {
     }
     #locationButton {
         height: 35px;
-        width: 60px;
+        width: 100px;
         font-size: 8px;
     }
     #galleryButton {
         height: 35px;
-        width: 60px;
+        width: 100px;
         font-size: 8px;
     }
     li > h1 { 
@@ -222,6 +227,10 @@ li > h1 {
     .hover__effect {
         top: max(2.989781798829164vw, 30px);
       
+    }
+    .circle > img {
+        width: 3.777303233679073vw;
+        
     }
     
 }

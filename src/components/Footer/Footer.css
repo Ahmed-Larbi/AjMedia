@@ -1,5 +1,16 @@
 @import url('https://fonts.cdnfonts.com/css/futura-pt');
 
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }
+
 .footer__container {
     margin-top: 5%;
     width: 100%;

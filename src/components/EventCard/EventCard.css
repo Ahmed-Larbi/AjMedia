@@ -72,6 +72,7 @@
     font-weight: 700;
     font-size: 30px;
     height: 1px;
+    margin-top: 15px;
 }
 .card__date {
     font-family: 'Futura PT', sans-serif;
@@ -123,4 +124,4 @@
         font-size: max(0.4255319vw,8px);
         padding: 1.5957446808510638vw;
     }
-  }
+}
