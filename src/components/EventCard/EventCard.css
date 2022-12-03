@@ -99,6 +99,11 @@
 #arrow__icon {
     height: 10px;
 }
+.card__location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 @media screen and (max-width: 700px) {
     .card__container {
         margin-top: 20px;
