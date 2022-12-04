@@ -85,7 +85,7 @@
     position: absolute;
     width: 18px;
     height: 18px;
-    left: max(18.5%, 100px);
+    left: max(19.5%, 110px);
     bottom: min(150px, 10%);
 
     background: rgba(255, 255, 255, 0.3);
@@ -96,7 +96,7 @@
     position: absolute;
     width: 18px;
     height: 18px;
-    left: max(22%, 150px);
+    left: max(22.5%, 155px);
     bottom: min(150px, 10%);
     background: rgba(255, 255, 255, 0.3);
     border-radius: 100px;

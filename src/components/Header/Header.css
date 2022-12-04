@@ -39,7 +39,7 @@
 .right__container > img {
     width: 100%;
     min-width: 10%;
-    margin: 10px;
+    margin: 8px;
 }
 .arabic {
     font-family: 'GE SS Two';
@@ -68,6 +68,6 @@
         position: static;
         right: 15vw;
         align-items: center;
-        gap: 0.5vw;
+        gap: 0vw;
     }
 }
