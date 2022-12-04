@@ -248,7 +248,7 @@
         max-width: min(20vw, 125px);
     }
     #arrow__icon1 {
-        max-height: 5px;
+        max-height: 7px;
     }
 }
 @media screen and (max-width: 1250px) {

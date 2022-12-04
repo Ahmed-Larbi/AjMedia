@@ -131,4 +131,7 @@
         font-size: max(0.4255319vw,8px);
         padding: 2.5957446808510638vw;
     }
+    #arrow__icon {
+        max-height: 9px;
+    }
 }

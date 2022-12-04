@@ -96,4 +96,8 @@
     .card__name1 { 
         font-size: 10px;
     }
+    #arrow__icon {
+        max-height: 9px;
+    }
+    
   }  
