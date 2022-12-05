@@ -17,7 +17,7 @@
     text-align: center;
     width: 150px;
     height: 51px;
-    font-family: 'Futura PT', sans-serif;
+    font-family: 'FuturaPT-Bold', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -38,7 +38,7 @@
 .media__header > h1 {
     
     height: 43px;
-    font-family: 'Futura PT', sans-serif;
+    font-family: 'FuturaPT-Bold', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: max(2.4405125076266017vw, 1.5rem);
@@ -62,7 +62,7 @@
     color: #747272;
 }
 .headers > button {
-    font-family: 'Futura PT', sans-serif;
+    font-family: 'FuturaPT-Bold', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: min(3.2772751463544438vw, 1.5rem);

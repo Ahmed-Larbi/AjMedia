@@ -54,7 +54,7 @@
     left: 15%;
     top: min(20vh, 150px);
 
-    font-family: 'Futura PT', sans-serif;
+    font-family: 'FuturaPT-Bold', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: min(7vw, 3.5rem);
@@ -96,7 +96,7 @@
     position: absolute;
     width: 18px;
     height: 18px;
-    left: max(22.5%, 155px);
+    left: max(23.5%, 160px);
     bottom: min(150px, 10%);
     background: rgba(255, 255, 255, 0.3);
     border-radius: 100px;
@@ -140,7 +140,7 @@
       left: 11%;
       top: min(20vh, 150px);
   
-      font-family: 'Futura PT', sans-serif;
+      font-family: 'FuturaPT-Bold', sans-serif;
       font-style: normal;
       font-weight: 700;
       font-size: min(7vw, 3.5rem);

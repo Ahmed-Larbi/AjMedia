@@ -34,7 +34,7 @@ a:active { text-decoration: none; }
     margin-left: 10%;
 }
 .footer__visitor > h1{
-    font-family: 'Futura PT', sans-serif;
+    font-family: 'FuturaPT-Bold', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: clamp(12px,1.064307504575961vw,20px);
@@ -46,7 +46,7 @@ a:active { text-decoration: none; }
     color: #747272;
 }
 .footer__visitor > h3 {
-    font-family: 'Futura PT', sans-serif;
+    font-family: 'FuturaPT-Bold', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: clamp(12px,1.064307504575961vw,18px);;
@@ -61,7 +61,7 @@ a:active { text-decoration: none; }
 }
 .footer__working > h1{
     
-    font-family: 'Futura PT', sans-serif;
+    font-family: 'FuturaPT-Bold', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: clamp(12px,1.064307504575961vw,20px);
@@ -71,7 +71,7 @@ a:active { text-decoration: none; }
  }
  .footer__working > h3 {
     margin-left: 2vw;
-    font-family: 'Futura PT', sans-serif;
+    font-family: 'FuturaPT-Bold', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: clamp(8px,1.064307504575961vw,24px);
@@ -130,7 +130,7 @@ a:active { text-decoration: none; }
     align-items: center;
 }
 .footer__signup h1 {
-    font-family: 'Futura PT', sans-serif;
+    font-family: 'FuturaPT-Bold', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: clamp(12px,1.064307504575961vw,20px);
@@ -202,7 +202,7 @@ a:active { text-decoration: none; }
     color: #AFAFAF;
 }
 .footer__main h1{
-    font-family: 'Futura PT', sans-serif;
+    font-family: 'FuturaPT-Bold', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: clamp(16px,1.664307504575961vw,24px);
@@ -214,7 +214,7 @@ a:active { text-decoration: none; }
     color: #747272;
 }
 .footer__main h3 {
-    font-family: 'Futura PT', sans-serif;
+    font-family: 'FuturaPT-Bold', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: clamp(8px,1.064307504575961vw,24px);
@@ -236,7 +236,7 @@ a:active { text-decoration: none; }
 }
 .footer__copyright {
     position: relative;
-    font-family: 'Futura PT', sans-serif;
+    font-family: 'FuturaPT-Bold', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: clamp(12px,1.064307504575961vw,18px);
@@ -258,7 +258,7 @@ a:active { text-decoration: none; }
     gap: 0.66vw;
 }
 .footer__number h3 {
-    font-family: 'Futura PT', sans-serif;
+    font-family: 'FuturaPT-Bold', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: clamp(12px,1.064307504575961vw,18px);
@@ -316,7 +316,7 @@ a:active { text-decoration: none; }
         height: 10px;
     }
     .footer__visitor > h1{
-        font-family: 'Futura PT', sans-serif;
+        font-family: 'FuturaPT-Bold', sans-serif;
         font-style: normal;
         font-weight: 700;
         font-size: 10px;
@@ -327,7 +327,7 @@ a:active { text-decoration: none; }
         color: #747272;
     }
     .footer__visitor > h3 {
-        font-family: 'Futura PT', sans-serif;
+        font-family: 'FuturaPT-Bold', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 10px;
@@ -345,7 +345,7 @@ a:active { text-decoration: none; }
     }
     .footer__working > h1{
         
-        font-family: 'Futura PT', sans-serif;
+        font-family: 'FuturaPT-Bold', sans-serif;
         font-style: normal;
         font-weight: 700;
         font-size: 10px;
@@ -360,7 +360,7 @@ a:active { text-decoration: none; }
      .footer__working > h3 {
         margin-left: 5px;
         width: 110px;
-        font-family: 'Futura PT', sans-serif;
+        font-family: 'FuturaPT-Bold', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 10px;
@@ -378,7 +378,7 @@ a:active { text-decoration: none; }
         content: url('../../assets/footer/footerline.png');
     }
     .footer__header plaintext {
-        font-family: 'Futura PT', sans-serif;
+        font-family: 'FuturaPT-Bold', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 10px;
@@ -477,7 +477,7 @@ a:active { text-decoration: none; }
         top: -20px;
     }
     .footer__main h1{
-        font-family: 'Futura PT', sans-serif;
+        font-family: 'FuturaPT-Bold', sans-serif;
         font-style: normal;
         font-weight: 700;
         font-size: 10px;
@@ -489,7 +489,7 @@ a:active { text-decoration: none; }
         color: #747272;
     }
     .footer__main h3 {
-        font-family: 'Futura PT', sans-serif;
+        font-family: 'FuturaPT-Bold', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 10px;
@@ -511,7 +511,7 @@ a:active { text-decoration: none; }
     }
     .footer__copyright {
         position: relative;
-        font-family: 'Futura PT', sans-serif;
+        font-family: 'FuturaPT-Bold', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -540,7 +540,7 @@ a:active { text-decoration: none; }
         height: 15px;
     }
     .footer__number h3 {
-        font-family: 'Futura PT', sans-serif;
+        font-family: 'FuturaPT-Bold', sans-serif;
         font-style: normal;
         font-weight: 700;
         font-size: 12px;

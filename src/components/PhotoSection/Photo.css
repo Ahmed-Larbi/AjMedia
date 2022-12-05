@@ -29,7 +29,7 @@
 }
 .photosection__title {
     width: 50%;
-    font-family: 'Futura PT', sans-serif;
+    font-family: 'FuturaPT-Bold', sans-serif;
     font-style: normal;
     font-weight: 700;
     min-width: 800px;
@@ -42,7 +42,7 @@
 }
 .photosection__information {
     width: 50%;
-    font-family: 'Futura PT', sans-serif;
+    font-family: 'FuturaPT-Bold', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: min(2.2vw, 1.25rem);
@@ -60,7 +60,7 @@
 }
 .not__hover__effect {
     position: absolute;
-    font-family: 'Futura PT', sans-serif;
+    font-family: 'FuturaPT-Bold', sans-serif;
     font-style: normal;
     align-items: center;
     font-weight: 700;
@@ -72,7 +72,7 @@
   }
   .hover__effect {
     position: absolute;
-    font-family: 'Futura PT', sans-serif;
+    font-family: 'FuturaPT-Bold', sans-serif;
     font-style: normal;
     align-items: center;
     font-weight: 700;
@@ -86,7 +86,7 @@
   }
 #locationButton {
     background: #A3C891;
-    font-family: 'Futura PT', sans-serif;
+    font-family: 'FuturaPT-Bold', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: min(1.2202562538133008vw,20px);
@@ -106,7 +106,7 @@
 }
 #galleryButton {
     border: 1px solid #FFFFFF;
-    font-family: 'Futura PT', sans-serif;
+    font-family: 'FuturaPT-Bold', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: min(1.2202562538133008vw,20px);
@@ -142,7 +142,7 @@
     word-wrap: break-word;
 }
 .circle__info h1 { 
-    font-family: 'Futura PT', sans-serif;
+    font-family: 'FuturaPT-Bold', sans-serif;
     font-style: normal;
     font-weight: 700;
     width: 100%;

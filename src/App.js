@@ -1,4 +1,5 @@
 import './App.css';
+import "./fonts/FuturaCyrillicMedium.ttf"
 import Header from './components/Header/Header';
 import Intro from './components/Introduction/Intro';
 import Confernce from './components/Conference/Confernce';

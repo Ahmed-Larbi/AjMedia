@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import "./Intro.css"
+import "../../fonts/FuturaCyrillicMedium.ttf"
 import mainImage from "../../assets/mainimage.png"
 import bannerImage1 from "../../assets/banner/11.jpg"
 import bannerImage2 from "../../assets/banner/Group1023.jpg";
