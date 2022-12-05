@@ -7,6 +7,7 @@ import leftArrow from "../../assets/leftarrow.png"
 import rightArrow from "../../assets/rightarrow.png"
 import {motion} from "framer-motion"
 import Photo from '../Photo/Photo'
+import Icon from "../Icon/Icon"
 
 function Media() {
     const [mediaChoice, setMediaChoice] = React.useState('All')
@@ -151,9 +152,15 @@ function Media() {
                   : ''}
             </motion.div>
             <div className='media__footer'>
-                <img src={leftArrow} alt="" onClick={goToPrevious}/>
+            <div onClick={goToPrevious} className="arrow__circle">
+
+                <Icon icon="arrow" size={12} id="left__arrow" color="#fff"/>
+                </div>
                 <div className='vector'></div>
-                <img src={rightArrow} alt="" onClick={goToNext}/>
+                <div onClick={goToNext} className="arrow__circle" id="right__arrow">
+
+                <Icon icon="arrow" size={12} style={{transform: 'rotate(180deg)'}} color="#fff"/>
+                </div>
             </div>
         </main>
     </div>

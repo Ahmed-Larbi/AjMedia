@@ -6,6 +6,7 @@ import menu from "../../assets/buttons/menu.png"
 import audioIcon from "../../assets/buttons/audio.png"
 import cameraIcon from "../../assets/buttons/camera.png"
 import arrow from "../../assets/arrow.png"
+import Icon from '../Icon/Icon'
 
 function PhotoSection() {
   const [isHovering, setIsHovering] = React.useState([{id: 0, isHovered: false},{id: 1, isHovered: false},{id: 2, isHovered: false}])
@@ -55,7 +56,7 @@ function PhotoSection() {
           <li onMouseOver={() => handleMouseOver(0)} onMouseOut={() => handleMouseOut(0)}>
             <span className='circle'>
 
-            <img src={menu} alt=""/>
+            <Icon icon='media-footage' className="img" color="#fff"/>
             </span>
             <div className='circle__info'>
 
@@ -66,7 +67,7 @@ function PhotoSection() {
           <li onMouseOver={() => handleMouseOver(1)} onMouseOut={() => handleMouseOut(1)}>
             <span className='circle'>
 
-            <img src={cameraIcon} alt=""/>
+            <Icon icon='camera' className="img" color="#fff"/>
             </span>
             <div className='circle__info'>
 
@@ -77,7 +78,7 @@ function PhotoSection() {
           <li onMouseOver={() => handleMouseOver(2)} onMouseOut={() => handleMouseOut(2)} >
             <span className='circle'>
 
-            <img src={audioIcon} alt=""/>
+            <Icon icon='speaker' className="img" color="#fff"/>
             </span>
             <div className='circle__info'>
 

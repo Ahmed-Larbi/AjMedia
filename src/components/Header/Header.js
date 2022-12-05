@@ -16,10 +16,10 @@ function Header() {
         <img src={ajmanMedia} alt="" className='ajman__media'/>
     </div>
     <div className='right__container'>
-    <Icon icon="search" size={20} alt="" className='search' color="#797977"/>
-    <Icon icon="settings" size={20} className='settings' color="#797977"/>
+    <Icon icon="search" size={20} alt="" className='icons' color="#797977"/>
+    <Icon icon="settings" size={20} className='icons' color="#797977"/>
     <h1 className='arabic'> عربي </h1>
-    <Icon icon="menu"  size={20} alt="" className='menu' color="#797977"/>
+    <Icon icon="menu"  size={20} alt="" className='icons' color="#797977"/>
     </div>
     </div>
   )

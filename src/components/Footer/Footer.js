@@ -9,11 +9,6 @@ import ajmanMedia from "../../assets/ajmanmedia.png"
 import footerline from "../../assets/footer/footerline.png"
 import phone from "../../assets/footer/telephone.png"
 import Tooltip from "@mui/material/Tooltip"
-import { FacebookIcon } from '../SvgIcons';
-import { TwitterIcon } from '../SvgIcons';
-import { YoutubeIcon } from '../SvgIcons';
-import { InstagramIcon } from '../SvgIcons';
-
 import Icon from '../Icon/Icon'
 
 function Footer() {
@@ -26,12 +21,12 @@ function Footer() {
     <div className='footer__container'>
         <header className='footer__header'>
         <div className='footer__visitor'>
-            <img src={userLogo} alt=""/>
+            <Icon icon="visitor-counter" size={20} alt=""/>
             <h1> Visitor Count </h1>
             <h3>2376182</h3>
         </div>
         <div className='footer__working'>
-            <img src={clock} alt=""/>
+            <Icon icon="working-hours" size={20}/>
             <h1> Working Hours </h1>
             <h3>07:30 AM - 12:00 PM</h3>
         </div>
@@ -40,7 +35,7 @@ function Footer() {
 
             <div className='footer__signup'>
                 <h1>SignUp</h1>
-                <img src={signUp} alt=""/>
+                <Icon icon='newsletter-signup-icon' size={20} className='icon' alt=""/>
             </div>
         </form>
         </header>
@@ -107,7 +102,7 @@ function Footer() {
             )}
             </div>
             <div className='footer__number'>
-                <img src={phone} alt=""/>
+                <Icon icon="phone-icon" size={20} alt=""/>
                 <h3> Toll-free 24/7 800 8877 </h3>
             </div>
         </section>

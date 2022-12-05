@@ -7,6 +7,7 @@ import EventCard from '../EventCard/EventCard';
 import cards from '../../Events';
 import Vector6 from "../../assets/vectors/Vector6.png"
 import {motion} from "framer-motion"
+import Icon from '../Icon/Icon'
 
 function Confernce() {
   const [startingIndex, setStartingIndex] = React.useState(0)
@@ -59,9 +60,15 @@ function Confernce() {
         <header className='container__header'>
             <h1 className='container__title'> Conference & Events </h1>
             <div className='container__header2'>
-                <img src={leftArrow} alt="" onClick={goToPrevious}/>
+            <div onClick={goToPrevious} className="arrow__circle">
+
+                <Icon icon="arrow" size={12} id="left__arrow" color="#fff"/>
+            </div>
                 <div className='vector'></div>
-                <img src={rightArrow} alt="" onClick={goToNext}/>
+                <div onClick={goToNext} className="arrow__circle" id="right__arrow">
+
+                <Icon icon="arrow" size={12} style={{transform: 'rotate(180deg)'}} color="#fff"/>
+                </div>
             </div>
             <img src={Vector6} alt="" className="conf__vector"></img>
         </header>
