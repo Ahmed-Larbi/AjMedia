@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/AjMedia/static/css/main.e68f0fb8.css",
-    "main.js": "/AjMedia/static/js/main.5e2e51b9.js",
+    "main.css": "/AjMedia/static/css/main.fb1920e6.css",
+    "main.js": "/AjMedia/static/js/main.1d9d6614.js",
     "static/js/787.ae4825b1.chunk.js": "/AjMedia/static/js/787.ae4825b1.chunk.js",
     "static/media/Group1023.jpg": "/AjMedia/static/media/Group1023.2a062984f900b6c0b1bd.jpg",
     "static/media/11.jpg": "/AjMedia/static/media/11.b2e0d7c946a0f9db184d.jpg",
@@ -23,17 +23,13 @@
     "static/media/VectorLeft.png": "/AjMedia/static/media/VectorLeft.cc3f8fabaaab0c12f9c7.png",
     "static/media/GE SS Two Medium.otf": "/AjMedia/static/media/GE SS Two Medium.3fb3dc620fa627c8b767.otf",
     "static/media/ajmanmedia.png": "/AjMedia/static/media/ajmanmedia.8fc58217a1d4969fee4d.png",
-    "static/media/icons8-instagram.svg": "/AjMedia/static/media/icons8-instagram.8a97ee028f23683f09234f1d9adc4b81.svg",
-    "static/media/icons8-youtube.svg": "/AjMedia/static/media/icons8-youtube.16c9d3d12857cf319c96d9257ab927ae.svg",
-    "static/media/icons8-twitter.svg": "/AjMedia/static/media/icons8-twitter.fe06d572bd13680e66f4d31fc7cf1832.svg",
     "index.html": "/AjMedia/index.html",
-    "static/media/icons8-facebook-48.svg": "/AjMedia/static/media/icons8-facebook-48.1d60f030f88d365627c35afd0f0f9d38.svg",
-    "main.e68f0fb8.css.map": "/AjMedia/static/css/main.e68f0fb8.css.map",
-    "main.5e2e51b9.js.map": "/AjMedia/static/js/main.5e2e51b9.js.map",
+    "main.fb1920e6.css.map": "/AjMedia/static/css/main.fb1920e6.css.map",
+    "main.1d9d6614.js.map": "/AjMedia/static/js/main.1d9d6614.js.map",
     "787.ae4825b1.chunk.js.map": "/AjMedia/static/js/787.ae4825b1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e68f0fb8.css",
-    "static/js/main.5e2e51b9.js"
+    "static/css/main.fb1920e6.css",
+    "static/js/main.1d9d6614.js"
   ]
 }
