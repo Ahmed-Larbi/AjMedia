@@ -5,10 +5,10 @@
     display: flex;
     flex-direction: column;
     
-    margin-top: 10vh;
+    margin-top: 14vh;
     position: relative;
     min-width: 100%;
-    height: 546px;
+    height: 650px;
     background: linear-gradient(13.3deg, #25527A -20.52%, rgba(37, 82, 122, 0) 362.92%), url('../../assets/photosection.png') no-repeat;
     background-size:cover;
     background-repeat: no-repeat;
@@ -117,6 +117,7 @@
     color: #FFFFFF;
 
     flex: none;
+    max-width: 201px;
     order: 0;
     flex-grow: 0;
     background-color: transparent;
@@ -128,6 +129,7 @@
     display: flex;
     width: 80%;
     justify-content: center;
+    margin-top: 3vw;
     margin-left: 10vw;
 }
 .photosection__container li {

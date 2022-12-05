@@ -7,17 +7,17 @@ import signUp from "../../assets/footer/signup.png"
 import ajmanGov from "../../assets/ajmangov.png"
 import ajmanMedia from "../../assets/ajmanmedia.png"
 import footerline from "../../assets/footer/footerline.png"
-import facebookLogo from "../../assets/footer/facebook.png"
-import twitterLogo from "../../assets/footer/twitter.png"
-import youtubeLogo from "../../assets/footer/youtube.png"
-import instagramLogo from "../../assets/footer/instagram.png"
 import phone from "../../assets/footer/telephone.png"
 import Tooltip from "@mui/material/Tooltip"
+import { FacebookIcon } from '../SvgIcons';
+import { TwitterIcon } from '../SvgIcons';
+import { YoutubeIcon } from '../SvgIcons';
+import { InstagramIcon } from '../SvgIcons';
 
 function Footer() {
     const [socialLogos, setSocialLogos] = React.useState([
-        {image: facebookLogo, 'hint': 'Facebook', },{image: twitterLogo, 'hint': 'Twitter',}
-        ,{image: youtubeLogo, 'hint': 'Youtube',},{image: instagramLogo, 'hint': 'Instagram',}
+        {image: FacebookIcon, 'hint': 'Facebook', },{image: TwitterIcon, 'hint': 'Twitter',}
+        ,{image: YoutubeIcon, 'hint': 'Youtube',},{image: InstagramIcon, 'hint': 'Instagram',}
     ])
 
   return (

@@ -265,6 +265,9 @@ a:active { text-decoration: none; }
 
     color: #AFAFAF;
 }
+.social__logo {
+    width: 20px;
+}
 .social__logo:hover {
     width: 12%;
     height: auto;
