@@ -2,9 +2,6 @@ import React from 'react'
 import "./Photo.css"
 import vectorLeft from "../../assets/vectors/VectorLeft.png"
 import vectorRight from "../../assets/vectors/VectorRight.png"
-import menu from "../../assets/buttons/menu.png"
-import audioIcon from "../../assets/buttons/audio.png"
-import cameraIcon from "../../assets/buttons/camera.png"
 import arrow from "../../assets/arrow.png"
 import Icon from '../Icon/Icon'
 
@@ -44,7 +41,7 @@ function PhotoSection() {
         <div className='wrapper'>
 
         <h1 className='photosection__title'> Photo-Shooting & Filming in Ajman </h1>
-        <plaintext className="photosection__information"> You can request any kind of shooting permission inside the emirate of Ajman online.</plaintext>
+        <h1 className="photosection__information"> You can request any kind of shooting permission inside the emirate of Ajman online.</h1>
         </div>
         <div className='button'>
             <button id='locationButton'> View Locations </button>

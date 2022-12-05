@@ -20,15 +20,16 @@
     flex-direction: row;
     align-items: center;
     margin-top: 7vh;
+    gap: 20px;
 }
 .wrapper {
     width: 100%;
     margin-inline-end: 0;
     padding-right: 0;
-    margin-left: 15vw;
+    margin-left: 13.5vw;
 }
 .photosection__title {
-    width: 50%;
+    width: 100%;
     font-family: 'FuturaPT-Bold', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -41,7 +42,7 @@
     z-index: 2;
 }
 .photosection__information {
-    width: 50%;
+    width: 100%;
     font-family: 'FuturaPT-Bold', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -52,7 +53,7 @@
 .button {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
     gap: min(2vh,3.125rem);
@@ -91,7 +92,7 @@
     font-weight: 700;
     font-size: min(1.2202562538133008vw,20px);
     line-height: 102.26%;
-    width: 12.263575350823674vw;
+    width: 10.263575350823674vw;
     height: 5.660377358490566vh;
     max-width: 201px;
     border: 1px solid transparent;
@@ -111,7 +112,7 @@
     font-weight: 700;
     font-size: min(1.2202562538133008vw,20px);
     line-height: 102.26%;
-    width: 12.263575350823674vw;
+    width: 10.263575350823674vw;
     height: 5.660377358490566vh;
 
     color: #FFFFFF;
@@ -130,7 +131,7 @@
     width: 80%;
     justify-content: center;
     margin-top: 3vw;
-    margin-left: 10vw;
+    margin-left: 7.5vw;
 }
 .photosection__container li {
     position: relative;
@@ -149,7 +150,7 @@
     font-weight: 700;
     width: 100%;
     max-width: 17.5vw;
-    font-size: clamp(8px,1.464307504575961vw,24px);
+    font-size: clamp(8px,1.464307504575961vw,20px);
     word-wrap: break-word;
     overflow-wrap: break-word;
     
@@ -264,6 +265,9 @@
     }
     .photosection__container{ 
         max-height: 400px;
+    }
+    .button {
+        justify-content: center;
     }
 }
 

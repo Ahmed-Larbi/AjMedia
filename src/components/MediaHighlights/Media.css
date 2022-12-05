@@ -7,10 +7,10 @@
 .media__header {
     display: flex;
     justify-content: space-evenly;
-    gap: 35vw;
+    gap: 33vw;
     align-items: center;
     margin-right: 7.5%;
-    margin-left: 8.5%;
+    margin-left: 7.5%;
 }
 .media__header > button {
     align-items: center;
