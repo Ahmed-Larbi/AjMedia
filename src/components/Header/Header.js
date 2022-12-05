@@ -5,6 +5,7 @@ import search from "../../assets/search.png"
 import settings from "../../assets/setting.png"
 import menu from "../../assets/menu.png"
 import "./Header.css"
+import Icon from '../Icon/Icon'
 
 function Header() {
   return (
@@ -15,10 +16,10 @@ function Header() {
         <img src={ajmanMedia} alt="" className='ajman__media'/>
     </div>
     <div className='right__container'>
-    <img src={search} alt="" className='search'/>
-    <img src={settings} alt="" className='settings'/>
+    <Icon icon="search" size={20} alt="" className='search' color="#797977"/>
+    <Icon icon="settings" size={20} className='settings' color="#797977"/>
     <h1 className='arabic'> عربي </h1>
-    <img src={menu} alt="" className='menu'/>
+    <Icon icon="menu"  size={20} alt="" className='menu' color="#797977"/>
     </div>
     </div>
   )

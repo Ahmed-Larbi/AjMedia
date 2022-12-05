@@ -14,10 +14,12 @@ import { TwitterIcon } from '../SvgIcons';
 import { YoutubeIcon } from '../SvgIcons';
 import { InstagramIcon } from '../SvgIcons';
 
+import Icon from '../Icon/Icon'
+
 function Footer() {
     const [socialLogos, setSocialLogos] = React.useState([
-        {image: FacebookIcon, 'hint': 'Facebook', },{image: TwitterIcon, 'hint': 'Twitter',}
-        ,{image: YoutubeIcon, 'hint': 'Youtube',},{image: InstagramIcon, 'hint': 'Instagram',}
+        {image: 'facebook', 'hint': 'Facebook', },{image: 'twitter', 'hint': 'Twitter',}
+        ,{image: 'youtube', 'hint': 'Youtube',},{image: 'instagram', 'hint': 'Instagram',}
     ])
 
   return (
@@ -94,12 +96,13 @@ function Footer() {
         <img src={footerline} alt="" className='footer__vector1'/>
         <section className='footer'>
             <div className='footer__copyright'> © 2022 Ajman Ruler’s Court Media Office
-</div>
+    </div>
             <div className='footer__social'>
             {socialLogos.map( (social) => 
-            <Tooltip title={`${social.hint}`} placement='top'>
-
-            <img src={social.image} alt="" className="social__logo"/>
+            <Tooltip title={social.hint} placement='top'>
+            <div className="social__logo">
+            <Icon icon={social.image} size={20}/>
+            </div>
             </Tooltip>
             )}
             </div>
