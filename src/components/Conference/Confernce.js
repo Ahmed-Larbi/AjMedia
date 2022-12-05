@@ -1,8 +1,5 @@
 import React from 'react'
 import "./Conf.css"
-import leftArrow from "../../assets/leftarrow.png"
-import rightArrow from "../../assets/rightarrow.png"
-// import vector from "../../assets/vectors/Vector3.png";
 import EventCard from '../EventCard/EventCard';
 import cards from '../../Events';
 import Vector6 from "../../assets/vectors/Vector6.png"

@@ -1,13 +1,10 @@
 import React from 'react'
 import "./Footer.css"
-import userLogo from "../../assets/footer/user.png"
-import clock from "../../assets/footer/clock.png"
 import vectorFooter from "../../assets/footer/vectorsFooter.png"
-import signUp from "../../assets/footer/signup.png"
 import ajmanGov from "../../assets/ajmangov.png"
 import ajmanMedia from "../../assets/ajmanmedia.png"
 import footerline from "../../assets/footer/footerline.png"
-import phone from "../../assets/footer/telephone.png"
+
 import Tooltip from "@mui/material/Tooltip"
 import Icon from '../Icon/Icon'
 
