@@ -3,8 +3,6 @@ import "./Media.css"
 import news from '../../Data/news'
 import photos from '../../Data/photos'
 import NewsCard from '../NewsCard/NewsCard'
-import leftArrow from "../../assets/leftarrow.png"
-import rightArrow from "../../assets/rightarrow.png"
 import {motion} from "framer-motion"
 import Photo from '../Photo/Photo'
 import Icon from "../Icon/Icon"
