@@ -20,23 +20,23 @@
     flex-direction: row;
     align-items: center;
     margin-top: 7vh;
-    gap: 20px;
+    gap: 0px;
 }
 .wrapper {
-    width: 100%;
+    width: 50%;
     margin-inline-end: 0;
     padding-right: 0;
     margin-left: 13.5vw;
 }
 .photosection__title {
-    width: 100%;
+    width: 50%;
     font-family: 'FuturaPT-Bold', sans-serif;
     font-style: normal;
     font-weight: 700;
     min-width: 800px;
     margin-right: 0;
     flex-wrap: wrap;
-    font-size: min(4.123711340206185vw, 2.5rem);
+    font-size: min(2.123711340206185vw, 2.5rem);
     text-transform: uppercase;
     color: white;
     z-index: 2;
@@ -46,7 +46,7 @@
     font-family: 'FuturaPT-Bold', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: min(2.2vw, 1.25rem);
+    font-size: min(1.2vw, 1.25rem);
     margin-inline: 0;
     color: #FFFFFF;
 }
