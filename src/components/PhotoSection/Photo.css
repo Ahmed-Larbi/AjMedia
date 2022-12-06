@@ -58,7 +58,7 @@
     width: 100%;
     gap: min(2vh,3.125rem);
     z-index: 1;
-    max-width: 400px;
+    max-width: 450px;
 }
 .not__hover__effect {
     position: absolute;

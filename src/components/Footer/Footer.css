@@ -24,7 +24,7 @@ a:active { text-decoration: none; }
     padding: 30px;
     display: flex;
     justify-content: center;
-    gap: 8vw;
+    gap: 9vw;
 }
 .footer__visitor{
     display: flex;
@@ -98,7 +98,7 @@ a:active { text-decoration: none; }
 .footer__header input {
     width: 12vw;
     height: 50px;
-    margin-left: 2vw;
+    padding-left: 2vw;
     border: transparent;
     background-color: transparent;
     font-family: "FuturaPT-Book";
@@ -109,7 +109,7 @@ a:active { text-decoration: none; }
 }
 .footer__hyperlinks { 
     display: flex;
-    gap: 8.982306284319707vw;
+    gap: 8vw;
 
 }
 .footer__header input:focus {
@@ -148,7 +148,7 @@ a:active { text-decoration: none; }
     padding: 15px;
     display: flex;
     justify-content: flex-start;
-    gap: 3.982306284319707vw;
+    gap: 1.982306284319707vw;
     margin-left: 6.5%;
     width: 85%;
 }
