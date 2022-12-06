@@ -85,7 +85,7 @@ a:active { text-decoration: none; }
     top: -80px;
     left: 22vw;
     min-width: 300px;
-    padding-left: 150px;
+    padding-left: 140px;
 }
 .footer__vector1 {
     position: relative;
@@ -123,7 +123,7 @@ a:active { text-decoration: none; }
     gap: 0.6101281269066504vw;
 }
 .form__signup input {
-    font-size: clamp(8px,0.664307504575961vw,18px);
+    font-size: clamp(8px,0.964307504575961vw,24px);
     width: 150px;
 }
 .footer__signup{
