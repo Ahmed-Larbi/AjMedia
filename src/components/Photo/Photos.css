@@ -56,7 +56,7 @@
 
 .date__card-arabic {
     position: absolute;
-    font-family: 'FuturaPT-Bold', sans-serif;
+    font-family: 'FuturaPT-Book', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: clamp(12px,1.064307504575961vw,18px);
@@ -68,7 +68,7 @@
 }
 .date__card-english {
     position: absolute;
-    font-family: 'FuturaPT-Bold', sans-serif;
+    font-family: 'FuturaPT-Book', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: clamp(12px,1.064307504575961vw,18px);
