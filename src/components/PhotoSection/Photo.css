@@ -20,12 +20,13 @@
     flex-direction: row;
     align-items: center;
     margin-top: 7vh;
-    gap: min(5.2vw, 75px);
-    max-width: 1050px;
+    gap: max(calc(5.2vw - 10px), 6rem);
+    width: 50vw;
+    max-width: 950px;
 }
 .wrapper {
-    width: 80%;
-    margin-left: 13.5vw;
+    width: 100%;
+    margin-left: 14.5vw;
 }
 .photosection__title {
     width: 50%;
@@ -53,13 +54,11 @@
 .button {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
-    width: 70%;
+    width: 100%;
     gap: min(2vh,3.125rem);
     z-index: 1;
     max-width: 400px;
-    margin-left: 0;
 }
 .not__hover__effect {
     position: absolute;
@@ -272,7 +271,7 @@
         justify-content: center;
     }
 }
-@media screen and (max-width: 1650px) {
+@media screen and (max-width: 1670px) {
     .photosection__headers {
         justify-content: flex-start;
         gap: 0px;
