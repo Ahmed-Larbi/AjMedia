@@ -108,7 +108,7 @@ a:active { text-decoration: none; }
 }
 .footer__hyperlinks { 
     display: flex;
-    gap: 10.982306284319707vw;
+    gap: 8.982306284319707vw;
 
 }
 .footer__header input:focus {
@@ -122,7 +122,8 @@ a:active { text-decoration: none; }
     gap: 0.6101281269066504vw;
 }
 .form__signup input {
-    font-size: clamp(8px,1.064307504575961vw,24px);
+    font-size: clamp(8px,0.664307504575961vw,18px);
+    width: 150px;
 }
 .footer__signup{
     display: flex;
@@ -146,8 +147,9 @@ a:active { text-decoration: none; }
     padding: 15px;
     display: flex;
     justify-content: flex-start;
-    gap: 5.982306284319707vw;
-    margin-left: 4%;
+    gap: 3.982306284319707vw;
+    margin-left: 6.5%;
+    width: 85%;
 }
 .vertical__linefooter{
     height: 52px;
@@ -160,12 +162,12 @@ a:active { text-decoration: none; }
     justify-content: flex-start;
     gap:  0.6101281269066504vw;
     align-items: center;
-    margin-left: 9%;
+    margin-left: 10%;
     height: 0;
     
 }
 .footer__logo > img {
-    width: 50%;
+    width: 30%;
     max-width: 10vw;
 }
 .footer__about {
