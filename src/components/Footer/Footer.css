@@ -23,15 +23,15 @@ a:active { text-decoration: none; }
 .footer__header {
     padding: 30px;
     display: flex;
-    justify-content: flex-start;
-    gap: 12vw;
+    justify-content: center;
+    gap: 8vw;
 }
 .footer__visitor{
     display: flex;
     justify-content: flex-start;
     gap: 0.4vw;
     align-items: center;
-    margin-left: 10%;
+
 }
 .footer__visitor > h1{
     font-family: 'FuturaPT-Bold', sans-serif;
@@ -81,15 +81,15 @@ a:active { text-decoration: none; }
 }
 .footer__vector {
     position: relative;
-    width: 60vw;
-    top: -70px;
+    width: 55vw;
+    top: -80px;
     left: 22vw;
     min-width: 300px;
     padding-left: 150px;
 }
 .footer__vector1 {
     position: relative;
-    width: 60vw;
+    width: 55vw;
     top: -70px;
     left: 22vw;
     min-width: 500px;
@@ -146,7 +146,8 @@ a:active { text-decoration: none; }
     padding: 15px;
     display: flex;
     justify-content: flex-start;
-    gap: 10.982306284319707vw;
+    gap: 5.982306284319707vw;
+    margin-left: 4%;
 }
 .vertical__linefooter{
     height: 52px;
@@ -227,10 +228,9 @@ a:active { text-decoration: none; }
     position: relative;
     padding: 30px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    gap: 18.303843807199513vw;
-    margin-left: 10%;
+    gap: 12.303843807199513vw;
     height: 0;
     top: -80px;
 }
@@ -548,5 +548,8 @@ a:active { text-decoration: none; }
         font-size: 12px;
     
         color: #AFAFAF;
+    }
+    .footer {
+        margin-left: 7%;
     }
 } 
