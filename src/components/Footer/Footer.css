@@ -46,7 +46,7 @@ a:active { text-decoration: none; }
     color: #747272;
 }
 .footer__visitor > h3 {
-    font-family: 'FuturaPT-Bold', sans-serif;
+    font-family: 'FuturaPT-Book', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: clamp(12px,1.064307504575961vw,18px);;
@@ -71,7 +71,7 @@ a:active { text-decoration: none; }
  }
  .footer__working > h3 {
     margin-left: 2vw;
-    font-family: 'FuturaPT-Bold', sans-serif;
+    font-family: 'FuturaPT-Book', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: clamp(8px,1.064307504575961vw,24px);
@@ -101,6 +101,7 @@ a:active { text-decoration: none; }
     margin-left: 2vw;
     border: transparent;
     background-color: transparent;
+    font-family: "FuturaPT-Book";
     z-index: 1;
 
 
@@ -217,7 +218,7 @@ a:active { text-decoration: none; }
     color: #747272;
 }
 .footer__main h3 {
-    font-family: 'FuturaPT-Bold', sans-serif;
+    font-family: 'FuturaPT-Book', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: clamp(8px,1.064307504575961vw,24px);
@@ -238,7 +239,7 @@ a:active { text-decoration: none; }
 }
 .footer__copyright {
     position: relative;
-    font-family: 'FuturaPT-Bold', sans-serif;
+    font-family: 'FuturaPT-Book', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: clamp(12px,1.064307504575961vw,18px);

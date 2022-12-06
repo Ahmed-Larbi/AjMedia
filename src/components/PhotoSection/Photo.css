@@ -42,7 +42,7 @@
 }
 .photosection__information {
     width: 100%;
-    font-family: 'FuturaPT-Bold', sans-serif;
+    font-family: "FuturaPT-Book", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: min(1.2vw, 1.25rem);
