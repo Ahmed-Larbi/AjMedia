@@ -1,10 +1,12 @@
 
 @import url(//db.onlinewebfonts.com/c/a5b324b1dc86e3633de3e059b2facf3d?family=FuturaPT-Bold);
+@import url(//db.onlinewebfonts.com/c/13a7a4a64f0a4b39a872e732c91d2375?family=FuturaPT-Book);
 @font-face {font-family: "FuturaPT-Bold"; src: url("//db.onlinewebfonts.com/t/a5b324b1dc86e3633de3e059b2facf3d.eot"); src: url("//db.onlinewebfonts.com/t/a5b324b1dc86e3633de3e059b2facf3d.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/a5b324b1dc86e3633de3e059b2facf3d.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/a5b324b1dc86e3633de3e059b2facf3d.woff") format("woff"), url("//db.onlinewebfonts.com/t/a5b324b1dc86e3633de3e059b2facf3d.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/a5b324b1dc86e3633de3e059b2facf3d.svg#FuturaPT-Bold") format("svg"); }
 @font-face {
     font-family: 'GE SS TWO';
     src: url("../src/fonts/GE\ SS\ Two\ Medium.otf") format("opentype");
 }
+@font-face {font-family: "FuturaPT-Book"; src: url("//db.onlinewebfonts.com/t/13a7a4a64f0a4b39a872e732c91d2375.eot"); src: url("//db.onlinewebfonts.com/t/13a7a4a64f0a4b39a872e732c91d2375.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/13a7a4a64f0a4b39a872e732c91d2375.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/13a7a4a64f0a4b39a872e732c91d2375.woff") format("woff"), url("//db.onlinewebfonts.com/t/13a7a4a64f0a4b39a872e732c91d2375.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/13a7a4a64f0a4b39a872e732c91d2375.svg#FuturaPT-Book") format("svg"); }
 html,body
 {
     width: 100%;
