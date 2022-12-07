@@ -580,5 +580,8 @@ a:active { text-decoration: none; }
     .form__signup input {
         border: none;
     }
+    .form__signup input:focus {
+        border: none;
+    }
     
 }
