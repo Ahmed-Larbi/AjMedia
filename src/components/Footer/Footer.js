@@ -36,7 +36,7 @@ function Footer() {
             </div>
         </form>
         </header>
-        <img src={vectorFooter} alt="" className='footer__vector'/>
+        <div className='footer__vector'></div>
         <main className='footer__main'>
             <div className='footer__logo'>
                 <img src={ajmanGov} alt="" className='ajman__gov'/>
@@ -85,7 +85,7 @@ function Footer() {
                 
             </div>
         </main>
-        <img src={footerline} alt="" className='footer__vector1'/>
+        <div className='footer__vector1'></div>
         <section className='footer'>
             <div className='footer__copyright'> © 2022 Ajman Ruler’s Court Media Office
     </div>
