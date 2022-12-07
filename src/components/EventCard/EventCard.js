@@ -6,7 +6,7 @@ import arrow from "../../assets/arrow.png"
 function EventCard(props) {
   const [isHovering, setIsHovering] = React.useState(false);
   const [windowWidth, setWindowWidth] = React.useState(window.innerWidth)
-  const [translateName, setTranslateName] = React.useState(-170);
+  const [translateName, setTranslateName] = React.useState(-100);
 
   React.useEffect( ()=> {
     function watchWidth() {
@@ -22,7 +22,7 @@ function EventCard(props) {
 
     }
     else {
-      setTranslateName(-170)
+      setTranslateName(-100)
     }
     setIsHovering(true);
   }
@@ -33,7 +33,7 @@ function EventCard(props) {
 
     }
     else {
-      setTranslateName(-170)
+      setTranslateName(-100)
     }
     setIsHovering(false);
   }
