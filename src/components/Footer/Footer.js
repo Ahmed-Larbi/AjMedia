@@ -18,12 +18,12 @@ function Footer() {
     <div className='footer__container'>
         <header className='footer__header'>
         <div className='footer__visitor'>
-            <Icon icon="visitor-counter" size={20} alt=""/>
+            <Icon icon="visitor-counter" size={20} alt="" color={'#747272'}/>
             <h1> Visitor Count </h1>
             <h3>2376182</h3>
         </div>
         <div className='footer__working'>
-            <Icon icon="working-hours" size={20}/>
+            <Icon icon="working-hours" size={20} color={'#747272'}/>
             <h1> Working Hours </h1>
             <h3>07:30 AM - 12:00 PM</h3>
         </div>
