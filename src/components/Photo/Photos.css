@@ -13,7 +13,7 @@
     position: absolute;
     left: 7.8%;
     right: 7.8%;
-    top: 80.71%;
+    top: 75.71%;
 
     font-family: 'FuturaPT-Bold', sans-serif;
     font-style: normal;
@@ -62,7 +62,7 @@
     font-size: clamp(12px,1.064307504575961vw,18px);
     line-height: 102.26%;
     left: 7.8%;
-    top: 72.05%;
+    top: 70.05%;
     text-align: right;
     color: rgba(255, 255, 255, 0.6);
 }
@@ -74,7 +74,7 @@
     font-size: clamp(12px,1.064307504575961vw,18px);
     line-height: 102.26%;
     left: 7.8%;
-    top: 72.05%;
+    top: 70.05%;
     text-align: right;
     color: rgba(255, 255, 255, 0.6);
 }

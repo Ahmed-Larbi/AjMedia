@@ -134,10 +134,10 @@ a:active { text-decoration: none; }
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0.6101281269066504vw;
+    gap: 2.6101281269066504vw;
 }
 .form__signup input {
-    font-size: clamp(8px,0.964307504575961vw,24px);
+    font-size: clamp(8px,0.864307504575961vw,20px);
     width: 150px;
     border-left: 0.11098779134295228vh solid #CFCFCF;
 }

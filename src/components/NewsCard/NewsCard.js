@@ -6,7 +6,7 @@ function NewsCard(props) {
   const [isHovering, setIsHovering] = React.useState(false);
   const [windowWidth, setWindowWidth] = React.useState(window.innerWidth)
   const [translateName, setTranslateName] = React.useState(-120);
-  const [translateDate, setTranslateDate] = React.useState(-350);
+  const [translateDate, setTranslateDate] = React.useState(-500);
 
   useEffect( ()=> {
     function watchWidth() {
@@ -24,7 +24,7 @@ function NewsCard(props) {
     }
     else {
       setTranslateName(-120)
-      setTranslateDate(-350)
+      setTranslateDate(-500)
     }
     setIsHovering(true);
   }
@@ -37,7 +37,7 @@ function NewsCard(props) {
     }
     else {
       setTranslateName(-120)
-      setTranslateDate(-350)
+      setTranslateDate(-500)
     }
     setIsHovering(false);
   }
