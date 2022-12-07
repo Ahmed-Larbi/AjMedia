@@ -199,7 +199,7 @@ a:active { text-decoration: none; }
     top:  -2.4405125076266017vw;
     color: #AFAFAF;
 }
-.footer__about a {
+.footer__about h3 a {
     color: #AFAFAF;
 }
 .footer__links {
@@ -210,7 +210,7 @@ a:active { text-decoration: none; }
     align-items: flex-start;
     top: -2.4405125076266017vw;
 }
-.footer__links a {
+.footer__links h3 a {
     color: #AFAFAF;
 }
 .footer__help {
@@ -228,11 +228,8 @@ a:active { text-decoration: none; }
     font-family: 'FuturaPT-Bold', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: clamp(16px,1.664307504575961vw,24px);
-    line-height: 24px;
-    /* or 120% */
-
-    text-transform: capitalize;
+    font-size: clamp(12px,1.064307504575961vw,20px);
+    line-height: 26px;
 
     color: #747272;
 }
@@ -302,6 +299,9 @@ a:active { text-decoration: none; }
     top: -30px;
     right: 50px;
 
+}
+.main__headers {
+    color:#747272;
 }
 @media screen and (max-width: 768px) {
     .footer__container {

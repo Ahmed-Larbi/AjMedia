@@ -48,7 +48,7 @@ function Footer() {
 
                 <div className='footer__about'>
                     <h1>
-                    <a href="javascript:void()">
+                    <a href="javascript:void()" className='main__headers'>
 
                     About The Website
                     </a>
@@ -69,7 +69,7 @@ function Footer() {
                     <h3> <a href="javascript:void()">Copyright</a> </h3>
                 </div>
                 <div className='footer__links'>
-                    <h1><a href="javascript:void()">Quick Links</a></h1>
+                    <h1><a href="javascript:void()" className='main__headers'>Quick Links</a></h1>
                     <h3> <a href="javascript:void()">FAQs</a> </h3>
                     <h3> <a href="javascript:void()">Contact Us</a> </h3>
                     <h3> <a href="javascript:void()">Sitemap</a> </h3>
