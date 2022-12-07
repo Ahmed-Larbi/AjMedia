@@ -140,6 +140,7 @@ a:active { text-decoration: none; }
     font-size: clamp(8px,0.864307504575961vw,20px);
     width: 150px;
     border-left: 0.11098779134295228vh solid #CFCFCF;
+    padding-right: 15px;
 }
 .form__signup input:focus {
     border-left: 0.11098779134295228vh solid #CFCFCF;
