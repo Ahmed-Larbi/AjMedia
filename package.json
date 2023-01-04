@@ -14,6 +14,7 @@
     "icomoon-react": "^3.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-owl-carousel": "^2.3.3",
     "react-scripts": "5.0.1",
     "react-simple-arrows": "^0.2.0",
     "react-transition-group": "^4.4.5",

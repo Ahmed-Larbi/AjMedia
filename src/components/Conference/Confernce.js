@@ -5,6 +5,9 @@ import cards from '../../Events';
 import Vector6 from "../../assets/vectors/Vector6.png"
 import {motion} from "framer-motion"
 import Icon from '../Icon/Icon'
+import OwlCarousel from "react-owl-carousel"
+import 'owl.carousel/dist/assets/owl.carousel.min.css'
+import 'owl.carousel/dist/assets/owl.theme.default.min.css'
 
 function Confernce() {
   const [startingIndex, setStartingIndex] = React.useState(0)
@@ -12,26 +15,42 @@ function Confernce() {
   const [limitIndex, setLimitIndex] = React.useState(limit)
   const [AnimationDirection, setAnimationDirection] = React.useState(0)
 
-  const variants = {
-    initial: (AnimationDirection) => {
-      return {
-
-        x: AnimationDirection > 0 ? 200 : -200,
-        opacity: 0
-      }
-    },
-    animate: {
-      x: 0,
-      opacity: 1,
-    },
-    exit: AnimationDirection => {
-      return {
-
-        x: AnimationDirection > 0 ? -200 : 200,
-        opacity: 0
-      }
+  const options = {
+    loop: true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        767:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
     }
-  }
+}
+  // const variants = {
+  //   initial: (AnimationDirection) => {
+  //     return {
+
+  //       x: AnimationDirection > 0 ? 200 : -200,
+  //       opacity: 0
+  //     }
+  //   },
+  //   animate: {
+  //     x: 0,
+  //     opacity: 1,
+  //   },
+  //   exit: AnimationDirection => {
+  //     return {
+
+  //       x: AnimationDirection > 0 ? -200 : 200,
+  //       opacity: 0
+  //     }
+  //   }
+  // }
 
   const goToNext = ()=> {
     setAnimationDirection(1)
@@ -71,12 +90,24 @@ function Confernce() {
         </header>
         <section>
 
-        <motion.div variants={variants} animate="animate" initial="initial" exit="exit" custom={AnimationDirection}  key={startingIndex} className='cards__container' style={{}}>
+        {/* <motion.div variants={variants} animate="animate" initial="initial" exit="exit" custom={AnimationDirection}  key={startingIndex} className='cards__container' style={{}}>
 
         {cards.slice(startingIndex,limitIndex).map( card => 
             <EventCard props={card}/>
         )}
-        </motion.div>
+        </motion.div> */}
+        <OwlCarousel
+        className='owl-theme'
+        style={{maxWidth: '70%', marginLeft: '15%'}}
+        {...options}
+        >
+          <EventCard props={cards[0]}/>
+          <EventCard props={cards[1]}/>
+          <EventCard props={cards[2]}/>
+          <EventCard props={cards[3]}/>
+          <EventCard props={cards[4]}/>
+          <EventCard props={cards[5]}/>
+        </OwlCarousel>
         </section>
     </div>
   )

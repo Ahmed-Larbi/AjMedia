@@ -6,15 +6,14 @@ import NewsCard from '../NewsCard/NewsCard'
 import {motion} from "framer-motion"
 import Photo from '../Photo/Photo'
 import Icon from "../Icon/Icon"
+import OwlCarousel from "react-owl-carousel"
+import 'owl.carousel/dist/assets/owl.carousel.min.css'
+import 'owl.carousel/dist/assets/owl.theme.default.min.css'
 
 function Media() {
     const [mediaChoice, setMediaChoice] = React.useState('All')
     const [windowSize, setWindowSize] = React.useState(getWindowSize())
     const markerRef = React.useRef(null)
-    const [startingIndex, setStartingIndex] = React.useState(0)
-    const limit = parseInt( (news.length / 2))
-    const [limitIndex, setLimitIndex] = React.useState(limit)
-    const [animationDirection, setAnimationDirection] = React.useState(0)
     const [extraLength, setExtraLength] = React.useState('0px');
     
     let marker;
@@ -63,46 +62,23 @@ function Media() {
       setMediaChoice(name)
     }
    
-    const variants = {
-      initial: (animationDirection) => {
-        return {
-  
-          x: animationDirection > 0 ? 200 : -200,
-          opacity: 0
-        }
-      },
-      animate: {
-        x: 0,
-        opacity: 1,
-      },
-      exit: animationDirection => {
-        return {
-  
-          x: animationDirection > 0 ? -200 : 200,
-          opacity: 0
-        }
+    const options = {
+      loop: true,
+      margin:10,
+      nav:true,
+      responsive:{
+          0:{
+              items:1
+          },
+          767:{
+              items:2
+          },
+          1000:{
+              items:3
+          }
       }
-    }
+  }
   
-    const goToNext = ()=> {
-        setAnimationDirection(1)
-      if( limitIndex < news.length)
-      {
-        
-        setStartingIndex(limitIndex)
-        setLimitIndex((limitIndex * 2) + 1)
-      }
-  
-    }
-  
-    const goToPrevious = ()=> {
-      setAnimationDirection(-1)
-      if(startingIndex > 0)
-      {
-        setStartingIndex(0)
-        setLimitIndex(parseInt((limitIndex / 2)))
-      }
-    }
     const changeButtonStyling = () => {
         var buttons= document.getElementsByClassName('buttons')
         for( let x= 0; x<buttons.length; x++)
@@ -136,20 +112,62 @@ function Media() {
             </div>
             {/* style={top} */}
 
-            <motion.div variants={variants} animate="animate" initial="initial" exit="exit" custom={animationDirection}  key={startingIndex} className='media__cards'>
+            <div className=''>
                   {mediaChoice === 'News' ?
-                  news.slice(startingIndex,limitIndex).map(neww =>
-                  <NewsCard props={neww}/>)
+                  <OwlCarousel
+                    className='owl-theme'
+                    style={{maxWidth: '70%', marginLeft: '15%','marginTop': '25px'}}
+                    {...options}
+                    navText={[
+                      '<Icon icon="arrow" size={12} style={{transform: rotate(180deg)}} color="#fff"/>',
+                      '<Icon icon="arrow" size={12} id="left__arrow" color="#fff"/>'
+                    ]}
+                    >
+                      <NewsCard props={news[0]}/>
+                      <NewsCard props={news[1]}/>
+                      <NewsCard props={news[2]}/>
+                      <NewsCard props={news[3]}/>
+                      <NewsCard props={news[4]}/>
+                      <NewsCard props={news[5]}/>
+                    </OwlCarousel>
 
-                  : mediaChoice === 'All' ? news.slice(startingIndex,limitIndex).map(neww =>
-                  <NewsCard props={neww}/> )
+                  : mediaChoice === 'All' ? <OwlCarousel
+                      className='owl-theme'
+                      style={{maxWidth: '70%', marginLeft: '15%','marginTop': '25px'}}
+                      {...options}
+                      navText={[
+                        '<Icon icon="arrow" size={12} style={{transform: rotate(180deg)}} color="#fff"/>',
+                        '<Icon icon="arrow" size={12} id="left__arrow" color="#fff"/>'
+                      ]}
+                      >
+                        <NewsCard props={news[0]}/>
+                        <NewsCard props={news[1]}/>
+                        <NewsCard props={news[2]}/>
+                        <NewsCard props={news[3]}/>
+                        <NewsCard props={news[4]}/>
+                        <NewsCard props={news[5]}/>
+                      </OwlCarousel>
 
                   : mediaChoice === 'Photos' ?
-                  photos.slice(startingIndex,limitIndex).map(photo =>
-                  <Photo props={photo}/> ) 
+                  <OwlCarousel
+                    className='owl-theme'
+                    style={{maxWidth: '70%', marginLeft: '15%','marginTop': '25px'}}
+                    {...options}
+                    navText={[
+                      '<Icon icon="arrow" size={12} style={{transform: rotate(180deg)}} color="#fff"/>',
+                      '<Icon icon="arrow" size={12} id="left__arrow" color="#fff"/>'
+                    ]}
+                    >
+                      <NewsCard props={photos[0]}/>
+                      <NewsCard props={photos[1]}/>
+                      <NewsCard props={photos[2]}/>
+                      <NewsCard props={photos[3]}/>
+                      <NewsCard props={photos[4]}/>
+                      <NewsCard props={photos[5]}/>
+                    </OwlCarousel>
                   : ''}
-            </motion.div>
-            <div className='media__footer'>
+            </div>
+            {/* <div className='media__footer'>
             <div onClick={goToPrevious} className="arrow__circle">
 
                 <Icon icon="arrow" size={12} id="left__arrow" color="#fff"/>
@@ -159,7 +177,7 @@ function Media() {
 
                 <Icon icon="arrow" size={12} style={{transform: 'rotate(180deg)'}} color="#fff"/>
                 </div>
-            </div>
+            </div> */}
         </main>
     </div>
   )
