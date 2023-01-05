@@ -152,6 +152,12 @@
       color: rgba(255, 255, 255, 0.4);
       z-index: 1;
   }
+  #image1{
+    display: -webkit-box;
+    height: 400px;
+    margin-left: auto;
+    width: 70%;
+}
   .animate {
     min-width: 100%;
     object-fit:cover;
