@@ -53,7 +53,7 @@
     width: 40px;
     height: 0px;
     margin: auto;
-    border: 1px solid rgba(255, 255, 255, 0.7);
+    border: 3px solid rgba(255, 255, 255, 0.7);
 }
 .hover__text {
     position: relative;
@@ -72,7 +72,7 @@
     font-weight: 700;
     font-size: 30px;
     height: 1px;
-    margin-top: 15px;
+    margin-top: 35px;
 }
 .card__date {
     font-family: 'FuturaPT-Bold', sans-serif;
@@ -86,7 +86,7 @@
     padding-bottom: 15px;
     margin-bottom: 0;
 }
-.hover__text > h1 {
+.hover__text > h6 {
     color: #A3C891;
 }
 .hover__text > .card__location {
@@ -97,7 +97,12 @@
     margin-right: 10px;
 }
 #arrow__icon {
-    height: 10px;
+    height: 12px;
+}
+.hover__knowmore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .card__location {
     display: flex;

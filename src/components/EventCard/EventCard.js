@@ -44,15 +44,16 @@ function EventCard(props) {
         <div className='date__container'>
         <h1 className='card__year'> {props.props.year}</h1>
         <div className='vector2'></div>
+        {/* <hr className='vector2'></hr> */}
         <h1 className='card__date'> {props.props.month} </h1>
         <h1 className='card__day'> {props.props.day}</h1>
         </div>
         <h1 className='card__name' style={{'transform': isHovering ? `translateY(${translateName}%)` : '', transition: '0.25s'}}> {props.props.card_name}</h1>
         {isHovering &&
-        <div className='hover__text'>
+        <div className='hover__text' style={{fontSize: 'font-size: max(0.4255319vw,12px)'}}>
 
-        <h1 className='card__location'> <span> <img src={locationIcon} alt="" id="location__icon"/></span>{props.props.location}</h1>
-        <h1> Know More <span><img src={arrow} alt="" id="arrow__icon" style={{ transform: 'rotate(180deg)'}}/></span> </h1>
+        <h6 className='card__location'> <span> <img src={locationIcon} alt="" id="location__icon"/></span>{props.props.location}</h6>
+        <h6 className='hover__knowmore'> Know More <span><img src={arrow} alt="" id="arrow__icon" style={{ transform: 'rotate(180deg)'}}/></span> </h6>
         </div>
         }
     </div>
