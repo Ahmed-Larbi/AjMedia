@@ -4,6 +4,7 @@ import vectorLeft from "../../assets/vectors/VectorLeft.png"
 import vectorRight from "../../assets/vectors/VectorRight.png"
 import arrow from "../../assets/arrow.png"
 import Icon from '../Icon/Icon'
+import {Row, Col, Container} from "react-bootstrap"
 
 function PhotoSection() {
   const [isHovering, setIsHovering] = React.useState([{id: 0, isHovered: false},{id: 1, isHovered: false},{id: 2, isHovered: false}])
@@ -49,7 +50,7 @@ function PhotoSection() {
         </div>
         </div>
             
-        <ul>
+        {/* <ul>
           <li onMouseOver={() => handleMouseOver(0)} onMouseOut={() => handleMouseOut(0)}>
             <span className='circle'>
 
@@ -83,7 +84,69 @@ function PhotoSection() {
             <h3 className={isHovering[2].isHovered ? 'hover__effect' : 'not__hover__effect'}> View Details <span><img src={arrow} alt="" id="arrow__icon1" style={{ transform: 'rotate(180deg)'}}/></span> </h3>
             </div>
           </li>
-        </ul>
+        </ul> */}
+        <Container className='my-auto'>
+        <Row>
+          <Col lg={4}>
+            <Row onMouseOver={() => handleMouseOver(0)} onMouseOut={() => handleMouseOut(0)} className="d-flex align-items-center">
+              <Col>
+            <span className='circle'>
+
+              <Icon icon='media-footage' className="img" color="#fff"/>
+              </span>
+              </Col>
+              <Col lg={8}>
+              <div className='circle__info'>
+
+              <h1> Media Footage Approval</h1>
+                            </div>
+              </Col>
+            </Row>
+            <Row>
+            <h3 className={isHovering[0].isHovered ? 'hover__effect' : 'not__hover__effect'}> View Details <span><img src={arrow} alt="" id="arrow__icon1" style={{ transform: 'rotate(180deg)'}}/></span> </h3>
+            </Row>
+          </Col>
+          <Col lg={4}>
+            <Row onMouseOver={() => handleMouseOver(1)} onMouseOut={() => handleMouseOut(1)} className="d-flex align-items-center">
+              <Col>
+            <span className='circle'>
+
+              <Icon icon='camera' className="img" color="#fff"/>
+              </span>
+              </Col>
+              <Col lg={8}>
+              <div className='circle__info'>
+
+              <h1> Photographer Permission Request</h1>
+              </div>
+              </Col>
+            </Row>
+            <Row>
+            <h3 className={isHovering[1].isHovered ? 'hover__effect' : 'not__hover__effect'}> View Details <span><img src={arrow} alt="" id="arrow__icon1" style={{ transform: 'rotate(180deg)'}}/></span> </h3>
+
+            </Row>
+          </Col>
+          <Col lg={4}>
+            <Row onMouseOver={() => handleMouseOver(2)} onMouseOut={() => handleMouseOut(2)} className="d-flex align-items-center"> 
+              <Col>
+              <span className='circle'>
+
+              <Icon icon='speaker' className="img" color="#fff"/>
+              </span>
+              </Col>
+              <Col lg={8}>
+              <div className='circle__info'>
+
+              <h1> Request to Host Influencer/Speaker</h1>
+              </div>
+              </Col>
+            </Row>
+            <Row>
+            <h3 className={isHovering[2].isHovered ? 'hover__effect' : 'not__hover__effect'}> View Details <span><img src={arrow} alt="" id="arrow__icon1" style={{ transform: 'rotate(180deg)'}}/></span> </h3>
+            </Row>
+            </Col>
+        </Row>
+      </Container>
     </div>
   )
 }
