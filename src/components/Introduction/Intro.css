@@ -20,7 +20,7 @@
     top: 12.74%;
     opacity: 0.5;
     z-index: 1;
-    animation: rotation 2s infinite linear;
+    animation: rotation 5s infinite linear;
 }
 #vector2{
     position: absolute;
@@ -29,7 +29,7 @@
     right: 69.6%;
     top: 1.95%;
     bottom: 86.27%;
-    animation: rotation 2s infinite linear;
+    animation: rotation 5s infinite linear;
 
 }
 .not-showing {
@@ -166,4 +166,13 @@
 @keyframes fade {
   0%,100% { opacity: 0 }
   45% { opacity: 1 }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }

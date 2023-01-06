@@ -1,8 +1,8 @@
 .confernece__container{
-    margin-top: 7rem;
     position: relative;
     min-width: 100%;
     background: #F1F2F2;
+    height: 100%;
     z-index: 1;
     
 }
@@ -52,6 +52,8 @@
     max-width: 300px;
     right: 10px;
     z-index: -2;
+    animation: rotation 5s infinite linear;
+
     
 }
 .arrow__circle {
@@ -95,4 +97,14 @@
         
     } 
   }
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+  
 

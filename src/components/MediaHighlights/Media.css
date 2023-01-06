@@ -106,7 +106,7 @@
     content: '';
     height: 10px;
     transform: rotate(-45deg);
-    top: 12px;
+    top: 13px;
     right: 3px;
 }
 .arrow__border__right {
@@ -116,13 +116,13 @@
     content: '';
     height: 10px;
     transform: rotate(-45deg);
-    top: -8px;
-    left: 12px;
+    top: -7px;
+    left: 9px;
 
 }
 .arrow__border_middle {
     position: absolute;
-    width: 11px;
+    width: 10px;
     border-top: 5px solid #F1F2F2;
     content: '';
     height: 1px;

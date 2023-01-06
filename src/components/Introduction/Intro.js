@@ -6,7 +6,6 @@ import bannerImage1 from "../../assets/banner/11.jpg"
 import bannerImage2 from "../../assets/banner/Group1023.jpg";
 import Vector from "../../assets/vectors/Vector.png"
 import Vector2 from "../../assets/vectors/Vector2.png"
-import { CSSTransition, TransitionGroup } from "react-transition-group";
 import {AnimatePresence,motion} from "framer-motion"
 // import Shader1 from "../../assets/Rectangle.png"
 // import Shader2 from "../../assets/Rectangle2.png"
