@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/AjMedia/static/css/main.d435aab2.css",
-    "main.js": "/AjMedia/static/js/main.3530c267.js",
+    "main.css": "/AjMedia/static/css/main.9062b3fc.css",
+    "main.js": "/AjMedia/static/js/main.13ed5cd3.js",
     "static/js/787.ae4825b1.chunk.js": "/AjMedia/static/js/787.ae4825b1.chunk.js",
     "static/media/Group1023.jpg": "/AjMedia/static/media/Group1023.2a062984f900b6c0b1bd.jpg",
     "static/media/11.jpg": "/AjMedia/static/media/11.b2e0d7c946a0f9db184d.jpg",
@@ -24,12 +24,12 @@
     "static/media/GE SS Two Medium.otf": "/AjMedia/static/media/GE SS Two Medium.3fb3dc620fa627c8b767.otf",
     "static/media/ajmanmedia.png": "/AjMedia/static/media/ajmanmedia.8fc58217a1d4969fee4d.png",
     "index.html": "/AjMedia/index.html",
-    "main.d435aab2.css.map": "/AjMedia/static/css/main.d435aab2.css.map",
-    "main.3530c267.js.map": "/AjMedia/static/js/main.3530c267.js.map",
+    "main.9062b3fc.css.map": "/AjMedia/static/css/main.9062b3fc.css.map",
+    "main.13ed5cd3.js.map": "/AjMedia/static/js/main.13ed5cd3.js.map",
     "787.ae4825b1.chunk.js.map": "/AjMedia/static/js/787.ae4825b1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d435aab2.css",
-    "static/js/main.3530c267.js"
+    "static/css/main.9062b3fc.css",
+    "static/js/main.13ed5cd3.js"
   ]
 }
