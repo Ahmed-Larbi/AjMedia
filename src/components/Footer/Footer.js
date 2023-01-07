@@ -17,17 +17,17 @@ function Footer() {
   return (
     <Container className="footer__container pt-4 " style={{minWidth: '100%',}}>
         <Row>
-            <Col lg={4} md={4} sm={6}  className='d-flex footer__visitor d-flex justify-content-center '>
+            <Col lg={4} md={4} sm={6}  className='footer__visitor d-flex justify-content-center align-items-center'>
                 <Icon icon="visitor-counter" size={20} alt="" color={'#747272'}/>
                 <h1> Visitor Count </h1>
                 <h3>2376182</h3>
             </Col>
-            <Col lg={4} md={3} sm={6} className='d-flex footer__working d-flex justify-content-center '>
+            <Col lg={4} md={3} sm={6} className='footer__working d-flex justify-content-center'>
                 <Icon icon="working-hours" size={20} color={'#747272'}/>
                 <h1> Working Hours </h1>
                 <h3>07:30 AM - 12:00 PM</h3>
             </Col>
-            <Col lg={4} md={3} sm={6} className='form__signup    d-flex justify-content-center '>
+            <Col lg={4} md={3} sm={6} className='form__signup d-flex justify-content-center'>
             <input placeholder='Sign to our Newsletter'/>
 
                 <div className='footer__signup'>
@@ -42,14 +42,14 @@ function Footer() {
         </Col>
         </Row>
         <Row className='footer__main'>
-            <Col lg={3} className="footer__logo d-flex justify-content-center ">
+            <Col lg={3} className="footer__logo d-flex justify-content-center" md={12} sm={12}>
 
                 <img src={ajmanGov} alt="" className='ajman__gov'/>
                 <div className='vertical__linefooter'></div>
                 <img src={ajmanMedia} alt="" className='ajman__media'/>
 
             </Col>
-            <Col lg={3} className='footer__about'>
+            <Col lg={3} className='footer__about' md={4} sm={6}>
                      <h1>
                      <a href="#" className='main__headers'>
 
@@ -71,7 +71,7 @@ function Footer() {
                  <h3> <a href="#">Disclaimer</a> </h3>
                  <h3> <a href="#">Copyright</a> </h3>
             </Col>
-            <Col className='footer__links d-flex justify-content-center' lg={3}>
+            <Col className='footer__links d-flex justify-content-center' lg={3} md={4} sm={6}>
             
                      <h1><a href="#" className='main__headers'>Quick Links</a></h1>
                      <h3> <a href="#">FAQs</a> </h3>
@@ -80,7 +80,7 @@ function Footer() {
                      <h3> <a href="#">Careers</a> </h3>
                  
             </Col>
-            <Col lg={3} className='footer__help'>
+            <Col lg={3} className='footer__help' md={4} sm={6}>
             
                 <h1 style={{color: '#FFFFFF'}}> __ </h1>
                  <h3> <a href="#">Archive</a> </h3>
@@ -96,10 +96,10 @@ function Footer() {
             </Col>
         </Row>
         <Row className='footer'>
-            <Col lg={4} className="d-flex justify-content-center footer__copyright">
+            <Col lg={4} className="d-flex justify-content-center footer__copyright" md={4} sm={12}>
             © 2022 Ajman Ruler’s Court Media Office
             </Col>
-            <Col lg={4} className="d-flex justify-content-center">
+            <Col lg={4} className="d-flex justify-content-center align-items-center" md={4} sm={12}>
             <div className='footer__social'>
              {socialLogos.map( (social) => 
              <Tooltip title={social.hint} placement='top'>
@@ -110,7 +110,7 @@ function Footer() {
              )}
              </div>
             </Col>
-            <Col className='footer__number d-flex justify-content-center'>
+            <Col className='footer__number d-flex justify-content-center' md={4} sm={12}>
                 <Icon icon="phone-icon" size={20} alt=""/>
                 <h3> Toll-free 24/7 800 8877 </h3>
             </Col>
