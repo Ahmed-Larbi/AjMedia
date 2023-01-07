@@ -16,19 +16,19 @@ function Footer() {
     ])
 
   return (
-    <Container className="footer__container w-100 pt-4 " style={{minWidth: '1300px', paddingLeft: '30px'}}>
+    <Container className="footer__container pt-4 " style={{minWidth: '100%',}}>
         <Row>
-            <Col lg={4} className='d-flex footer__visitor d-flex justify-content-center '>
+            <Col lg={4} md={4} sm={6}  className='d-flex footer__visitor d-flex justify-content-center '>
                 <Icon icon="visitor-counter" size={20} alt="" color={'#747272'}/>
                 <h1> Visitor Count </h1>
                 <h3>2376182</h3>
             </Col>
-            <Col lg={4} className='d-flex footer__working d-flex justify-content-center '>
+            <Col lg={4} md={3} sm={6} className='d-flex footer__working d-flex justify-content-center '>
                 <Icon icon="working-hours" size={20} color={'#747272'}/>
                 <h1> Working Hours </h1>
                 <h3>07:30 AM - 12:00 PM</h3>
             </Col>
-            <Col lg={4} className='form__signup    d-flex justify-content-center '>
+            <Col lg={4} md={3} sm={6} className='form__signup    d-flex justify-content-center '>
             <input placeholder='Sign to our Newsletter'/>
 
                 <div className='footer__signup'>
@@ -43,14 +43,14 @@ function Footer() {
         </Col>
         </Row>
         <Row className='footer__main'>
-            <Col lg={4} className="footer__logo d-flex justify-content-center ">
+            <Col lg={3} className="footer__logo d-flex justify-content-center ">
 
                 <img src={ajmanGov} alt="" className='ajman__gov'/>
                 <div className='vertical__linefooter'></div>
                 <img src={ajmanMedia} alt="" className='ajman__media'/>
 
             </Col>
-            <Col lg={4} className='footer__about d-flex justify-content-center '>
+            <Col lg={3} className='footer__about'>
                      <h1>
                      <a href="#" className='main__headers'>
 
@@ -72,7 +72,7 @@ function Footer() {
                  <h3> <a href="#">Disclaimer</a> </h3>
                  <h3> <a href="#">Copyright</a> </h3>
             </Col>
-            <Col className='footer__links d-flex justify-content-center' lg={4}>
+            <Col className='footer__links d-flex justify-content-center' lg={3}>
             
                      <h1><a href="#" className='main__headers'>Quick Links</a></h1>
                      <h3> <a href="#">FAQs</a> </h3>
@@ -80,6 +80,15 @@ function Footer() {
                      <h3> <a href="#">Sitemap</a> </h3>
                      <h3> <a href="#">Careers</a> </h3>
                  
+            </Col>
+            <Col lg={3} className='footer__help'>
+            
+                <h1 style={{color: '#FFFFFF'}}> __ </h1>
+                 <h3> <a href="#">Archive</a> </h3>
+                 <h3> <a href="#">Suggestions</a> </h3>
+                <h3> <a href="#">Acessability Policy</a> </h3>
+               <h3> <a href="#">Help</a> </h3>
+
             </Col>
         </Row>
         <Row>
