@@ -83,10 +83,11 @@ a:active { text-decoration: none; }
     color: #AFAFAF;
 }
 .footer__vector {
-    position: relative;
+    /* position: relative;
     width: 61vw;
     top: -73px;
-    left: 15vw;
+    left: 15vw; */
+    height: 10px;
     min-width: 300px;
     border-bottom: 0.25px solid #A6A6A6;
     padding-left: 140px;
@@ -109,7 +110,7 @@ a:active { text-decoration: none; }
     border-bottom: 0.25px solid #A6A6A6;
     padding-left: 140px;
 }
-.footer__header input {
+.form__signup input {
     width: 12vw;
     height: 50px;
     padding-left: 2vw;
@@ -161,16 +162,6 @@ a:active { text-decoration: none; }
 
     color: #2077A5;
 }
-.footer__main {
-    position: relative;
-    top: -40px;
-    padding: 15px;
-    display: flex;
-    justify-content: flex-start;
-    gap: 1.982306284319707vw;
-    margin-left: 6.5%;
-    width: 85%;
-}
 .vertical__linefooter{
     height: 52px;
     border: 1px solid #73654A;
@@ -182,8 +173,6 @@ a:active { text-decoration: none; }
     justify-content: flex-start;
     gap:  0.6101281269066504vw;
     align-items: center;
-    margin-left: 10%;
-    height: 0;
     
 }
 .footer__logo > img {
@@ -196,7 +185,6 @@ a:active { text-decoration: none; }
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    top:  -2.4405125076266017vw;
     color: #AFAFAF;
 }
 .footer__about h3 a {

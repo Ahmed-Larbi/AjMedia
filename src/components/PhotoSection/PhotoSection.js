@@ -85,7 +85,7 @@ function PhotoSection() {
             </div>
           </li>
         </ul> */}
-        <Container className='my-auto'>
+        <Container className='my-auto h-50'>
         <Row>
           <Col lg={4}>
             <Row onMouseOver={() => handleMouseOver(0)} onMouseOut={() => handleMouseOut(0)} className="d-flex align-items-center">
