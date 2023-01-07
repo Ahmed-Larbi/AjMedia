@@ -60,7 +60,6 @@
     max-width: 450px;
 }
 .not__hover__effect {
-    position: absolute;
     font-family: 'FuturaPT-Bold', sans-serif;
     font-style: normal;
     align-items: center;
@@ -72,7 +71,6 @@
     transition: visibility 0s, opacity 0.5s linear;
   }
   .hover__effect {
-    position: absolute;
     font-family: 'FuturaPT-Bold', sans-serif;
     font-style: normal;
     align-items: center;

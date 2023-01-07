@@ -99,11 +99,9 @@ function PhotoSection() {
               <div className='circle__info'>
 
               <h1> Media Footage Approval</h1>
-                            </div>
+              <h3 className={isHovering[0].isHovered ? 'hover__effect' : 'not__hover__effect'}> View Details <span><img src={arrow} alt="" id="arrow__icon1" style={{ transform: 'rotate(180deg)'}}/></span> </h3>
+              </div>
               </Col>
-            </Row>
-            <Row>
-            <h3 className={isHovering[0].isHovered ? 'hover__effect' : 'not__hover__effect'}> View Details <span><img src={arrow} alt="" id="arrow__icon1" style={{ transform: 'rotate(180deg)'}}/></span> </h3>
             </Row>
           </Col>
           <Col lg={4}>
@@ -118,13 +116,12 @@ function PhotoSection() {
               <div className='circle__info'>
 
               <h1> Photographer Permission Request</h1>
+            <h3 className={isHovering[1].isHovered ? 'hover__effect' : 'not__hover__effect'}> View Details <span><img src={arrow} alt="" id="arrow__icon1" style={{ transform: 'rotate(180deg)'}}/></span> </h3>
+
               </div>
               </Col>
             </Row>
-            <Row>
-            <h3 className={isHovering[1].isHovered ? 'hover__effect' : 'not__hover__effect'}> View Details <span><img src={arrow} alt="" id="arrow__icon1" style={{ transform: 'rotate(180deg)'}}/></span> </h3>
 
-            </Row>
           </Col>
           <Col lg={4}>
             <Row onMouseOver={() => handleMouseOver(2)} onMouseOut={() => handleMouseOut(2)} className="d-flex align-items-center"> 
@@ -138,11 +135,9 @@ function PhotoSection() {
               <div className='circle__info'>
 
               <h1> Request to Host Influencer/Speaker</h1>
+              <h3 className={isHovering[2].isHovered ? 'hover__effect' : 'not__hover__effect'}> View Details <span><img src={arrow} alt="" id="arrow__icon1" style={{ transform: 'rotate(180deg)'}}/></span> </h3>
               </div>
               </Col>
-            </Row>
-            <Row>
-            <h3 className={isHovering[2].isHovered ? 'hover__effect' : 'not__hover__effect'}> View Details <span><img src={arrow} alt="" id="arrow__icon1" style={{ transform: 'rotate(180deg)'}}/></span> </h3>
             </Row>
             </Col>
         </Row>
