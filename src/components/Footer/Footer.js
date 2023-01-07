@@ -1,9 +1,8 @@
 import React from 'react'
 import "./Footer.css"
-import vectorFooter from "../../assets/footer/vectorsFooter.png"
 import ajmanGov from "../../assets/ajmangov.png"
 import ajmanMedia from "../../assets/ajmanmedia.png"
-import footerline from "../../assets/footer/footerline.png"
+
 import {Container, Col, Row} from "react-bootstrap"
 
 import Tooltip from "@mui/material/Tooltip"
