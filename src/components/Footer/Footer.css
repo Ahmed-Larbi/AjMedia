@@ -180,12 +180,11 @@ a:active { text-decoration: none; }
     max-width: 10vw;
 }
 .footer__about {
-    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
     color: #AFAFAF;
+    text-align: center;
+    align-items: flex-start;
 }
 .footer__about h3 a {
     color: #AFAFAF;
@@ -196,7 +195,6 @@ a:active { text-decoration: none; }
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    top: -2.4405125076266017vw;
 }
 .footer__links h3 a {
     color: #AFAFAF;
@@ -231,16 +229,6 @@ a:active { text-decoration: none; }
 
     color: #AFAFAF;
 }
-.footer {
-    position: relative;
-    padding: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 12.303843807199513vw;
-    height: 0;
-    top: -80px;
-}
 .footer__copyright {
     position: relative;
     font-family: 'FuturaPT-Book', sans-serif;
@@ -248,7 +236,6 @@ a:active { text-decoration: none; }
     font-weight: 400;
     font-size: clamp(12px,1.064307504575961vw,18px);
     color: #A6A6A6;
-    height: 0;
 
 }
 .footer__social {

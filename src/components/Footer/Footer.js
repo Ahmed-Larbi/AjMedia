@@ -16,19 +16,19 @@ function Footer() {
     ])
 
   return (
-    <Container className="footer__container w-100 pt-4">
+    <Container className="footer__container w-100 pt-4 " style={{minWidth: '1300px', paddingLeft: '30px'}}>
         <Row>
-            <Col lg={4} className='d-flex footer__visitor'>
+            <Col lg={4} className='d-flex footer__visitor d-flex justify-content-center '>
                 <Icon icon="visitor-counter" size={20} alt="" color={'#747272'}/>
                 <h1> Visitor Count </h1>
                 <h3>2376182</h3>
             </Col>
-            <Col lg={4} className='d-flex footer__working'>
+            <Col lg={4} className='d-flex footer__working d-flex justify-content-center '>
                 <Icon icon="working-hours" size={20} color={'#747272'}/>
                 <h1> Working Hours </h1>
                 <h3>07:30 AM - 12:00 PM</h3>
             </Col>
-            <Col lg={4} className='form__signup'>
+            <Col lg={4} className='form__signup    d-flex justify-content-center '>
             <input placeholder='Sign to our Newsletter'/>
 
                 <div className='footer__signup'>
@@ -43,34 +43,68 @@ function Footer() {
         </Col>
         </Row>
         <Row className='footer__main'>
-            <Col lg={4} className="footer__logo">
+            <Col lg={4} className="footer__logo d-flex justify-content-center ">
 
                 <img src={ajmanGov} alt="" className='ajman__gov'/>
                 <div className='vertical__linefooter'></div>
                 <img src={ajmanMedia} alt="" className='ajman__media'/>
 
             </Col>
-            <Col className='footer__about'>
+            <Col lg={4} className='footer__about d-flex justify-content-center '>
                      <h1>
-                     <a href="javascript:void()" className='main__headers'>
+                     <a href="#" className='main__headers'>
 
                      About The Website
                      </a>
                      </h1>
                      <h3> 
-                     <a href="javascript:void()">
+                     <a href="#">
 
                     Privacy Policy
                     </a> 
                     </h3>
                   <h3> 
-                 <a href="javascript:void()">
+                 <a href="#">
 
                  Terms & Conditions
                 </a> 
                  </h3>
-                 <h3> <a href="javascript:void()">Disclaimer</a> </h3>
-                 <h3> <a href="javascript:void()">Copyright</a> </h3>
+                 <h3> <a href="#">Disclaimer</a> </h3>
+                 <h3> <a href="#">Copyright</a> </h3>
+            </Col>
+            <Col className='footer__links d-flex justify-content-center' lg={4}>
+            
+                     <h1><a href="#" className='main__headers'>Quick Links</a></h1>
+                     <h3> <a href="#">FAQs</a> </h3>
+                     <h3> <a href="#">Contact Us</a> </h3>
+                     <h3> <a href="#">Sitemap</a> </h3>
+                     <h3> <a href="#">Careers</a> </h3>
+                 
+            </Col>
+        </Row>
+        <Row>
+            <Col className=''>
+                <div className='footer__vector'></div>
+            </Col>
+        </Row>
+        <Row className='footer'>
+            <Col lg={4} className="d-flex justify-content-center footer__copyright">
+            © 2022 Ajman Ruler’s Court Media Office
+            </Col>
+            <Col lg={4} className="d-flex justify-content-center">
+            <div className='footer__social'>
+             {socialLogos.map( (social) => 
+             <Tooltip title={social.hint} placement='top'>
+             <div className="social__logo">
+             <Icon icon={social.image} size={20}/>
+             </div>
+             </Tooltip>
+             )}
+             </div>
+            </Col>
+            <Col className='footer__number d-flex justify-content-center'>
+                <Icon icon="phone-icon" size={20} alt=""/>
+                <h3> Toll-free 24/7 800 8877 </h3>
             </Col>
         </Row>
     </Container>
@@ -107,39 +141,39 @@ function Footer() {
 
     //             <div className='footer__about'>
     //                 <h1>
-    //                 <a href="javascript:void()" className='main__headers'>
+    //                 <a href="#" className='main__headers'>
 
     //                 About The Website
     //                 </a>
     //                 </h1>
     //                 <h3> 
-    //                 <a href="javascript:void()">
+    //                 <a href="#">
 
     //                 Privacy Policy
     //                 </a> 
     //                 </h3>
     //                 <h3> 
-    //                 <a href="javascript:void()">
+    //                 <a href="#">
 
     //                 Terms & Conditions
     //                 </a> 
     //                 </h3>
-    //                 <h3> <a href="javascript:void()">Disclaimer</a> </h3>
-    //                 <h3> <a href="javascript:void()">Copyright</a> </h3>
+    //                 <h3> <a href="#">Disclaimer</a> </h3>
+    //                 <h3> <a href="#">Copyright</a> </h3>
     //             </div>
     //             <div className='footer__links'>
-    //                 <h1><a href="javascript:void()" className='main__headers'>Quick Links</a></h1>
-    //                 <h3> <a href="javascript:void()">FAQs</a> </h3>
-    //                 <h3> <a href="javascript:void()">Contact Us</a> </h3>
-    //                 <h3> <a href="javascript:void()">Sitemap</a> </h3>
-    //                 <h3> <a href="javascript:void()">Careers</a> </h3>
+    //                 <h1><a href="#" className='main__headers'>Quick Links</a></h1>
+    //                 <h3> <a href="#">FAQs</a> </h3>
+    //                 <h3> <a href="#">Contact Us</a> </h3>
+    //                 <h3> <a href="#">Sitemap</a> </h3>
+    //                 <h3> <a href="#">Careers</a> </h3>
     //             </div>
     //             <div className='footer__help'>
     //                 <h1 style={{color: '#FFFFFF'}}> __ </h1>
-    //                 <h3> <a href="javascript:void()">Archive</a> </h3>
-    //                 <h3> <a href="javascript:void()">Suggestions</a> </h3>
-    //                 <h3> <a href="javascript:void()">Acessability Policy</a> </h3>
-    //                 <h3> <a href="javascript:void()">Help</a> </h3>
+    //                 <h3> <a href="#">Archive</a> </h3>
+    //                 <h3> <a href="#">Suggestions</a> </h3>
+    //                 <h3> <a href="#">Acessability Policy</a> </h3>
+    //                 <h3> <a href="#">Help</a> </h3>
     //             </div>
                 
     //         </div>
