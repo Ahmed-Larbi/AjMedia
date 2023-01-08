@@ -55,6 +55,12 @@
 
     color: #797977;
 }
+.sidebar { 
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 280px;
+}
 @media screen and (max-width: 700px) {
     .header__container {
         gap: 5%;

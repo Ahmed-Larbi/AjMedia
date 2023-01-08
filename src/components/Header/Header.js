@@ -10,7 +10,7 @@ import { Sidebar, Menu, MenuItem, SubMenu, useProSidebar } from 'react-pro-sideb
 
 function Header() {
   const [expanded, setExpanded] = useState(false)
-  const { collapseSidebar } = useProSidebar();
+  const { collapseSidebar } = useProSidebar(false);
 
   return (
     <div className='header__container'>
@@ -24,11 +24,14 @@ function Header() {
         <Icon icon="settings" size={20} className='icons' color="#797977"/>
         <h1 className='arabic'> عربي </h1>
         <div onClick={() => collapseSidebar()}>
-
+        {expanded ? 
+        <MenuItem onClick={() => collapseSidebar()}> X </MenuItem>
+        :
         <Icon icon="menu"  size={20} alt="" className='icons' color="#797977"/>
+        }
         </div>
         </div>
-      <Sidebar style={{height: '100vh'}} collapsedWidth='0px'>
+      <Sidebar style={{height: '100vh', position: 'absolute'}} collapsedWidth='0px' className='sidebar'>
           <Menu>
             <SubMenu label="Charts">
               <MenuItem> Pie charts </MenuItem>
@@ -36,6 +39,7 @@ function Header() {
             </SubMenu>
             <MenuItem> Documentation </MenuItem>
             <MenuItem> Calendar </MenuItem>
+
           </Menu>
         </Sidebar>
     </div>
