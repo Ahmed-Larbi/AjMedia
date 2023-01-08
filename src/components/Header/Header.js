@@ -1,16 +1,18 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import ajmanGov from "../../assets/ajmangov.png"
 import ajmanMedia from "../../assets/ajmanmedia.png"
-import search from "../../assets/search.png"
-import settings from "../../assets/setting.png"
-import menu from "../../assets/menu.png"
 import "./Header.css"
 import Icon from '../Icon/Icon'
 import { Sidebar, Menu, MenuItem, SubMenu, useProSidebar } from 'react-pro-sidebar';
 
 function Header() {
   const [expanded, setExpanded] = useState(false)
-  const { collapseSidebar } = useProSidebar(false);
+  const { collapseSidebar, toggleSidebar, collapsed, toggled, broken, rtl } = useProSidebar();
+
+  function collapse() {
+    setExpanded(!expanded)
+    collapseSidebar()
+  }
 
   return (
     <div className='header__container'>
@@ -23,15 +25,16 @@ function Header() {
         <Icon icon="search" size={20} alt="" className='icons' color="#797977"/>
         <Icon icon="settings" size={20} className='icons' color="#797977"/>
         <h1 className='arabic'> عربي </h1>
-        <div onClick={() => collapseSidebar()}>
+        <div onClick={collapse}>
         {expanded ? 
-        <MenuItem onClick={() => collapseSidebar()}> X </MenuItem>
+        <h6> X </h6>
         :
+        
         <Icon icon="menu"  size={20} alt="" className='icons' color="#797977"/>
         }
         </div>
         </div>
-      <Sidebar style={{height: '100vh', position: 'absolute'}} collapsedWidth='0px' className='sidebar'>
+      <Sidebar defaultCollapsed={true} style={{height: '100%', position: 'absolute'}} collapsedWidth='0px' className='sidebar' breakPoint='xxl' backgroundColor='#fff' width='220px'>
           <Menu>
             <SubMenu label="Charts">
               <MenuItem> Pie charts </MenuItem>

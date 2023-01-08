@@ -498,16 +498,6 @@ a:active { text-decoration: none; }
         margin-right: auto;
         line-height: 10px;
     }
-    .footer__copyright {
-        position: relative;
-        font-family: 'FuturaPT-Bold', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        color: #A6A6A6;
-        height: 0;
-    
-    }
     .footer__social {
         display: flex;
         width: 100%;
