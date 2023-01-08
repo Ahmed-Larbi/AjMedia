@@ -17,17 +17,17 @@ function Footer() {
   return (
     <Container className="footer__container pt-4 " style={{minWidth: '100%',}}>
         <Row>
-            <Col lg={4} md={4} sm={6}  className='footer__visitor d-flex justify-content-center align-items-center'>
+            <Col lg={4} md={12} sm={12}  className='footer__visitor d-flex justify-content-center align-items-center'>
                 <Icon icon="visitor-counter" size={20} alt="" color={'#747272'}/>
                 <h1> Visitor Count </h1>
                 <h3>2376182</h3>
             </Col>
-            <Col lg={4} md={3} sm={6} className='footer__working d-flex justify-content-center'>
+            <Col lg={4} md={12} sm={12} className='footer__working d-flex justify-content-center'>
                 <Icon icon="working-hours" size={20} color={'#747272'}/>
                 <h1> Working Hours </h1>
                 <h3>07:30 AM - 12:00 PM</h3>
             </Col>
-            <Col lg={4} md={3} sm={6} className='form__signup d-flex justify-content-center'>
+            <Col lg={4} md={12} sm={12} className='form__signup d-flex justify-content-center'>
             <input placeholder='Sign to our Newsletter'/>
 
                 <div className='footer__signup'>
@@ -41,7 +41,7 @@ function Footer() {
         <div className='footer__vector'></div>  
         </Col>
         </Row>
-        <Row className='footer__main'>
+        <Row className='footer__main mt-4 mb-3'>
             <Col lg={3} className="footer__logo d-flex justify-content-center" md={12} sm={12}>
 
                 <img src={ajmanGov} alt="" className='ajman__gov'/>
@@ -95,7 +95,7 @@ function Footer() {
                 <div className='footer__vector'></div>
             </Col>
         </Row>
-        <Row className='footer'>
+        <Row className='footer mt-2'>
             <Col lg={4} className="d-flex justify-content-center footer__copyright" md={4} sm={12}>
             © 2022 Ajman Ruler’s Court Media Office
             </Col>

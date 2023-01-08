@@ -146,7 +146,7 @@
     white-space: pre-line;
     word-wrap: break-word;
 }
-.circle__info h1 { 
+.circle__info h3:first-of-type { 
     font-family: 'FuturaPT-Bold', sans-serif;
     font-style: normal;
     font-weight: 700;
