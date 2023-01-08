@@ -50,46 +50,11 @@ function PhotoSection() {
         </div>
         </div>
             
-        {/* <ul>
-          <li onMouseOver={() => handleMouseOver(0)} onMouseOut={() => handleMouseOut(0)}>
-            <span className='circle'>
-
-            <Icon icon='media-footage' className="img" color="#fff"/>
-            </span>
-            <div className='circle__info'>
-
-            <h1> Media Footage Approval</h1>
-            <h3 className={isHovering[0].isHovered ? 'hover__effect' : 'not__hover__effect'}> View Details <span><img src={arrow} alt="" id="arrow__icon1" style={{ transform: 'rotate(180deg)'}}/></span> </h3>
-            </div>
-          </li>
-          <li onMouseOver={() => handleMouseOver(1)} onMouseOut={() => handleMouseOut(1)}>
-            <span className='circle'>
-
-            <Icon icon='camera' className="img" color="#fff"/>
-            </span>
-            <div className='circle__info'>
-
-            <h1> Photographer Permission Request</h1>
-            <h3 className={isHovering[1].isHovered ? 'hover__effect' : 'not__hover__effect'}> View Details <span><img src={arrow} alt="" id="arrow__icon1" style={{ transform: 'rotate(180deg)'}}/></span> </h3>
-            </div>
-          </li>
-          <li onMouseOver={() => handleMouseOver(2)} onMouseOut={() => handleMouseOut(2)} >
-            <span className='circle'>
-
-            <Icon icon='speaker' className="img" color="#fff"/>
-            </span>
-            <div className='circle__info'>
-
-            <h1> Request to Host Influencer/Speaker</h1>
-            <h3 className={isHovering[2].isHovered ? 'hover__effect' : 'not__hover__effect'}> View Details <span><img src={arrow} alt="" id="arrow__icon1" style={{ transform: 'rotate(180deg)'}}/></span> </h3>
-            </div>
-          </li>
-        </ul> */}
-        <Container className='my-auto h-50'>
+        <Container className='my-auto h-50 justify-content-center'>
         <Row>
-          <Col lg={4} md={6} sm={6} xs={6}>
+          <Col lg={4} md={6} sm={6} xs={12} className="">
             <Row onMouseOver={() => handleMouseOver(0)} onMouseOut={() => handleMouseOut(0)} className="d-flex align-items-center">
-              <Col className='d-flex align-items-center gap-5'>
+              <Col className='d-flex align-items-center gap-3 smaller'>
             <span className='circle'>
 
               <Icon icon='media-footage' className="img" color="#fff"/>
@@ -103,26 +68,24 @@ function PhotoSection() {
               
             </Row>
           </Col>
-          <Col lg={4} md={6} sm={6} xs={6}>
+          <Col lg={4} md={6} sm={6} xs={12}>
             <Row onMouseOver={() => handleMouseOver(1)} onMouseOut={() => handleMouseOut(1)} className="d-flex align-items-center">
-              <Col className='d-flex align-items-center gap-5'>
+              <Col className='d-flex align-items-center gap-3 smaller'>
             <span className='circle'>
 
               <Icon icon='camera' className="img" color="#fff"/>
               </span>
               <div className='circle__info'>
-
               <h3> Photographer Permission Request</h3>
             <h3 className={isHovering[1].isHovered ? 'hover__effect' : 'not__hover__effect'}> View Details <span><img src={arrow} alt="" id="arrow__icon1" style={{ transform: 'rotate(180deg)'}}/></span> </h3>
-
               </div>
               </Col>
             </Row>
 
           </Col>
-          <Col lg={4} md={12} sm={12} xs={12}>
-            <Row onMouseOver={() => handleMouseOver(2)} onMouseOut={() => handleMouseOut(2)} className="d-flex align-items-center"> 
-              <Col className='d-flex align-items-center gap-5'>
+          <Col lg={4} md={12} sm={6} xs={12}>
+            <Row onMouseOver={() => handleMouseOver(2)} onMouseOut={() => handleMouseOut(2)} className="d-flex align-items-center smaller"> 
+              <Col className='d-flex align-items-center gap-3'>
               <span className='circle'>
 
               <Icon icon='speaker' className="img" color="#fff"/>
